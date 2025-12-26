@@ -1,5 +1,7 @@
 COMMANDS TO MEMORIZE
 
+Control - C stops execution of an ongoing action.
+
 Blinking cursor is where the command line starts We see user name followed by possibly the directory we are in (ie. Desktop), followed by % sign. If we press return/enter then a new command line presents. Commands are only executed in the directory we are in at the moment. We can't interact with the terminal with the mouse (but we can use it to place the cursor). You can only use the arrow keys and keyboard. The UP arrow is useful to select previous commands used in the session.
 
 UP ARROW--goes through previous commands
