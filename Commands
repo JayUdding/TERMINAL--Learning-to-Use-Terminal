@@ -8,7 +8,8 @@ UP ARROW--goes through previous commands
 
 clear --use this to clear the terminal
 
-man--get to a manual
+man--if you do not know what a command does or what a specific parameter related to a command does, 
+the manual (man) page will provide you with all the information you need. 
 
 itconfig --checks IP address and related
 
@@ -43,6 +44,7 @@ Homebrew is what’s known as a package manager. All this means is that you can 
 **history, clear, ***, and sudo
 
 history -- gives the history of commands made in the session clear -- does clear the window back to a basic command line where we were
+history -c clears the history
 
 -- wildcard symbol --returns all with the reference to follow it. eg. *.pdf sudo -- means you are using as an administrator, superuser--and you are overriding protections! say --will make computer talk
 Once you get the hang of moving around the Mac terminal, you’re ready to start learning the fundamental commands. In my opinion, that means understanding how history, clear, *, and sudo work.
