@@ -1,5 +1,91 @@
 COMMANDS TO MEMORIZE--keep this updated and add to it
 
+Here's a comprehensive list of terminal commands to learn, categorized for better understanding:
+
+**Basic Navigation**
+
+1. `cd` - Change directory
+2. `cd ~` - Change to home directory
+3. `cd ..` - Move up one directory level
+4. `cd ./` - Move to the current directory (refresh)
+5. `pwd` - Print working directory (display current directory)
+6. `ls` - List files and directories in the current directory
+7. `ls -a` - List all files and directories (including hidden ones)
+8. `ls -l` - List files and directories in a detailed format
+
+**File Management**
+
+1. `mkdir` - Make a new directory
+2. `rm` - Remove a file or directory
+3. `rm -r` - Remove a directory and its contents recursively
+4. `rm -f` - Force remove a file or directory without prompting
+5. `cp` - Copy a file or directory
+6. `cp -r` - Copy a directory and its contents recursively
+7. `mv` - Move or rename a file or directory
+8. `touch` - Create a new empty file
+
+**File Editing and Viewing**
+
+1. `nano` - Open a file in the nano text editor
+2. `vim` - Open a file in the vim text editor
+3. `cat` - Display the contents of a file
+4. `less` - Display the contents of a file one page at a time
+5. `head` - Display the first few lines of a file
+6. `tail` - Display the last few lines of a file
+7. `grep` - Search for a pattern in a file
+
+**System Information**
+
+1. `uname -a` - Display system information (kernel version, etc.)
+2. `hostname` - Display the system's hostname
+3. `uptime` - Display the system's uptime
+4. `whoami` - Display the current user's username
+5. `groups` - Display the groups the current user belongs to
+6. `df` - Display disk usage information
+7. `du` - Display disk usage information for a specific directory or file
+
+**Process Management**
+
+1. `ps` - Display a list of running processes
+2. `ps aux` - Display a detailed list of running processes
+3. `kill` - Terminate a process
+4. `killall` - Terminate all processes with a specific name
+5. `bg` - Run a command in the background
+6. `fg` - Bring a background process to the foreground
+7. `jobs` - Display a list of background jobs
+
+**Network**
+
+1. `ping` - Test network connectivity to a host
+2. `ssh` - Connect to a remote server using SSH
+3. `scp` - Copy files over a network using SSH
+4. `wget` - Download a file from the internet
+5. `curl` - Transfer data to or from a web server
+6. `ifconfig` - Display network interface information
+7. `netstat` - Display network connection information
+
+**Security**
+
+1. `sudo` - Run a command with superuser privileges
+2. `su` - Switch to the superuser account
+3. `chmod` - Change the permissions of a file or directory
+4. `chown` - Change the ownership of a file or directory
+5. `passwd` - Change the password of a user account
+6. `ssh-keygen` - Generate a pair of SSH keys
+7. `openssl` - Manage SSL/TLS certificates and keys
+
+**Miscellaneous**
+
+1. `man` - Display the manual for a command or function
+2. `info` - Display information about a command or function
+3. `history` - Display a list of previously executed commands
+4. `alias` - Create a shortcut for a command
+5. `source` - Execute a script or file in the current shell
+6. `export` - Set an environment variable
+7. `echo` - Print text to the screen
+
+Remember, this is not an exhaustive list, and you'll likely encounter many more commands as you become more comfortable with the terminal. Practice using these commands to become proficient in using the terminal effectively.
+
 Control - C stops execution of an ongoing action.
 
 Blinking cursor is where the command line starts We see user name followed by possibly the directory we are in (ie. Desktop), followed by % sign. If we press return/enter then a new command line presents. Commands are only executed in the directory we are in at the moment. We can't interact with the terminal with the mouse (but we can use it to place the cursor). You can only use the arrow keys and keyboard. The UP arrow is useful to select previous commands used in the session.
