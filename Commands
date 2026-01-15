@@ -1,6 +1,15 @@
-COMMANDS TO MEMORIZE--keep this updated and add to it
+COMMANDS for DAILY MEMORIZATION
 
-Here's a comprehensive list of terminal commands to learn, categorized for better understanding:
+make a list here of what I know:
+
+UP ARROW
+cd
+cd ~ 
+cd ..
+ls
+ls -a
+history
+
 
 **Basic Navigation**
 
@@ -84,11 +93,19 @@ Here's a comprehensive list of terminal commands to learn, categorized for bette
 6. `export` - Set an environment variable
 7. `echo` - Print text to the screen
 
-Remember, this is not an exhaustive list, and you'll likely encounter many more commands as you become more comfortable with the terminal. Practice using these commands to become proficient in using the terminal effectively.
+Remember, this is not an exhaustive list
+We likely encounter many more commands as you become more comfortable with the terminal. 
+Practice using these commands to become proficient in using the terminal effectively.
 
 Control - C stops execution of an ongoing action.
 
-Blinking cursor is where the command line starts We see user name followed by possibly the directory we are in (ie. Desktop), followed by % sign. If we press return/enter then a new command line presents. Commands are only executed in the directory we are in at the moment. We can't interact with the terminal with the mouse (but we can use it to place the cursor). You can only use the arrow keys and keyboard. The UP arrow is useful to select previous commands used in the session.
+Blinking cursor is where the command line starts 
+We see user name followed by possibly the directory we are in (ie. Desktop), 
+followed by % sign. If we press return/enter then a new command line presents. 
+Commands are only executed in the directory we are in at the moment. 
+We can't interact with the terminal with the mouse (but we can use it to place the cursor). 
+You can only use the arrow keys and keyboard. 
+The UP arrow is useful to select previous commands used in the session.
 
 UP ARROW--goes through previous commands
 
