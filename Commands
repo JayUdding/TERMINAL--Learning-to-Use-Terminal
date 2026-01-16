@@ -1,7 +1,5 @@
 COMMANDS for DAILY MEMORIZATION
 
-make a list here of what I know:
-
 UP ARROW
 cd
 cd ~ 
@@ -9,6 +7,9 @@ cd ..
 ls
 ls -a
 history
+say
+clear
+
 
 
 **Basic Navigation**
@@ -94,7 +95,7 @@ history
 7. `echo` - Print text to the screen
 
 Remember, this is not an exhaustive list
-We likely encounter many more commands as you become more comfortable with the terminal. 
+Likely encounter many more commands as I become more comfortable with the terminal. 
 Practice using these commands to become proficient in using the terminal effectively.
 
 Control - C stops execution of an ongoing action.
@@ -107,9 +108,7 @@ We can't interact with the terminal with the mouse (but we can use it to place t
 You can only use the arrow keys and keyboard. 
 The UP arrow is useful to select previous commands used in the session.
 
-UP ARROW--goes through previous commands
 
-clear --use this to clear the terminal
 
 man--if you do not know what a command does or what a specific parameter related to a command does, 
 the manual (man) page will provide you with all the information you need. 
@@ -152,9 +151,9 @@ history -c clears the history
 -- wildcard symbol --returns all with the reference to follow it. eg. *.pdf sudo -- means you are using as an administrator, superuser--and you are overriding protections! say --will make computer talk
 Once you get the hang of moving around the Mac terminal, you’re ready to start learning the fundamental commands. In my opinion, that means understanding how history, clear, *, and sudo work.
 
-history is a straightforward command. It shows you a brief history of the commands you’ve recently entered into the terminal. This is helpful when you need to remember what you’ve done so far.
+history shows you a brief history of the commands recently entered into the terminal. 
 
-clear This is arguably a pointless command, though I use it a lot. When you enter clear into the Mac terminal, it clears the window back to a basic terminal screen. Go ahead and try it.
+clear --clears the window back to a basic terminal screen. 
 
 * This isn’t so much a command as it is an important symbol to be familiar with. It’s known as the “wildcard” symbol and is used to reference anything within certain criteria.
 
@@ -162,10 +161,3 @@ sudo is used to run commands as a superuser, or as an admin. It means that you�
 
 
 
-clear
-ls
-Up Arrow
-history
-More to be added here...more commands
-
-Use AI to create daily lessons...
