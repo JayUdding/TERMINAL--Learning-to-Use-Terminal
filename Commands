@@ -4,11 +4,14 @@ UP ARROW
 cd
 cd ~ 
 cd ..
+cd ./
 ls
 ls -a
+ls -l
 history
 say
 clear
+whoami --> use id -p instead
 
 
 
@@ -49,7 +52,7 @@ clear
 1. `uname -a` - Display system information (kernel version, etc.)
 2. `hostname` - Display the system's hostname
 3. `uptime` - Display the system's uptime
-4. `whoami` - Display the current user's username
+4. `whoami` - Display the current user's username--> use id -p instead
 5. `groups` - Display the groups the current user belongs to
 6. `df` - Display disk usage information
 7. `du` - Display disk usage information for a specific directory or file
@@ -94,19 +97,19 @@ clear
 6. `export` - Set an environment variable
 7. `echo` - Print text to the screen
 
-Remember, this is not an exhaustive list
-Likely encounter many more commands as I become more comfortable with the terminal. 
+
 Practice using these commands to become proficient in using the terminal effectively.
 
 Control - C stops execution of an ongoing action.
 
 Blinking cursor is where the command line starts 
 We see user name followed by possibly the directory we are in (ie. Desktop), 
-followed by % sign. If we press return/enter then a new command line presents. 
+followed by % sign. 
+If we press return/enter then a new command line presents. 
 Commands are only executed in the directory we are in at the moment. 
 We can't interact with the terminal with the mouse (but we can use it to place the cursor). 
 You can only use the arrow keys and keyboard. 
-The UP arrow is useful to select previous commands used in the session.
+The UP arrow selects the previous commands used in the session.
 
 
 
