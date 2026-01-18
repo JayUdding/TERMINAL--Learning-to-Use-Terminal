@@ -12,8 +12,10 @@ history
 say
 clear
 whoami --> use id -p instead
-
-
+arp -a
+traceroute
+rm 
+rm -r
 
 **Basic Navigation**
 
@@ -96,6 +98,11 @@ whoami --> use id -p instead
 5. `source` - Execute a script or file in the current shell
 6. `export` - Set an environment variable
 7. `echo` - Print text to the screen
+8. `traceroute` -- It traces the path, packets go through. 
+If your connection with the host is not established, 
+you can pinpoint the exact location at which the packets do not pass
+9. arp -a -- View a list of all active devices on your local network. 
+Show you the IP and MAC addresses of all the devices. 
 
 
 Practice using these commands to become proficient in using the terminal effectively.
