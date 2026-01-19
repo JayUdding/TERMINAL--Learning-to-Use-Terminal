@@ -1,21 +1,27 @@
 COMMANDS for DAILY MEMORIZATION
 
+mkdir test (make a new directory called test)
+cd test (change into the test directory)
+pwd (print)
+mv (move a file)
+cp (copy a file)
+
 UP ARROW
 cd
 cd ~ 
 cd ..
 cd ./
 ls
-ls -a
-ls -l
+ls -a (shows hidden files)
+ls -l (shows all files)
 history
 say
 clear
 whoami --> use id -p instead
 arp -a
 traceroute
-rm 
-rm -r
+rmdir test (remove directory called test)
+rm -r test (remove directory test when it is not empty)
 
 **Basic Navigation**
 
