@@ -1,13 +1,14 @@
-COMMANDS for DAILY MEMORIZATION
+COMMANDS for DAILY MEMORIZATION and SELF TESTING
 
-mkdir test (make a new directory called test)
+mkdir test (make a new directory called test)--then press pwd to see if it is there!
+touch test (make a new file called test that is an empty file)
 cd test (change into the test directory)
-pwd (print)
+pwd (print working directory)--provides path to the current working directory
 mv (move a file)
 cp (copy a file)
 
 UP ARROW
-cd
+cd --changes to another directory; moves you into a different folder
 cd ~ 
 cd ..
 cd ./
