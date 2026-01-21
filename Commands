@@ -1,20 +1,25 @@
 COMMANDS for DAILY MEMORIZATION and SELF TESTING
 
+
+head--display first 10 lines of a file
+tail-display last 10 lines of a file
+grep--search for 
+cat--display contents of a file
 mkdir test (make a new directory called test)--then press pwd to see if it is there!
 touch test (make a new file called test that is an empty file)
 cd test (change into the test directory)
 pwd (print working directory)--provides path to the current working directory
-mv (move a file)
+mv (move or rename a file)
 cp (copy a file)
-
+!! runs last command
 UP ARROW
 cd --changes to another directory; moves you into a different folder
-cd ~ 
-cd ..
+cd ~ go to the home directory
+cd .. go up one directory
 cd ./
 ls
-ls -a (shows hidden files)
-ls -l (shows all files)
+ls -a (shows all files including hidden files)
+ls -l (shows all files in long format)
 history
 say
 clear
@@ -23,6 +28,8 @@ arp -a
 traceroute
 rmdir test (remove directory called test)
 rm -r test (remove directory test when it is not empty)
+CONTROL C--cancel command
+CONTROL D--Exit Terminal
 
 **Basic Navigation**
 
@@ -176,5 +183,65 @@ clear --clears the window back to a basic terminal screen.
 
 sudo is used to run commands as a superuser, or as an admin. It means that you’re overriding some basic protection of your Mac and making an alteration to your computer
 
+Here's a **clean, one-page printable terminal cheat sheet** — optimized for printing, with all the essential commands in a compact layout. Just copy the text below into a document (like Google Docs or Word), adjust font size if needed, and print!
 
+---
 
+SAMPLE CHEAT SHEET ONE PAGE
+
+### 🔹 Navigation
+| Command | Purpose | Example |
+|--------|--------|--------|
+| `ls` | List files | `ls` |
+| `ls -l` | List with details | `ls -l` |
+| `ls -a` | Show hidden files | `ls -a` |
+| `cd dir` | Change directory | `cd Documents` |
+| `cd ..` | Go up | `cd ..` |
+| `cd ~` | Home dir | `cd ~` |
+| `pwd` | Show path | `pwd` |
+
+---
+
+### 🔹 File & Dir Management
+| Command | Purpose | Example |
+|--------|--------|--------|
+| `mkdir dir` | Create dir | `mkdir projects` |
+| `mkdir -p path` | Nested dirs | `mkdir -p work/reports` |
+| `touch file.txt` | Create file | `touch notes.txt` |
+| `cp src dst` | Copy | `cp file.txt backup/` |
+| `mv old new` | Move/rename | `mv old.txt new.txt` |
+| `rm file.txt` | Delete | `rm old.txt` |
+| `rm -r dir/` | Delete dir | `rm -r backup/` |
+| `rm -f file.txt` | Force delete | `rm -f temp.txt` |
+
+---
+
+### 🔹 View & Search
+| Command | Purpose | Example |
+|--------|--------|--------|
+| `cat file.txt` | Show content | `cat README.md` |
+| `head file.txt` | First 10 lines | `head log.txt` |
+| `tail file.txt` | Last 10 lines | `tail app.log` |
+| `grep "text" file.txt` | Search text | `grep "error" app.log` |
+| `echo "Hello"` | Print text | `echo "Hi!"` |
+
+---
+
+### 🔹 Tools & Shortcuts
+| Command | Purpose |
+|--------|--------|
+| `clear` | Clear screen |
+| `history` | Show commands |
+| `!!` | Re-run last |
+| `man cmd` | Manual | `man grep` |
+| `Ctrl + C` | Cancel |
+| `Ctrl + D` | Exit |
+
+---
+
+### 💡 Pro Tips:
+- **Tab** → auto-complete filenames  
+- `--help` → quick help: `ls --help`  
+- `Ctrl + R` → search command history  
+
+---
