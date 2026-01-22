@@ -1,5 +1,23 @@
 COMMANDS for DAILY MEMORIZATION and SELF TESTING
 
+my Terminal opens with username@computername 
+~ meaning home directory and % ready for input
+Terminal default is in the home directory
+Home directory is where the personal files (docs, downloads, apps) live
+
+pwd -- shows working directory: /users/username
+ls list of files and folders
+ls -l shows details, i.e. date, permission, size
+cd go to another directory
+cd .. go back
+TAB is an autocomplete
+mkdir --- make a new directory
+rm --remove a file
+cp --copy a file -> cp hello.py backup.py
+mv --move a file OR RENAME a file --> mv backup.py scripts/   //  mv oldname.py newname.py
+cat --view a file
+
+
 
 head--display first 10 lines of a file
 tail-display last 10 lines of a file
@@ -55,7 +73,7 @@ CONTROL D--Exit Terminal
 
 **File Editing and Viewing**
 
-1. `nano` - Open a file in the nano text editor
+1. `nano` - Open a file in the nano text editor--Check your code
 2. `vim` - Open a file in the vim text editor
 3. `cat` - Display the contents of a file
 4. `less` - Display the contents of a file one page at a time
