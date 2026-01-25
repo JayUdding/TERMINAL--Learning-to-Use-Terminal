@@ -1,4 +1,10 @@
 # TERMINAL--Learning-to-Use-Terminal
+
+The Top file is the various commands for Terminal and some example uses.
+I use AI to create a quiz to memorize and practice the prompts.
+
+
+
 Learning Resources and Journey to Master the Terminal includes List of Prompts
 
 
