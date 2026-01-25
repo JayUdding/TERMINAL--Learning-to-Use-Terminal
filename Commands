@@ -1,48 +1,46 @@
-COMMANDS for DAILY MEMORIZATION and SELF TESTING--repeat daily DAILY
+COMMANDS MEMORIZATION / SELF TESTING
 
-my Terminal opens with username@computername 
-~ meaning home directory 
-% ready for input
+Terminal opens with username@computername 
+~ means home directory 
+% means ready for input
 Terminal default is in the Home Directory
-Home Directory is where the personal files (docs, downloads, apps) live
+Home Directory is where the personal files (docs, downloads, apps, etc.) live
 
-pwd -- shows working directory: /users/username
-ls list of files and folders
-ls -l shows details, i.e. date, permission, size
-cd go to another directory
-cd .. go back
-TAB is an autocomplete
+pwd -- shows working directory, provides path to the current working directory
+Example result: /users/username
 mkdir --- make a new directory
+mkdir test (make a new directory called test)--then press pwd to see if it is there!
+
+ls list of files and folders
+ls -a (shows all files including hidden files)
+ls -l (shows all files in long format)
+ls -l shows details, i.e. date, permission, size
+cd go to another directory, moves to a different folder
+cd .. go back, go up one directory
+cd ~ go to the home directory
+cd ./` - Move to the current directory (refresh)
+
+TAB is an autocomplete
+
 rm --remove a file
-cp --copy a file -> cp hello.py backup.py
-mv --move a file OR RENAME a file --> mv backup.py scripts/   //  mv oldname.py newname.py
-cat --view a file
-
-
+cp --copy a file / example: cp hello.py backup.py (note no comma between the two filenames)
+mv --move a file OR RENAME a file / example: mv backup.py scripts/   //  mv oldname.py newname.py
+cat --view a file, display contents of a file
 
 head--display first 10 lines of a file
 tail-display last 10 lines of a file
+
 grep--search for 
-cat--display contents of a file
-mkdir test (make a new directory called test)--then press pwd to see if it is there!
-touch test (make a new file called test that is an empty file)
+touch--make a new file/ example: touch test (make a new file called test that is an empty file)
 cd test (change into the test directory)
-pwd (print working directory)--provides path to the current working directory
-mv (move or rename a file)
-cp (copy a file)
+
 !! runs last command
-UP ARROW
-cd --changes to another directory; moves you into a different folder
-cd ~ go to the home directory
-cd .. go up one directory
-cd ./
-ls
-ls -a (shows all files including hidden files)
-ls -l (shows all files in long format)
+UP ARROW goes also to the last command
 history
 say
 clear
 whoami --> use id -p instead
+
 arp -a
 traceroute
 rmdir test (remove directory called test)
@@ -50,16 +48,6 @@ rm -r test (remove directory test when it is not empty)
 CONTROL C--cancel command
 CONTROL D--Exit Terminal
 
-**Basic Navigation**
-
-1. `cd` - Change directory
-2. `cd ~` - Change to home directory
-3. `cd ..` - Move up one directory level
-4. `cd ./` - Move to the current directory (refresh)
-5. `pwd` - Print working directory (display current directory)
-6. `ls` - List files and directories in the current directory
-7. `ls -a` - List all files and directories (including hidden ones)
-8. `ls -l` - List files and directories in a detailed format
 
 **File Management**
 
