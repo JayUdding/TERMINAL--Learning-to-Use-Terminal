@@ -7,6 +7,8 @@ Terminal default is in the Home Directory
 Home Directory is where the personal files (docs, downloads, apps, etc.) live.
 
 date -- shows current date and time
+exit--this saves the current version and no longer allows input (then it should be closed)
+Note: on a mac this does not automatically close the Terminal, nor does Control + D
 
 pwd -- shows working directory, provides path to the current working directory
 Example result: /users/username
