@@ -11,6 +11,9 @@ Example result: /users/username
 mkdir --- make a new directory
 mkdir test (make a new directory called test)--then press pwd to see if it is there!
 
+TIP: Tip: If you want to create a directory with a space in its name, 
+you'll need to surround the name with quotes. For example, mkdir "My Projects"
+
 ls list of files and folders
 ls -a (shows all files including hidden files)
 ls -l (shows all files in long format)
@@ -20,17 +23,48 @@ cd .. go back, go up one directory
 cd ~ go to the home directory
 cd ./` - Move to the current directory (refresh)
 
+TIP: The command cd Documents is used to change the current directory to the Documents directory.
+
+When you type cd Documents and press Enter, you'll move from your current directory 
+to the Documents directory. The cd command stands for "change directory," 
+and it's used to navigate through your file system.
+
+Tip: If the Documents directory is not in your current directory, 
+you'll need to specify the full path to the directory. 
+For example, if the Documents directory is in your home directory, 
+you would use cd ~/Documents.
+
+
+
 TAB is an autocomplete
 
 rm --remove a file
 cp --copy a file / example: cp hello.py backup.py (note no comma between the two filenames)
 mv --move a file OR RENAME a file / example: mv backup.py scripts/   //  mv oldname.py newname.py
+
+TIP: Be careful when using mv
+as it will overwrite any existing file with the same name in the destination directory.
+
 cat --view a file, display contents of a file
+
+TIP: If you want to display the contents of multiple files at once, 
+you can separate the filenames with spaces, like this: cat example.txt anotherfile.txt
+To scroll through the output if it's too long to fit in the terminal, 
+use a pager like less or more. For example: cat example.txt | less
 
 head--display first 10 lines of a file
 tail-display last 10 lines of a file
 
 grep--search for 
+(global regular expression print)
+TIP: If you want to search for a word in multiple files, 
+use the * wildcard to specify multiple files
+Example: grep word *.txt
+TIP: To search for a word in a case-insensitive manner, 
+use the -i option, like this: grep -i word example.txt
+
+
+
 touch--make a new file/ example: touch test (make a new file called test that is an empty file)
 cd test (change into the test directory)
 
@@ -57,12 +91,27 @@ CONTROL D--Exit Terminal
 4. `rm -f` - Force remove a file or directory without prompting
 5. `cp` - Copy a file or directory
 6. `cp -r` - Copy a directory and its contents recursively
+
+TIP: Example: cp example.txt ~/Documents)
+Remember to specify the source and destination for the copy operation.
+If you want to rename the file while copying it, 
+specify a new name as the destination. 
+Example: cp example.txt ~/Documents/newfile.txt 
+This now will copy the example.txt file to the ~/Documents directory and rename it to newfile.txt.
+
+
+
+
 7. `mv` - Move or rename a file or directory
 8. `touch` - Create a new empty file
 
 **File Editing and Viewing**
 
-1. `nano` - Open a file in the nano text editor--Check your code
+1. `nano` - Open a file (or create a new file in the nano text editor
+Done in order to: check code, make changes, edits
+Note: To save changes in nano, press Ctrl+O and then Enter. To exit nano, press Ctrl+X
+
+
 2. `vim` - Open a file in the vim text editor
 3. `cat` - Display the contents of a file
 4. `less` - Display the contents of a file one page at a time
