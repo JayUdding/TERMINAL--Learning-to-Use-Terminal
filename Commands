@@ -4,7 +4,9 @@ Terminal opens with username@computername
 ~ means home directory 
 % means ready for input
 Terminal default is in the Home Directory
-Home Directory is where the personal files (docs, downloads, apps, etc.) live
+Home Directory is where the personal files (docs, downloads, apps, etc.) live.
+
+date -- shows current date and time
 
 pwd -- shows working directory, provides path to the current working directory
 Example result: /users/username
