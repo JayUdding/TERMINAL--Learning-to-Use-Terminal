@@ -21,6 +21,42 @@ $ tells the shell to expand the variable and provide its value
 %# = prompt symbol (% for normal user, # for root)
 
 Changes will be lost, but can be exported permanently into a configuration file..
+nano ~/.zshrc opens your configuration file in the nano text editor.
+
+Now, you can add your PS1 command to the end of the file.
+
+
+Example: export PS1="%F{green}%n%f@%F{blue}%m%f %F{red}%1~%f %# "
+then Ctrl+O and enter and Ctrl+X to exit Nano
+To reload the configuration, you need to run a command that tells Zsh to read the file again.
+
+The command is:
+
+
+Copy Code
+source ~/.zshrc
+
+So:
+
+nano ~/.zshrc → edit the file
+source ~/.zshrc → apply changes immediately
+Restart terminal → apply changes next time
+
+source -- reads and executes commands from a file in the current shell.
+
+Final Recap:
+We’ve learned:
+
+PS1 controls the prompt
+It’s a shell variable
+You can customize it with colors and formatting
+But changes are temporary unless saved
+To save changes, edit ~/.zshrc
+Use export PS1="..." to make changes persistent
+Use source ~/.zshrc to apply changes immediately
+Always back up your ~/.zshrc file
+
+
 
 date -- shows current date and time
 exit -- saves the current version and no longer allows input (then it should be closed)
