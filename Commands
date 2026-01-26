@@ -1,14 +1,29 @@
-COMMANDS MEMORIZATION / SELF TESTING
+COMMANDS MEMORIZATION / SELF TESTING  I am using macOS so I have Zsh Shell (not Bash Shell)
 
-Terminal opens with username@computername 
+Terminal opens with username@computername (or hostname)
 ~ means home directory 
-% means ready for input as a normal non-root user
-# means ready for input as a root user (admin)
+% is the prompt symbol -- means ready for input as a normal non-root user
+# is also a prompt symbol and means ready for input as a root user (admin)
 Terminal default is in the Home Directory
 Home Directory is where the personal files (docs, downloads, apps, etc.) live.
 
+
+PS1
+
+$ stands for value (echo $PS1 will give value of)
+$ tells the shell to expand the variable and provide its value
+
+%n@%m %1~ %# -- %n here stands for username (in Bash, the standard is \u for username)
+
+%n = username 
+%m = hostname 
+%1~ = current directory (shortened) 
+%# = prompt symbol (% for normal user, # for root)
+
+Changes will be lost, but can be exported permanently into a configuration file..
+
 date -- shows current date and time
-exit--this saves the current version and no longer allows input (then it should be closed)
+exit -- saves the current version and no longer allows input (then it should be closed)
 Note: on a mac this does not automatically close the Terminal, nor does Control + D
 
 pwd -- shows working directory, provides path to the current working directory
@@ -309,5 +324,18 @@ SAMPLE CHEAT SHEET ONE PAGE
 - **Tab** → auto-complete filenames  
 - `--help` → quick help: `ls --help`  
 - `Ctrl + R` → search command history  
+
+
+
+
+PS1 defines the command prompt — what appears before you type a command.
+
+It controls the text and formatting of the prompt, including:
+
+Username
+Hostname
+Current directory
+Color
+The % or # symbol
 
 ---
