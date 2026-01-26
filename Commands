@@ -2,7 +2,8 @@ COMMANDS MEMORIZATION / SELF TESTING
 
 Terminal opens with username@computername 
 ~ means home directory 
-% means ready for input
+% means ready for input as a normal non-root user
+# means ready for input as a root user (admin)
 Terminal default is in the Home Directory
 Home Directory is where the personal files (docs, downloads, apps, etc.) live.
 
@@ -37,6 +38,11 @@ Tip: If the Documents directory is not in your current directory,
 you'll need to specify the full path to the directory. 
 For example, if the Documents directory is in your home directory, 
 you would use cd ~/Documents.
+
+EXAMPLE: You don’t need to cd into Documents first to copy a file into it. 
+You can do it in one step.
+
+cp example.txt ~/Documents (adds the path)
 
 
 
