@@ -28,3 +28,41 @@ Some popular tools and platforms for creating these types of projects include:
 * **Shell scripting tools**: Tools like Bash, Zsh, or Fish that allow you to write and run shell scripts.
 
 Remember, the most important thing is to choose a format and tool that works for you and your learning style. Good luck with your project, and have fun learning Terminal commands!
+
+Example of a Quiz:
+
+(Created by CoPilot)
+
+Ready for another beginner quiz — no hints unless you ask. Reply with the command you'd type.
+
+Question 1/10:
+What command creates an empty file named todo.txt?
+
+Question 2/10:
+What command copies a directory named src and all its contents to src_backup?
+
+Question 3/10:
+What command removes an empty directory named temp?
+
+Question 4/10:
+What command force-removes a directory named old_project and everything inside it?
+
+Question 5/10:
+What command prints the full path of the current working directory?
+
+Question 6/10:
+What command counts the number of lines in a file named notes.txt?
+
+Question 7/10:
+What command searches recursively for the string TODO in the current directory and prints matching lines?
+
+Question 8/10:
+What command writes the output of ls into a file named listing.txt, replacing any existing content?
+
+Question 9/10:
+What command sets a file named report.txt to have permissions rw-r--r-- (owner read/write, group and others read)?
+
+Question 10/10:
+What command prints the value of the PATH environment variable?
+
+When you answer, give one command per question.
