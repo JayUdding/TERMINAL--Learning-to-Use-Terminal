@@ -108,6 +108,7 @@ TIP: Be careful when using mv
 as it will overwrite any existing file with the same name in the destination directory.
 
 cat --view a file, display contents of a file
+top --shows running processes in real time (a continuously updating view)
 
 TIP: If you want to display the contents of multiple files at once, 
 you can separate the filenames with spaces, like this: cat example.txt anotherfile.txt
@@ -116,6 +117,8 @@ use a pager like less or more. For example: cat example.txt | less
 
 head--display first 10 lines of a file
 tail-display last 10 lines of a file
+head -n20 textfile.txt (displays the first 20 lines of textfile.txt)
+head -20 textfile.txt (same)
 
 grep--search for 
 (global regular expression print)
@@ -216,6 +219,10 @@ Note: To save changes in nano, press Ctrl+O and then Enter. To exit nano, press 
 1. `sudo` - Run a command with superuser privileges
 2. `su` - Switch to the superuser account
 3. `chmod` - Change the permissions of a file or directory
+
+EXAMPLE: chmod u+x script.sh -- makes a file called script.sh executable for the owner
+command changes a file's permissions to make it executable for the owner
+
 4. `chown` - Change the ownership of a file or directory
 5. `passwd` - Change the password of a user account
 6. `ssh-keygen` - Generate a pair of SSH keys
@@ -230,6 +237,11 @@ Note: To save changes in nano, press Ctrl+O and then Enter. To exit nano, press 
 5. `source` - Execute a script or file in the current shell
 6. `export` - Set an environment variable
 7. `echo` - Print text to the screen
+
+APPEND TEXT EXAMPLE: echo "done" >> results.txt appends the text done (plus a newline) to the end of results.txt.
+
+
+
 8. `traceroute` -- It traces the path, packets go through. 
 If your connection with the host is not established, 
 you can pinpoint the exact location at which the packets do not pass
@@ -362,8 +374,7 @@ SAMPLE CHEAT SHEET ONE PAGE
 - `--help` → quick help: `ls --help`  
 - `Ctrl + R` → search command history  
 
-
-
+du -sh --shows disk usage of the current directory in a human-readable format.
 
 PS1 defines the command prompt — what appears before you type a command.
 
