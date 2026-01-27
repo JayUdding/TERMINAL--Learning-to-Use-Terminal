@@ -75,9 +75,10 @@ ls -a (shows all files including hidden files)
 ls -l (shows all files in long format)
 ls -l shows details, i.e. date, permission, size
 cd go to another directory, moves to a different folder
-cd .. go back, go up one directory
+cd .. go up one directory to the parent directory
 cd ~ go to the home directory
 cd ./` - Move to the current directory (refresh)
+cd - go back to the previous working directory (like a back button)
 
 TIP: The command cd Documents is used to change the current directory to the Documents directory.
 
