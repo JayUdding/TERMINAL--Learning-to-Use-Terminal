@@ -1,6 +1,6 @@
 TERMINAL--Learning-to-Use-Terminal
 
-The Top file (Commands) is a list of the various commands for Terminal and some example uses.
+The Top file (Commands) is a list of the various commands for Terminal and some example uses. I will keep adding until complete.
 I use AI (the Copilot and Maple.AI) to create daily quizzes to memorize and practice the prompts and refine the explanations.
 Goal: Stop with the quizzes and continue other learning when all tests are passed with ease and the use of Terminal feels like second nature.
 
@@ -66,3 +66,5 @@ Question 10/10:
 What command prints the value of the PATH environment variable?
 
 When you answer, give one command per question.
+
+[first go, 5 correct answers, 6-10 were not correct]
