@@ -393,4 +393,4 @@ Color
 The % or # symbol
 
 ---
-wc -l  counts all lines in a file
+wc -l  counts all lines in a file [added jan 28]
