@@ -96,7 +96,7 @@ You can do it in one step.
 
 cp example.txt ~/Documents (adds the path)
 
-
+touch -- creates a new empty file
 
 TAB is an autocomplete
 
@@ -152,10 +152,16 @@ CONTROL D--Exit Terminal
 
 1. `mkdir` - Make a new directory
 2. `rm` - Remove a file or directory
-3. `rm -r` - Remove a directory and its contents recursively
+3. `rm -r` - Remove a directory and its contents recursively [includes all subfiles, etc.]
 4. `rm -f` - Force remove a file or directory without prompting
 5. `cp` - Copy a file or directory
-6. `cp -r` - Copy a directory and its contents recursively
+6. `cp -r` - Copy a directory and its contents recursively [see below]
+
+cp -r ---a command that copies a directory named ____ and all its contents to _______.
+
+The filesystem is a tree structure: a folder can contain files, which can contain other folders, and so on. 
+Non-recursive: "Clean this room" (only cleans the main room).
+Recursive: "Clean this room and every room inside it, and every room inside those rooms, and so on". 
 
 TIP: Example: cp example.txt ~/Documents)
 Remember to specify the source and destination for the copy operation.
@@ -387,3 +393,4 @@ Color
 The % or # symbol
 
 ---
+wc -l  counts all lines in a file
