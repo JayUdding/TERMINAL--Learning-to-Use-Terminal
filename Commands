@@ -1,14 +1,44 @@
-COMMANDS MEMORIZATION / SELF TESTING  I am using macOS so I have Zsh Shell (not Bash Shell)
+COMMANDS MEMORIZATION / SELF TESTING  
+I am using macOS so I work with Zsh Shell (not Bash Shell)
+
+Cursor is where the command line starts after the prompt
+We see user name followed by computername and possibly the directory we are in (ie. Desktop), 
+followed by % sign. 
+If we press return/enter then a new command line presents. 
+Commands are only executed in the directory we are in at the moment. 
+We can't interact with the terminal with the mouse (but we can use it to place the cursor). 
+You can only use the arrow keys and keyboard. 
+The UP arrow selects the previous commands used in the session.
+
+
+First the Prompt when we open up the Terminal:
 
 Terminal opens with username@computername (or hostname)
+@ is the divider between username and computername
 ~ means home directory 
 % is the prompt symbol -- means ready for input as a normal non-root user
 # is also a prompt symbol and means ready for input as a root user (admin)
-Terminal default is in the Home Directory
-Home Directory is where the personal files (docs, downloads, apps, etc.) live.
+Terminal default is in the Home Directory; that where it opens up by default
+Home Directory is where the personal files live such as docs, downloads, apps, etc.
+
+~ shows where you are in the file system of the Mac. 
+~ is a shortcut that means the current user’s Home folder.
+% is a character that the shell (the default interface that Terminal uses) displays 
+to indicate that it’s ready to accept a command.
+% sign is just there to show you where your line command starts. 
+If you press return, you’ll see another line with a % sign, 
+indicating that the previous line has been abandoned.
+
+The point is that ls -l can provide additional information about files and folders, 
+depending on the options you specify. 
+In this case, that additional information includes the name of the user who owns each item in the directory. 
+(That ownership is part of the Unix system’s file-permissions regime.) 
+You can view invisible files—ones that the Finder doesn’t normally show you—by typing ls -a. 
+These hidden files all have dots (.) in front of their names.
 
 
-PS1
+
+PS1--Prompt Control (control and set prompt variables)--done in a source file.
 
 $ stands for value (echo $PS1 will give value of)
 $ tells the shell to expand the variable and provide its value
@@ -25,15 +55,12 @@ nano ~/.zshrc opens your configuration file in the nano text editor.
 
 Now, you can add your PS1 command to the end of the file.
 
-
 Example: export PS1="%F{green}%n%f@%F{blue}%m%f %F{red}%1~%f %# "
 then Ctrl+O and enter and Ctrl+X to exit Nano
 To reload the configuration, you need to run a command that tells Zsh to read the file again.
 
 The command is:
 
-
-Copy Code
 source ~/.zshrc
 
 So:
@@ -44,57 +71,55 @@ Restart terminal → apply changes next time
 
 source -- reads and executes commands from a file in the current shell.
 
-Final Recap:
-We’ve learned:
+PS1 Recap:
 
 PS1 controls the prompt
 It’s a shell variable
 You can customize it with colors and formatting
 But changes are temporary unless saved
-To save changes, edit ~/.zshrc
+To save changes: edit ~/.zshrc
 Use export PS1="..." to make changes persistent
 Use source ~/.zshrc to apply changes immediately
 Always back up your ~/.zshrc file
 
-
+COMMANDS
 
 date -- shows current date and time
 exit -- saves the current version and no longer allows input (then it should be closed)
-Note: on a mac this does not automatically close the Terminal, nor does Control + D
+Note: on a mac this does not automatically close the Terminal, nor does Control + D but will not accept more input.
 
-pwd -- shows working directory, provides path to the current working directory
-Example result: /users/username
+pwd -- [Print Working Direcory] 
+This shows current working directory, provides path to the current working directory
+Example result from pwd: /users/username
+
 mkdir --- make a new directory
-mkdir test (make a new directory called test)--then press pwd to see if it is there!
+Example: mkdir test (make a new directory called test)--then press pwd to see if it is there!
 
 TIP: Tip: If you want to create a directory with a space in its name, 
 you'll need to surround the name with quotes. For example, mkdir "My Projects"
 
 ls list of files and folders
-ls -a (shows all files including hidden files)
-ls -l (shows all files in long format)
-ls -l shows details, i.e. date, permission, size
-cd go to another directory, moves to a different folder
+ls -a shows all files including hidden files)
+ls -l shows all files in long format--shows details, i.e. date, permission, size
+cd  go to another directory, moves to a different folder
 cd .. go up one directory to the parent directory
 cd ~ go to the home directory
-cd ./` - Move to the current directory (refresh)
+cd ./ - Move to the current directory (refresh)
 cd - go back to the previous working directory (like a back button)
-
-TIP: The command cd Documents is used to change the current directory to the Documents directory.
 
 When you type cd Documents and press Enter, you'll move from your current directory 
 to the Documents directory. The cd command stands for "change directory," 
 and it's used to navigate through your file system.
 
-Tip: If the Documents directory is not in your current directory, 
+If the Documents directory is not in your current directory, 
 you'll need to specify the full path to the directory. 
 For example, if the Documents directory is in your home directory, 
 you would use cd ~/Documents.
 
-EXAMPLE: You don’t need to cd into Documents first to copy a file into it. 
+You don’t need to cd into Documents first to copy a file into it. 
 You can do it in one step.
 
-cp example.txt ~/Documents (adds the path)
+cp example.txt ~/Documents (the ~ adds the path)
 
 touch -- creates a new empty file
 
@@ -110,8 +135,9 @@ as it will overwrite any existing file with the same name in the destination dir
 cat --view a file, display contents of a file
 top --shows running processes in real time (a continuously updating view)
 
-TIP: If you want to display the contents of multiple files at once, 
+If you want to display the contents of multiple files at once, 
 you can separate the filenames with spaces, like this: cat example.txt anotherfile.txt
+
 To scroll through the output if it's too long to fit in the terminal, 
 use a pager like less or more. For example: cat example.txt | less
 
@@ -128,15 +154,10 @@ Example: grep word *.txt
 TIP: To search for a word in a case-insensitive manner, 
 use the -i option, like this: grep -i word example.txt
 
-
-
-touch--make a new file/ example: touch test (make a new file called test that is an empty file)
-cd test (change into the test directory)
-
 !! runs last command
-UP ARROW goes also to the last command
+UP ARROW goes also to the last command and then the one before that
 history
-say
+say -- say anything! fun for the whole family
 clear
 whoami --> use id -p instead
 
@@ -147,7 +168,6 @@ rm -r test (remove directory test when it is not empty)
 CONTROL C--cancel command
 CONTROL D--Exit Terminal
 
-
 **File Management**
 
 1. `mkdir` - Make a new directory
@@ -157,7 +177,7 @@ CONTROL D--Exit Terminal
 5. `cp` - Copy a file or directory
 6. `cp -r` - Copy a directory and its contents recursively [see below]
 
-cp -r ---a command that copies a directory named ____ and all its contents to _______.
+cp -r command that copies a directory named ____ and all its contents to _______.
 
 The filesystem is a tree structure: a folder can contain files, which can contain other folders, and so on. 
 Non-recursive: "Clean this room" (only cleans the main room).
@@ -165,16 +185,9 @@ Recursive: "Clean this room and every room inside it, and every room inside thos
 
 TIP: Example: cp example.txt ~/Documents)
 Remember to specify the source and destination for the copy operation.
-If you want to rename the file while copying it, 
-specify a new name as the destination. 
+If you want to rename the file while copying it, specify a new name as the destination. 
 Example: cp example.txt ~/Documents/newfile.txt 
 This now will copy the example.txt file to the ~/Documents directory and rename it to newfile.txt.
-
-
-
-
-7. `mv` - Move or rename a file or directory
-8. `touch` - Create a new empty file
 
 **File Editing and Viewing**
 
@@ -195,7 +208,7 @@ Note: To save changes in nano, press Ctrl+O and then Enter. To exit nano, press 
 1. `uname -a` - Display system information (kernel version, etc.)
 2. `hostname` - Display the system's hostname
 3. `uptime` - Display the system's uptime
-4. `whoami` - Display the current user's username--> use id -p instead
+4. `whoami` - Display the current user's username--> but better: use id -p instead
 5. `groups` - Display the groups the current user belongs to
 6. `df` - Display disk usage information
 7. `du` - Display disk usage information for a specific directory or file
@@ -259,17 +272,6 @@ Practice using these commands to become proficient in using the terminal effecti
 
 Control - C stops execution of an ongoing action.
 
-Blinking cursor is where the command line starts 
-We see user name followed by possibly the directory we are in (ie. Desktop), 
-followed by % sign. 
-If we press return/enter then a new command line presents. 
-Commands are only executed in the directory we are in at the moment. 
-We can't interact with the terminal with the mouse (but we can use it to place the cursor). 
-You can only use the arrow keys and keyboard. 
-The UP arrow selects the previous commands used in the session.
-
-
-
 man--if you do not know what a command does or what a specific parameter related to a command does, 
 the manual (man) page will provide you with all the information you need. 
 
@@ -277,15 +279,6 @@ itconfig --checks IP address and related
 
 netstat --lists network configurations
 
-ls list
-
--l get more details
-
-The ~ shows where you are in the file system of the Mac. ~ is a shortcut that means the current user’s Home folder.
-
-The % is a character that the shell (the default interface that Terminal uses) displays to indicate that it’s ready to accept a command.The % sign is just there to show you where your line command starts. If you press return, you’ll see another line with a % sign, indicating that the previous line has been abandoned.
-
-The point is that ls can provide additional information about files and folders, depending on the options you specify. In this case, that additional information includes the name of the user who owns each item in the directory. (That ownership is part of the Unix system’s file-permissions regime.) You can view invisible files—ones that the Finder doesn’t normally show you—by typing ls -a. (These hidden files all have dots (.) in front of their names.)
 
 cd (or change directory) command So let’s say you’re in your Home folder and want to peek inside the Downloads folder. To do that, you’d type cd Downloads.
 
@@ -393,4 +386,4 @@ Color
 The % or # symbol
 
 ---
-wc -l  counts all lines in a file [added jan 28]
+wc -l  counts all lines in a file 
