@@ -1,4 +1,7 @@
-COMMANDS MEMORIZATION / SELF TESTING  
+COMMANDS MEMORIZATION for TERMINAL 
+
+READ, MEMORIZE, TEST
+
 I am using macOS so I work with Zsh Shell (not Bash Shell)
 
 Cursor is where the command line starts after the prompt
@@ -101,6 +104,9 @@ you'll need to surround the name with quotes. For example, mkdir "My Projects"
 ls list of files and folders
 ls -a shows all files including hidden files)
 ls -l shows all files in long format--shows details, i.e. date, permission, size
+
+NOTE THE DIFFERENCES CAREFULLY:
+
 cd  go to another directory, moves to a different folder
 cd .. go up one directory to the parent directory
 cd ~ go to the home directory
@@ -120,6 +126,10 @@ You don’t need to cd into Documents first to copy a file into it.
 You can do it in one step.
 
 cp example.txt ~/Documents (the ~ adds the path)
+cp example.txt Documents would copy the file into the current directory, not into Documents.
+
+To copy it into Documents, you need:
+cp example.txt ~/Documents
 
 touch -- creates a new empty file
 
