@@ -1,6 +1,6 @@
-COMMANDS MEMORIZATION for TERMINAL 
+COMMANDS MEMORIZATION for TERMINAL USE
 
-READ, MEMORIZE, TEST
+READ, MEMORIZE, TEST AND PRACTICE WITH THE ACTUAL TERMINAL
 
 I am using macOS so I work with Zsh Shell (not Bash Shell)
 
@@ -85,7 +85,7 @@ Use export PS1="..." to make changes persistent
 Use source ~/.zshrc to apply changes immediately
 Always back up your ~/.zshrc file
 
-COMMANDS
+COMMANDS [practice these on the Terminal and play around with them]
 
 date -- shows current date and time
 exit -- saves the current version and no longer allows input (then it should be closed)
