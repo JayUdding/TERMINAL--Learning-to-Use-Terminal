@@ -169,7 +169,10 @@ UP ARROW goes also to the last command and then the one before that
 history
 say -- say anything! fun for the whole family
 clear
-whoami --> use id -p instead
+whoami --> shows the username
+id -p 
+alias --creates a shortcut for another command: Example alias ll="ls -la"
+
 
 arp -a
 traceroute
@@ -211,7 +214,22 @@ Note: To save changes in nano, press Ctrl+O and then Enter. To exit nano, press 
 4. `less` - Display the contents of a file one page at a time
 5. `head` - Display the first few lines of a file
 6. `tail` - Display the last few lines of a file
-7. `grep` - Search for a pattern in a file
+7. `grep` - Search for a pattern in a file or for a word
+EXAMPLE: grep "error" log.txt (searches for the word "error" in the file called log.txt
+find - searches for files by name
+EXAMPLE: find ~ -name "example.txt" (searches in home directory)
+
+
+> output redirectio
+To save the output of a command, you use output redirection.
+The > symbol redirects the output to a file.
+EXAMPLE: ls > list.txt
+
+To append output (add to the end of a file), you use >>
+>> 
+EXAMPLE: ls >> list.txt
+This adds the output of ls to the end of list.txt — without overwriting it.
+
 
 **System Information**
 
