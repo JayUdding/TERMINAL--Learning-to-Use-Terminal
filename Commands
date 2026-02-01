@@ -136,6 +136,8 @@ touch -- creates a new empty file
 TAB is an autocomplete
 
 rm --remove a file
+rm -i hello.py (interactive removal)
+
 cp --copy a file / example: cp hello.py backup.py (note no comma between the two filenames)
 mv --move a file OR RENAME a file / example: mv backup.py scripts/   //  mv oldname.py newname.py
 
