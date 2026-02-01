@@ -2,7 +2,7 @@ COMMANDS MEMORIZATION for TERMINAL USE
 
 READ, MEMORIZE, TEST AND PRACTICE WITH THE ACTUAL TERMINAL
 
-I am using macOS so I work with Zsh Shell (not Bash Shell)
+Using macOS so I work with Zsh Shell (not Bash Shell)
 
 Cursor is where the command line starts after the prompt
 We see user name followed by computername and possibly the directory we are in (ie. Desktop), 
@@ -40,50 +40,6 @@ You can view invisible files—ones that the Finder doesn’t normally show you�
 These hidden files all have dots (.) in front of their names.
 
 
-
-PS1--Prompt Control (control and set prompt variables)--done in a source file.
-
-$ stands for value (echo $PS1 will give value of)
-$ tells the shell to expand the variable and provide its value
-
-%n@%m %1~ %# -- %n here stands for username (in Bash, the standard is \u for username)
-
-%n = username 
-%m = hostname 
-%1~ = current directory (shortened) 
-%# = prompt symbol (% for normal user, # for root)
-
-Changes will be lost, but can be exported permanently into a configuration file..
-nano ~/.zshrc opens your configuration file in the nano text editor.
-
-Now, you can add your PS1 command to the end of the file.
-
-Example: export PS1="%F{green}%n%f@%F{blue}%m%f %F{red}%1~%f %# "
-then Ctrl+O and enter and Ctrl+X to exit Nano
-To reload the configuration, you need to run a command that tells Zsh to read the file again.
-
-The command is:
-
-source ~/.zshrc
-
-So:
-
-nano ~/.zshrc → edit the file
-source ~/.zshrc → apply changes immediately
-Restart terminal → apply changes next time
-
-source -- reads and executes commands from a file in the current shell.
-
-PS1 Recap:
-
-PS1 controls the prompt
-It’s a shell variable
-You can customize it with colors and formatting
-But changes are temporary unless saved
-To save changes: edit ~/.zshrc
-Use export PS1="..." to make changes persistent
-Use source ~/.zshrc to apply changes immediately
-Always back up your ~/.zshrc file
 
 COMMANDS [practice these on the Terminal and play around with them]
 
@@ -417,3 +373,49 @@ The % or # symbol
 
 ---
 wc -l  counts all lines in a file 
+
+PS1--Prompt Control (control and set prompt variables)--done in a source file.
+
+$ stands for value (echo $PS1 will give value of)
+$ tells the shell to expand the variable and provide its value
+
+%n@%m %1~ %# -- %n here stands for username (in Bash, the standard is \u for username)
+
+%n = username 
+%m = hostname 
+%1~ = current directory (shortened) 
+%# = prompt symbol (% for normal user, # for root)
+
+Changes will be lost, but can be exported permanently into a configuration file..
+nano ~/.zshrc opens your configuration file in the nano text editor.
+
+Now, you can add your PS1 command to the end of the file.
+
+Example: export PS1="%F{green}%n%f@%F{blue}%m%f %F{red}%1~%f %# "
+then Ctrl+O and enter and Ctrl+X to exit Nano
+To reload the configuration, you need to run a command that tells Zsh to read the file again.
+
+The command is:
+
+source ~/.zshrc
+
+So:
+
+nano ~/.zshrc → edit the file
+source ~/.zshrc → apply changes immediately
+Restart terminal → apply changes next time
+
+source -- reads and executes commands from a file in the current shell.
+
+PS1 Recap:
+
+PS1 controls the prompt
+It’s a shell variable
+You can customize it with colors and formatting
+But changes are temporary unless saved
+To save changes: edit ~/.zshrc
+Use export PS1="..." to make changes persistent
+Use source ~/.zshrc to apply changes immediately
+Always back up your ~/.zshrc file
+
+
