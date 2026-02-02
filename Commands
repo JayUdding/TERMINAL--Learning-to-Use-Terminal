@@ -48,7 +48,7 @@ exit -- saves the current version and no longer allows input (then it should be 
 Note: on a mac this does not automatically close the Terminal, nor does Control + D but will not accept more input.
 
 pwd -- [Print Working Direcory] 
-This shows current working directory, provides path to the current working directory
+This shows current working directory by providing the path to the current working directory
 Example result from pwd: /users/username
 
 mkdir --- make a new directory
@@ -91,13 +91,13 @@ touch -- creates a new empty file
 
 TAB is an autocomplete
 
-rm --remove a file
-rm -i hello.py (interactive removal)
+rm --remove a file (careful bc this happens immediately)
+rm -i hello.py (interactive removal) you can answer then with a y or n (or yes/no)
 
 cp --copy a file / example: cp hello.py backup.py (note no comma between the two filenames)
 mv --move a file OR RENAME a file / example: mv backup.py scripts/   //  mv oldname.py newname.py
 
-TIP: Be careful when using mv
+TIP: Be careful when using mv as well as mr
 as it will overwrite any existing file with the same name in the destination directory.
 
 cat --view a file, display contents of a file
