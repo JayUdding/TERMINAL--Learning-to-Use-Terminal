@@ -7,41 +7,44 @@ Using macOS so I work with Zsh Shell (not Bash Shell)...
 Cursor is where the command line starts after the prompt
 We see user name followed by computername and possibly the directory we are in (ie. Desktop), 
 followed by % sign. 
+
 If we press return/enter then a new command line presents. 
-Commands are only executed in the directory we are in at the moment. 
+
+Note: Commands are only executed in the directory we are in at the moment. 
+
 We can't interact with the terminal with the mouse (but we can use it to place the cursor). 
+
 You can only use the arrow keys and keyboard. 
+
 The UP arrow selects the previous commands used in the session.
 
 
-First the Prompt when we open up the Terminal:
+About the Prompt when we open up the Terminal:
 
 Terminal opens with username@computername (or hostname)
 @ is the divider between username and computername
 ~ means home directory 
 % is the prompt symbol -- means ready for input as a normal non-root user
 # is also a prompt symbol and means ready for input as a root user (admin)
+
 Terminal default is in the Home Directory; that where it opens up by default
 Home Directory is where the personal files live such as docs, downloads, apps, etc.
 
 ~ shows where you are in the file system of the Mac. 
 ~ is a shortcut that means the current user’s Home folder.
-% is a character that the shell (the default interface that Terminal uses) displays 
-to indicate that it’s ready to accept a command.
-% sign is just there to show you where your line command starts. 
+% -- ready to accept a command, where your command line starts. 
+
 If you press return, you’ll see another line with a % sign, 
 indicating that the previous line has been abandoned.
 
+ls -- list
+ls -l expanded list
 The point is that ls -l can provide additional information about files and folders, 
 depending on the options you specify. 
 In this case, that additional information includes the name of the user who owns each item in the directory. 
 (That ownership is part of the Unix system’s file-permissions regime.) 
 You can view invisible files—ones that the Finder doesn’t normally show you—by typing ls -a. 
 These hidden files all have dots (.) in front of their names.
-
-
-
-COMMANDS [practice these on the Terminal and play around with them]
 
 date -- shows current date and time
 exit -- saves the current version and no longer allows input (then it should be closed)
@@ -137,7 +140,7 @@ traceroute
 rmdir test (remove directory called test)
 rm -r test (remove directory test when it is not empty)
 CONTROL C--cancel command
-CONTROL D--Exit Terminal
+CONTROL X--Exit Terminal
 
 **File Management**
 
