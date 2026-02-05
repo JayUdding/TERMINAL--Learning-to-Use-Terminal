@@ -1,8 +1,6 @@
-DAILY PRACTICE UNTIL MASTERED
+DAILY PRACTICE and COMMANDS MEMORIZATION for TERMINAL USE
 
-COMMANDS MEMORIZATION for TERMINAL USE
-
-READ, MEMORIZE, TEST AND PRACTICE WITH THE ACTUAL TERMINAL
+READ, REVIEW, MEMORIZE, TEST AND PRACTICE WITH THE ACTUAL TERMINAL
 
 Using macOS so I work with Zsh Shell (not Bash Shell)...
 
@@ -12,7 +10,7 @@ followed by % sign.
 
 If we press return/enter then a new command line presents. 
 
-Note: Commands are only executed in the directory we are in at the moment. 
+Commands are only executed in the directory we are in at the moment. 
 
 We can't interact with the terminal with the mouse (but we can use it to place the cursor). 
 
@@ -23,7 +21,7 @@ The UP arrow selects the previous commands used in the session.
 
 About the Prompt when we open up the Terminal:
 
-Terminal opens with username@computername (or hostname)
+Terminal opens with username@computername (hostname)
 @ is the divider between username and computername
 ~ means home directory 
 % is the prompt symbol -- means ready for input as a normal non-root user
@@ -32,41 +30,32 @@ Terminal opens with username@computername (or hostname)
 Terminal default is in the Home Directory; that where it opens up by default
 Home Directory is where the personal files live such as docs, downloads, apps, etc.
 
-~ shows where you are in the file system of the Mac. 
-~ is a shortcut that means the current user’s Home folder.
-% -- ready to accept a command, where your command line starts. 
-
 If you press return, you’ll see another line with a % sign, 
 indicating that the previous line has been abandoned.
 
 ls -- list
-ls -l expanded list
-The point is that ls -l can provide additional information about files and folders, 
+ls -l expanded list (long format); can provide additional information about files and folders, 
 depending on the options you specify. 
 In this case, that additional information includes the name of the user who owns each item in the directory. 
 (That ownership is part of the Unix system’s file-permissions regime.) 
-You can view invisible files—ones that the Finder doesn’t normally show you—by typing ls -a. 
+ls -a  -- view invisible files—ones that the Finder doesn’t normally show you—by typing  
 These hidden files all have dots (.) in front of their names.
 
 date -- shows current date and time
 exit -- saves the current version and no longer allows input (then it should be closed)
-Note: on a mac this does not automatically close the Terminal, nor does Control + D but will not accept more input.
+Note: on a mac this does not automatically close the Terminal, but will not accept more input.
 
-pwd -- [Print Working Direcory] 
-This shows current working directory by providing the path to the current working directory
+pwd -- print working direcory 
+Shows current working directory by providing the path to the current working directory.
+
 Example result from pwd: /users/username
 
 mkdir --- make a new directory
-Example: mkdir test (make a new directory called test)--then press pwd to see if it is there!
 
-TIP: Tip: If you want to create a directory with a space in its name, 
+Example: mkdir test (make a new directory called test)--then press pwd to see if it is there.
+
+Note: Tip: If you want to create a directory with a space in its name, 
 you'll need to surround the name with quotes. For example, mkdir "My Projects"
-
-ls list of files and folders
-ls -a shows all files including hidden files)
-ls -l shows all files in long format--shows details, i.e. date, permission, size
-
-NOTE THE DIFFERENCES CAREFULLY:
 
 cd  go to another directory, moves to a different folder
 cd .. go up one directory to the parent directory
@@ -96,13 +85,13 @@ touch -- creates a new empty file
 
 TAB is an autocomplete
 
-rm --remove a file (careful bc this happens immediately)
-rm -i hello.py (interactive removal) you can answer then with a y or n (or yes/no)
+rm --remove a file (careful because this happens immediately)
+rm -i hello.py (interactive removal) you can answer then with y or n (or yes/no)
 
 cp --copy a file / example: cp hello.py backup.py (note no comma between the two filenames)
 mv --move a file OR RENAME a file / example: mv backup.py scripts/   //  mv oldname.py newname.py
 
-TIP: Be careful when using mv as well as mr
+TIP: Be careful when using mv as well as rm
 as it will overwrite any existing file with the same name in the destination directory.
 
 cat --view a file, display contents of a file
@@ -119,18 +108,18 @@ tail-display last 10 lines of a file
 head -n20 textfile.txt (displays the first 20 lines of textfile.txt)
 head -20 textfile.txt (same)
 
-grep--search for 
-(global regular expression print)
-TIP: If you want to search for a word in multiple files, 
-use the * wildcard to specify multiple files
+grep--search for (global regular expression print)
+WILDCARD TIP: If you want to search for a word in multiple files, 
+use the * (wildcard) to specify multiple files
 Example: grep word *.txt
 TIP: To search for a word in a case-insensitive manner, 
-use the -i option, like this: grep -i word example.txt
+use the -i option
+Example: grep -i word example.txt
 
 !! runs last command
 UP ARROW goes also to the last command and then the one before that
 history
-say -- say anything! fun for the whole family
+say -- say anything! (fun for the whole family)
 clear
 whoami --> shows the username
 id -p 
@@ -142,7 +131,7 @@ traceroute
 rmdir test (remove directory called test)
 rm -r test (remove directory test when it is not empty)
 CONTROL C--cancel command
-CONTROL X--Exit Terminal
+CONTROL X--Exit Terminal [does not seem to work??]
 
 **File Management**
 
