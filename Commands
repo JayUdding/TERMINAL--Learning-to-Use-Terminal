@@ -1,4 +1,4 @@
-DAILY PRACTICE and COMMANDS MEMORIZATION for TERMINAL USE
+COMMANDS for TERMINAL USE
 
 READ, REVIEW, MEMORIZE, TEST AND PRACTICE WITH THE ACTUAL TERMINAL
 
@@ -281,22 +281,18 @@ Homebrew is what’s known as a package manager. All this means is that you can 
 history -- gives the history of commands made in the session clear -- does clear the window back to a basic command line where we were
 history -c clears the history
 
--- wildcard symbol --returns all with the reference to follow it. eg. *.pdf sudo -- means you are using as an administrator, superuser--and you are overriding protections! say --will make computer talk
-Once you get the hang of moving around the Mac terminal, you’re ready to start learning the fundamental commands. In my opinion, that means understanding how history, clear, *, and sudo work.
+*  this is the wildcard symbol --returns all with the reference to follow it. eg. *.pdf 
 
 history shows you a brief history of the commands recently entered into the terminal. 
 
 clear --clears the window back to a basic terminal screen. 
 
-* This isn’t so much a command as it is an important symbol to be familiar with. It’s known as the “wildcard” symbol and is used to reference anything within certain criteria.
+* This isn’t so much a command as it is an important symbol to be familiar with. 
+It’s known as the “wildcard” symbol and is used to reference anything within certain criteria.
 
-sudo is used to run commands as a superuser, or as an admin. It means that you’re overriding some basic protection of your Mac and making an alteration to your computer
+sudo is used to run commands as a superuser, or as an admin. 
+It means that you’re overriding some basic protection of your Mac and making an alteration to your computer
 
-Here's a **clean, one-page printable terminal cheat sheet** — optimized for printing, with all the essential commands in a compact layout. Just copy the text below into a document (like Google Docs or Word), adjust font size if needed, and print!
-
----
-
-SAMPLE CHEAT SHEET ONE PAGE
 
 ### 🔹 Navigation
 | Command | Purpose | Example |
