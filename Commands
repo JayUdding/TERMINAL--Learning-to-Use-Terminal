@@ -35,7 +35,7 @@ indicating that the previous line has been abandoned.
 
 ls -- list
 ls -l expanded list (long format); can provide additional information about files and folders, 
-depending on the options you specify. 
+depending on the options you specify, it provides a date of creation, by whom and more
 In this case, that additional information includes the name of the user who owns each item in the directory. 
 (That ownership is part of the Unix system’s file-permissions regime.) 
 ls -a  -- view invisible files—ones that the Finder doesn’t normally show you—by typing  
