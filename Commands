@@ -1,8 +1,8 @@
-COMMANDS for TERMINAL USE: READ, REVIEW, MEMORIZE, TEST 
+COMMANDS for TERMINAL USE: READ, REVIEW, REMEMBER, RETEST, RINSE, REPEAT
 
->>>...AND... PRACTICE WITH THE ACTUAL TERMINAL...<<<
+>>>...AND OF COURSE... PRACTICE WITH THE ACTUAL TERMINAL...<<<
 
-Using macOS so I work with Zsh Shell (not Bash Shell)...
+On macOS we work with Zsh Shell (not Bash Shell)
 
 Cursor is where the command line starts after the prompt
 We see user name followed by computername and possibly the directory we are in (ie. Desktop), 
@@ -34,33 +34,39 @@ If you press return, you’ll see another line with a % sign,
 indicating that the previous line has been abandoned.
 
 ls -- list
+
 ls -l expanded list (long format); can provide additional information about files and folders, 
 depending on the options you specify, it provides a date of creation, by whom and more
 In this case, that additional information includes the name of the user who owns each item in the directory. 
 (That ownership is part of the Unix system’s file-permissions regime.) 
+
 ls -a  -- view invisible files—ones that the Finder doesn’t normally show you—by typing  
 These hidden files all have dots (.) in front of their names.
 
 date -- shows current date and time
+
 exit -- saves the current version and no longer allows input (then it should be closed)
 Note: on a mac this does not automatically close the Terminal, but will not accept more input.
 
 pwd -- print working direcory 
 Shows current working directory by providing the path to the current working directory.
-
 Example result from pwd: /users/username
 
 mkdir --- make a new directory
-
-Example: mkdir test (make a new directory called test)--then press pwd to see if it is there.
-
-Note: Tip: If you want to create a directory with a space in its name, 
-you'll need to surround the name with quotes. For example, mkdir "My Projects"
+Example: mkdir test (make a new directory called test)
+--then press pwd to see if it is there.
+NOTE: If you want to create a directory with a space in its name, 
+Surround the name with quotes. 
+Example: mkdir "My Projects"
 
 cd  go to another directory, moves to a different folder
+
 cd .. go up one directory to the parent directory
+
 cd ~ go to the home directory
+
 cd ./ - Move to the current directory (refresh)
+
 cd - go back to the previous working directory (like a back button)
 
 When you type cd Documents and press Enter, you'll move from your current directory 
@@ -75,26 +81,39 @@ you would use cd ~/Documents.
 You don’t need to cd into Documents first to copy a file into it. 
 You can do it in one step.
 
+Examples:
 cp example.txt ~/Documents (the ~ adds the path)
 cp example.txt Documents would copy the file into the current directory, not into Documents.
+cp   copy a file / example: cp hello.py backup.py (note no comma between the two filenames)
+cp -r   copy a directory and its contents recursively
 
-To copy it into Documents, you need:
-cp example.txt ~/Documents
+
+mv --move a file OR RENAME a file / example: mv backup.py scripts/   //  mv oldname.py newname.py
+
 
 touch -- creates a new empty file
 
 TAB is an autocomplete
 
 rm --remove a file (careful because this happens immediately)
+
 rm -i hello.py (interactive removal) you can answer then with y or n (or yes/no)
 
-cp --copy a file / example: cp hello.py backup.py (note no comma between the two filenames)
-mv --move a file OR RENAME a file / example: mv backup.py scripts/   //  mv oldname.py newname.py
+rm -r   Remove a directory and its contents recursively [includes all subfiles, etc.]
+
+rm -f  Force remove a file or directory without prompting
+
+
+Examples:
+rmdir test (remove directory called test)
+rm -r test (remove directory test when it is not empty)
+
 
 TIP: Be careful when using mv as well as rm
 as it will overwrite any existing file with the same name in the destination directory.
 
 cat --view a file, display contents of a file
+
 top --shows running processes in real time (a continuously updating view)
 
 If you want to display the contents of multiple files at once, 
@@ -109,70 +128,63 @@ head -n20 textfile.txt (displays the first 20 lines of textfile.txt)
 head -20 textfile.txt (same)
 
 grep--search for (global regular expression print)
-WILDCARD TIP: If you want to search for a word in multiple files, 
+
+* WILDCARD: If you want to search for a word in multiple files, 
 use the * (wildcard) to specify multiple files
 Example: grep word *.txt
-TIP: To search for a word in a case-insensitive manner, 
+
+NOTE: To search for a word in a case-insensitive manner, 
 use the -i option
 Example: grep -i word example.txt
 
 !! runs last command
+
 UP ARROW goes also to the last command and then the one before that
+
 history
+
 say -- say anything! (fun for the whole family)
+
 clear
+
 whoami --> shows the username
+
 id -p 
+
 alias --creates a shortcut for another command: Example alias ll="ls -la"
 
-
 arp -a
+
 traceroute
-rmdir test (remove directory called test)
-rm -r test (remove directory test when it is not empty)
+
 CONTROL C--cancel command
-CONTROL X--Exit Terminal [does not seem to work??]
 
-**File Management**
+CONTROL X--Exit Terminal [does not seem to work]
 
-1. `mkdir` - Make a new directory
-2. `rm` - Remove a file or directory
-3. `rm -r` - Remove a directory and its contents recursively [includes all subfiles, etc.]
-4. `rm -f` - Force remove a file or directory without prompting
-5. `cp` - Copy a file or directory
-6. `cp -r` - Copy a directory and its contents recursively [see below]
-
-cp -r command that copies a directory named ____ and all its contents to _______.
-
+Recursive and Non-Recursive:
 The filesystem is a tree structure: a folder can contain files, which can contain other folders, and so on. 
 Non-recursive: "Clean this room" (only cleans the main room).
 Recursive: "Clean this room and every room inside it, and every room inside those rooms, and so on". 
 
-TIP: Example: cp example.txt ~/Documents)
-Remember to specify the source and destination for the copy operation.
-If you want to rename the file while copying it, specify a new name as the destination. 
-Example: cp example.txt ~/Documents/newfile.txt 
-This now will copy the example.txt file to the ~/Documents directory and rename it to newfile.txt.
-
-**File Editing and Viewing**
-
-1. `nano` - Open a file (or create a new file in the nano text editor
+nano` - Open a file (or create a new file in the nano text editor
 Done in order to: check code, make changes, edits
-Note: To save changes in nano, press Ctrl+O and then Enter. To exit nano, press Ctrl+X
+Note: To save changes in nano, press Ctrl+O and then Enter. 
+To exit nano, press Ctrl+X
 
 
-2. `vim` - Open a file in the vim text editor
+vim    Open a file in the vim text editor
 3. `cat` - Display the contents of a file
 4. `less` - Display the contents of a file one page at a time
 5. `head` - Display the first few lines of a file
 6. `tail` - Display the last few lines of a file
 7. `grep` - Search for a pattern in a file or for a word
 EXAMPLE: grep "error" log.txt (searches for the word "error" in the file called log.txt
+
 find - searches for files by name
 EXAMPLE: find ~ -name "example.txt" (searches in home directory)
 
 
-> output redirectio
+> output redirection
 To save the output of a command, you use output redirection.
 The > symbol redirects the output to a file.
 EXAMPLE: ls > list.txt
