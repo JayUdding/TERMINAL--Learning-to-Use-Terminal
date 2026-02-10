@@ -87,9 +87,7 @@ cp example.txt Documents would copy the file into the current directory, not int
 cp   copy a file / example: cp hello.py backup.py (note no comma between the two filenames)
 cp -r   copy a directory and its contents recursively
 
-
 mv --move a file OR RENAME a file / example: mv backup.py scripts/   //  mv oldname.py newname.py
-
 
 touch -- creates a new empty file
 
@@ -103,11 +101,9 @@ rm -r   Remove a directory and its contents recursively [includes all subfiles, 
 
 rm -f  Force remove a file or directory without prompting
 
-
 Examples:
 rmdir test (remove directory called test)
 rm -r test (remove directory test when it is not empty)
-
 
 TIP: Be careful when using mv as well as rm
 as it will overwrite any existing file with the same name in the destination directory.
@@ -171,7 +167,6 @@ Done in order to: check code, make changes, edits
 Note: To save changes in nano, press Ctrl+O and then Enter. 
 To exit nano, press Ctrl+X
 
-
 vim    Open a file in the vim text editor
 3. `cat` - Display the contents of a file
 4. `less` - Display the contents of a file one page at a time
@@ -183,14 +178,13 @@ EXAMPLE: grep "error" log.txt (searches for the word "error" in the file called 
 find - searches for files by name
 EXAMPLE: find ~ -name "example.txt" (searches in home directory)
 
-
 > output redirection
 To save the output of a command, you use output redirection.
 The > symbol redirects the output to a file.
 EXAMPLE: ls > list.txt
 
+>>
 To append output (add to the end of a file), you use >>
->> 
 EXAMPLE: ls >> list.txt
 This adds the output of ls to the end of list.txt — without overwriting it.
 
