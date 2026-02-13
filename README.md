@@ -1,8 +1,8 @@
 TERMINAL--Learning-to-Use-Terminal
 
-The Top file (Commands) is a list of the various commands for Terminal and some example uses. I will keep adding until complete.
-I use AI (the Copilot and Maple.AI) to create daily quizzes to memorize and practice the prompts and refine the explanations.
-Goal: Stop with the quizzes and continue other learning when all tests are passed with ease and the use of Terminal feels like second nature.
+The Top file (Commands) is a list of the commands for Terminal and some example uses. This is for memorization and practice.
+I use AI to create quizzes to memorize and practice the prompts and then refine the explanations, examples use the Terminal with ease and build some basic python programs that I can run directly in the Terminal.
+Goal: Practice quizzes and continue with learning the Terminal prompts and only when all tests are passed with ease and the use of Terminal feels like second nature we will move on to further learning.
 
 
 
