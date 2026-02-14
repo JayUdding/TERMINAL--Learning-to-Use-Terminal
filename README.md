@@ -1,22 +1,14 @@
 TERMINAL--Learning-to-Use-Terminal
 
-The Top file (Commands) is a list of the commands for Terminal and some example uses. This is for memorization and practice.
-I use AI to create quizzes to memorize and practice the prompts and then refine the explanations, examples use the Terminal with ease and build some basic python programs that I can run directly in the Terminal.
-Goal: Practice quizzes and continue with learning the Terminal prompts and only when all tests are passed with ease and the use of Terminal feels like second nature we will move on to further learning.
+The Top file (Commands Reference File) is a list of the commands for Terminal and some example uses for memorization and practice.
+Use AI to create quizzes to memorize and practice the prompts. Learn to use examples of navigating Terminal with ease and build some basic python programs that can be run directly in Terminal.
 
-
-
-For later: 
-
-Resources to further Master the Terminal:
-
-To create as part of learning:
+Useful tools:
 
 Flashcards
 Cheatsheet
 
 **Interactive shell script**: Write a simple shell script that presents you with a series of Terminal commands and asks you to type them in. You can use a tool like `read` or `dialog` to create an interactive prompt.
-**Command reference file**: Create a Markdown or text file with a list of commands, their explanations, and examples. You can use headers, sections, and formatting to make it easy to read and navigate.
 **Terminal-based game**: Create a simple game that tests your knowledge of Terminal commands. For example, you can write a script that generates a random command and asks you to type it in correctly.
 
 Some popular tools and platforms for creating these types of projects include:
@@ -27,7 +19,7 @@ Some popular tools and platforms for creating these types of projects include:
 * **Markdown editors**: Tools like Mou, Typora, or Bear that allow you to create and edit Markdown documents.
 * **Shell scripting tools**: Tools like Bash, Zsh, or Fish that allow you to write and run shell scripts.
 
-Remember, the most important thing is to choose a format and tool that works for you and your learning style. Good luck with your project, and have fun learning Terminal commands!
+Remember, the most important thing is to choose a format and tool that works for you and your learning style. Good luck and have fun learning Terminal commands!
 
 Example of a Quiz:
 
@@ -65,6 +57,3 @@ What command sets a file named report.txt to have permissions rw-r--r-- (owner r
 Question 10/10:
 What command prints the value of the PATH environment variable?
 
-When you answer, give one command per question.
-
-[first go, 5 correct answers, 6-10 were not correct]
