@@ -2,7 +2,7 @@ COMMANDS for TERMINAL USE
 
 READ, REVIEW, REMEMBER, RETEST, RINSE, REPEAT
 
->>>...AND OF COURSE... PRACTICE WITH THE ACTUAL TERMINAL...<<<
+>>>...ABOVE ALL... PRACTICE WITH THE ACTUAL TERMINAL...<<<
 
 On macOS we work with Zsh Shell (not Bash Shell)
 
@@ -254,26 +254,16 @@ you can pinpoint the exact location at which the packets do not pass
 9. arp -a -- View a list of all active devices on your local network. 
 Show you the IP and MAC addresses of all the devices. 
 
-
-Practice using these commands to become proficient in using the terminal effectively.
-
-Control - C stops execution of an ongoing action.
-
 man--if you do not know what a command does or what a specific parameter related to a command does, 
 the manual (man) page will provide you with all the information you need. 
 
-itconfig --checks IP address and related
-
 netstat --lists network configurations
-
 
 cd (or change directory) command So let’s say you’re in your Home folder and want to peek inside the Downloads folder. To do that, you’d type cd Downloads.
 
 If you type cd and press the Return key—with no directory specified—you’ll go back to your Home folder. (You can also type cd ~ to go there.)
 
-If you type cd /, you’ll go to the root level of your startup disk
-
-ALSO NOTE VARIOUS PODCASTS
+If you type cd / you’ll go to the root level of your startup disk
 
 If you type cd .. (that’s two periods), you’ll go to the directory above the one you’re currently in. So if you’re in your home folder, and type cd .., you’ll go to your Mac’s /Users folder. This is like a Back Button
 
@@ -416,4 +406,4 @@ Use source ~/.zshrc to apply changes immediately
 Always back up your ~/.zshrc file
 
 
-END.
+END (for now).
