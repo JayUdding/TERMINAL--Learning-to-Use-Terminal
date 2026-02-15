@@ -21,7 +21,7 @@ Some popular tools and platforms for creating these types of projects include:
 
 Remember, the most important thing is to choose a format and tool that works for you and your learning style. Good luck and have fun learning Terminal commands!
 
-Example of a Quiz:
+Sample Quiz:
 
 (Created by CoPilot)
 
