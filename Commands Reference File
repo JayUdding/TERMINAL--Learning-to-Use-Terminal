@@ -189,7 +189,6 @@ To append output (add to the end of a file), you use >>
 EXAMPLE: ls >> list.txt
 This adds the output of ls to the end of list.txt — without overwriting it.
 
-
 **System Information**
 
 1. `uname -a` - Display system information (kernel version, etc.)
@@ -245,8 +244,6 @@ command changes a file's permissions to make it executable for the owner
 7. `echo` - Print text to the screen
 
 APPEND TEXT EXAMPLE: echo "done" >> results.txt appends the text done (plus a newline) to the end of results.txt.
-
-
 
 8. `traceroute` -- It traces the path, packets go through. 
 If your connection with the host is not established, 
