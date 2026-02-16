@@ -128,11 +128,11 @@ grep--search for (global regular expression print)
 
 * WILDCARD: If you want to search for a word in multiple files, 
 use the * (wildcard) to specify multiple files
-Example: grep word *.txt
+EXAMPLE: grep word *.txt
 
 NOTE: To search for a word in a case-insensitive manner, 
 use the -i option
-Example: grep -i word example.txt
+EXAMPLE: grep -i word example.txt
 
 !! runs last command
 
