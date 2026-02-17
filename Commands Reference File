@@ -82,10 +82,11 @@ you would use cd ~/Documents.
 You don’t need to cd into Documents first to copy a file into it. 
 You can do it in one step.
 
-Examples:
+EXMAMPLES:
+
 cp example.txt ~/Documents (the ~ adds the path)
 cp example.txt Documents would copy the file into the current directory, not into Documents.
-cp   copy a file / example: cp hello.py backup.py (note no comma between the two filenames)
+cp   copy a file / example: cp hello.py backup.py (NOTE no comma between the two filenames)
 cp -r   copy a directory and its contents recursively
 
 mv --move a file OR RENAME a file / example: mv backup.py scripts/   //  mv oldname.py newname.py
