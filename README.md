@@ -73,3 +73,43 @@ cat notes.txt – display file contents
 nano essay.txt – edit a file
 clear – clear screen
 You’ve built a strong foundation — and you’re ready for the next level.
+
+
+Example Quiz
+
+1. Which command shows the current working directory?
+2. Which command lists files and directories in the current directory?
+3. Which command changes the current directory to a specified path?
+4. Which command creates a new empty file?
+5. Which command creates a new directory?
+6. Which command copies a file from one location to another?
+7. Which command moves or renames a file or directory?
+8. Which command removes (deletes) a file?
+9. How do you redirect the standard output of a command into a file, overwriting the file?
+10. Which command displays the manual (help) pages for other commands?
+
+Answers provided: 1. cd 2. ls 3.  cd ./ 4. 5. 6. cp 7. mv 8. rm 9. mv 10. man
+    
+Then: Results:
+
+Nice — here’s how you did:
+
+1. Correct — `cd`
+2. Correct — `ls`
+3. Incorrect — `cd ./` only changes to the current directory. The general answer is `cd <path>` (e.g., `cd foldername` or `cd /path/to/dir`).
+4. Missing / Incorrect — correct command: `touch` (creates a new empty file)
+5. Missing / Incorrect — correct command: `mkdir` (creates a new directory)
+6. Correct — `cp`
+7. Correct — `mv`
+8. Correct — `rm`
+9. Incorrect — correct answer: use the redirection operator `>` (e.g., `command > file`) to overwrite a file
+EXAMPLE: `echo hello > file.txt`
+
+Question 10 of 10:
+Which command displays the manual (help) pages for other commands?
+
+(Type your answer and I'll check it.)
+11. Correct — `man`
+
+You got 6 out of 10 fully correct (questions 1, 2, 6, 7, 8, 10). 
+Would you like a short practice set or explanations for any of the ones you missed?
