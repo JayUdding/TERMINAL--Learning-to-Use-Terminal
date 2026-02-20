@@ -57,3 +57,19 @@ What command sets a file named report.txt to have permissions rw-r--r-- (owner r
 Question 10/10:
 What command prints the value of the PATH environment variable?
 
+
+at the end, see results (example):
+
+Let’s recap what you’ve learned:
+
+ls – list files
+cd ~ – go to home
+cd - – go back to previous directory
+mkdir Test – make a directory
+cp example.txt ~/Documents – copy a file
+mv old.txt new.txt – rename a file
+rm temp.txt – delete a file
+cat notes.txt – display file contents
+nano essay.txt – edit a file
+clear – clear screen
+You’ve built a strong foundation — and you’re ready for the next level.
