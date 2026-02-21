@@ -53,6 +53,12 @@ pwd -- print working direcory
 Shows current working directory by providing the path to the current working directory.
 Example result from pwd: /users/username
 
+chmod--makes a file executable (so you can run it),
+EXAMPLE: chmod +x script.sh
+chmod changes file permissions
++x means: add execute permission
+So chmod +x script.sh makes the file runnable
+
 mkdir --- make a new directory
 Example: mkdir test (make a new directory called test)
 --then press pwd to see if it is there.
@@ -113,6 +119,11 @@ as it will overwrite any existing file with the same name in the destination dir
 cat --view a file, display contents of a file
 
 top --shows running processes in real time (a continuously updating view)
+shows the current system load — including CPU usage, memory, and running processes.
+
+It’s a powerful command — and it’s unusual because it updates in real time.
+
+
 
 If you want to display the contents of multiple files at once, 
 you can separate the filenames with spaces, like this: cat example.txt anotherfile.txt
@@ -403,5 +414,14 @@ Use export PS1="..." to make changes persistent
 Use source ~/.zshrc to apply changes immediately
 Always back up your ~/.zshrc file
 
+ ls lists files, not processes.
 
+To show all running processes, you use:
+
+
+ 
+ps
+ps stands for process status.
+
+ 
 END (for now).
