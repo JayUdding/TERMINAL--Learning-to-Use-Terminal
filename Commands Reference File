@@ -50,8 +50,8 @@ exit -- saves the current version and no longer allows input (then it should be 
 Note: on a mac this does not automatically close the Terminal, but will not accept more input.
 
 pwd -- print working direcory 
-Shows current working directory by providing the path to the current working directory.
-Example result from pwd: /users/username
+Shows current working directory we are in by providing the path to the current working directory.
+EXAMPLE RESULT: from pwd: /users/username
 
 chmod--makes a file executable (so you can run it),
 EXAMPLE: chmod +x script.sh
