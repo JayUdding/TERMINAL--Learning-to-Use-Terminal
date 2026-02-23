@@ -423,5 +423,13 @@ To show all running processes, you use:
 ps
 ps stands for process status.
 
+--version checks the version 
+
+EXAMPLES:
+python3 --version
+git --version
+brew --versoin
+
+
  
 END (for now).
