@@ -1,0 +1,104 @@
+Please ask me (one at the time) 10 questions, not quite any longer an absolute beginner-level, Q&A quiz about shell prompts...
+
+—what they are, how they behave, and what they show.
+
+ Please keep it simple, avoid technical jargon unless necessary, and focus only on understanding the prompt as it appears in the terminal.
+
+Question 1 of 10:
+
+When you first open your terminal on your Mac, you see a line that looks something like:
+user@MacBook-Pro ~ %
+
+What is this entire line called? 
+
+Answer: the Shell Prompt
+
+While we often use "command line" loosely to mean the whole terminal interface, 
+that specific text (user@MacBook-Pro ~ %) is specifically called the prompt (or shell prompt).
+
+The "command line" usually refers to the entire input line (the prompt plus whatever you type after it),
+whereas the "prompt" is just the computer's status display showing who you are, where you are, and that it's ready for input.
+
+Question 2 of 10:
+
+In the prompt user@MacBook-Pro ~ %, what does the ~ symbol represent?
+
+home directory
+
+Question 3 of 10:
+
+In the prompt user@MacBook-Pro ~ %, what does the @ symbol do?
+
+Separates username from computer name...
+The @ sits between your username and your computer's name, making it easy to read both.
+
+Looking at the prompt structure: `user@MacBook-Pro ~ %`
+- `user` = username
+- `@` = separator
+- `MacBook-Pro` = computer name (hostname)
+- `~` = current directory (home)
+- `%` = prompt symbol (ready for input)
+
+Question 4 of 10:
+
+In the prompt user@MacBook-Pro ~ %, what does the % symbol at the end tell you?
+
+Ready for input as a user--
+The % means the terminal is ready for your command, and you're logged in as a normal user (not an administrator). 
+If you were the root user, you'd see # instead.
+
+Question 5 of 10:
+
+If you change into a folder called Documents, what happens to the ~ in your prompt?
+
+The ~ changes to show the name of the folder you're currently in. 
+So if you're in Documents, the prompt would show something like user@MacBook-Pro Documents %.
+
+Question 6 of 10:
+
+What does the word user represent in the prompt user@MacBook-Pro ~ %?
+
+The username (account we are logged in as)
+
+Question 7 of 10:
+
+If you become the administrator (the "root" user), what symbol appears at the end of the prompt instead of %?
+
+#
+
+# appears instead of % when you have administrator (root) privileges.
+
+Question 8 of 10:
+
+In the prompt user@MacBook-Pro ~ %, what does MacBook-Pro represent?
+
+The computer name or hostname--MacBook-Pro is the name of your computer (also called the "hostname").
+
+Question 9 of 10:
+
+If you type a command and the prompt doesn't appear afterwards, what does that usually mean?
+
+If the prompt doesn't come back, the command is usually still working, waiting for you to finish input, or possibly stuck.
+
+Question 10 of 10:
+
+What is the main purpose of the prompt showing information like your username, computer name, and current folder?
+
+The prompt shows you **where you are** in the computer's folder structure (the path), so you don't get lost.
+
+
+To summarize what the prompt does:
+
+Shows who you are (username)
+Shows where you are (computer name and current folder)
+Shows what permissions you have (% for normal user, # for admin)
+Shows that the system is ready for your next command
+
+You've now mastered the basics of the shell prompt:
+
+The whole line is called the prompt (or shell prompt)
+~ means home directory
+@ separates username from computer name
+% means normal user ready for input (# means admin)
+The prompt changes to show your current folder
+If the prompt disappears, the command is still running
