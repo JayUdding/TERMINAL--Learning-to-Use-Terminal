@@ -1,1 +1,38 @@
 The following are sample quiz questions:
+
+ 
+**Instructions:** Fill in your answer for each question in the blank space provided. When complete, submit all 10 answers for review.
+
+---
+
+**1.** What command shows you the full path of the folder you are currently in?  
+**Answer:** ____________________
+
+**2.** What command lists all files and folders in your current location?  
+**Answer:** ____________________
+
+**3.** What command changes your current folder to the one named "Documents"?  
+**Answer:** ____________________
+
+**4.** What command creates a new folder named "Projects"?  
+**Answer:** ____________________
+
+**5.** What command moves you up one level (to the parent folder)?  
+**Answer:** ____________________
+
+**6.** What command deletes a file named "temp.txt"?  
+**Answer:** ____________________
+
+**7.** What command renames "old.txt" to "new.txt"?  
+**Answer:** ____________________
+
+**8.** What command displays the contents of a file named "notes.txt" without opening an editor?  
+**Answer:** ____________________
+
+**9.** What command clears the terminal screen?  
+**Answer:** ____________________
+
+**10.** What command opens a file named "config.txt" in the nano text editor?  
+**Answer:** ____________________
+
+ 
