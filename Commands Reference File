@@ -44,6 +44,8 @@ In this case, that additional information includes the name of the user who owns
 ls -a  -- view invisible files—ones that the Finder doesn’t normally show you—by typing  
 These hidden files all have dots (.) in front of their names.
 
+ls -lh (long list as ls -l but in more human readable format)
+
 date -- shows current date and time
 
 exit -- saves the current version and no longer allows input (then it should be closed)
