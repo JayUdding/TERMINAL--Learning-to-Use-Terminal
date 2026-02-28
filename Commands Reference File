@@ -434,4 +434,79 @@ brew --versoin
 
 
  
-END (for now).
+ 
+
+### **The 15 (macOS Zsh Specific)**
+
+**Navigation & Context (Know where you are)**
+
+1. `pwd` — Print working directory. **Use this constantly.** You must know if you are in `~/Downloads` or `~/Projects` before running any script.
+2. `ls -la` — List with hidden files and permissions. The `-a` reveals `.zshrc` and `.venv`; the `-l` shows if you have execute permissions.
+3. `cd -` — Jump to previous directory. Essential when you `cd` deep into a project then need to snap back.
+4. `mkdir -p path/to/nested/dir` — Create parent directories as needed. You will use this to organize projects before writing code.
+
+**Inspection (Read before you run)**
+5. `file filename` — Tells you what type of file something is (text, binary, shell script). 
+Prevents you from trying to `cat` an image or executable.
+6. `less filename` — Read long files without flooding your terminal. Use `q` to quit, `/` to search.
+7. `head -n 20 filename` — Read just the top of a file. Useful for checking Python shebangs or README instructions.
+
+**Environment (Where commands live)**
+8. `echo $PATH` — **This is the most important command on your list.** 
+
+It prints the colon-separated list of directories where zsh searches for commands. 
+If you install something and get "command not found," it means the binary is in a directory not listed here.
+
+9. `which python3` — Tells you the absolute path of the `python3` binary that would execute if you typed it right now. 
+Critical for verifying you are using Homebrew's Python vs. Apple's system Python.
+10. `export PATH="/new/directory:$PATH"` — Temporarily adds a directory to your search path for the current session. 
+You will use this to fix "command not found" errors before making them permanent in `.zshrc`.
+
+**Python Workflow (The development loop)**
+11. `python3 -m venv venv` — Creates a virtual environment named `venv` in the current directory. 
+**Never skip this.** It isolates your project dependencies from the system Python.
+12. `source venv/bin/activate` — Activates the virtual environment. 
+Your prompt will change to show `(venv)`. Now `pip` and `python` point to the isolated versions.
+13. `pip install package_name` — Installs Python libraries. 
+**Only run this when you see `(venv)` in your prompt.** 
+If you use `sudo pip`, you have failed and must uninstall and start over.
+
+**System & Permissions (macOS specific)**
+14. `brew install package` — Homebrew is the de facto package manager for macOS. 
+You will use this to install `python3`, `git`, and eventually Rust (for NOSTR). 
+If you haven't installed Homebrew yet, that is Step Zero.
+15. `chmod +x script.py` — Makes a file executable. 
+On macOS, you cannot run a script with `./script.py` unless it has the execute bit set (shown as `x` in `ls -l`).
+
+---
+
+### **The 4-Week Progression (Do not skip)**
+
+**Week 1: PATH Mastery & Environment Hygiene**
+- **Goal:** Understand the difference between "where I am" (`pwd`) and "where my commands live" (`which`).
+- **Exercise:** Create `~/bin`. Add `export PATH="$HOME/bin:$PATH"` to `~/.zshrc` (using `nano ~/.zshrc`). 
+Create a Python script in `~/bin`, make it executable with `chmod +x`, and run it by name from anywhere (not just `~/bin`). 
+If you cannot do this, you do not understand how computers work.
+
+**Week 2: Virtual Environments & Package Isolation**
+- **Goal:** Never touch system Python again.
+- **Exercise:** Create a project folder. `python3 -m venv venv`. 
+Activate it. `pip install requests`. Write a script that imports `requests` and fetches a URL. 
+Run it. Deactivate (`deactivate`). Verify that outside the venv, `python3 -c "import requests"` **fails** (ModuleNotFoundError). 
+This proves isolation is working.
+
+**Week 3: Reading Error Messages**
+- **Goal:** Distinguish between "command not found" (PATH issue) vs. "Permission denied" (chmod issue) vs. "SyntaxError" (code issue).
+- **Exercise:** Intentionally cause each error, then fix it. 
+For "command not found," move the binary to a PATH directory or update PATH. 
+For "Permission denied," use `chmod +x`. 
+Do not proceed until you can diagnose these by sight.
+
+**Week 4: Building From Source (The Gateway to NOSTR)**
+- **Goal:** Compile and run a simple Rust or C project without panic.
+- **Exercise:** `brew install rustup`. `rustup-init`. 
+Follow the instructions to add cargo to your PATH (this will require editing `.zshrc` again—if you don't know how to do this from Week 1, you are not ready). 
+Clone a simple Rust CLI tool (like `fd` or `bat`). `cargo build --release`. 
+Run the binary from `./target/release/`.  
+
+ 
