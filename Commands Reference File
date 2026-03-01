@@ -28,6 +28,9 @@ Terminal opens with username@computername (hostname)
 % is the prompt symbol -- means ready for input as a normal non-root user
 # is also a prompt symbol and means ready for input as a root user (admin)
 
+&& while we are at it: the &&  means "run the next command only if the previous one succeeded." 
+It chains commands together. If cd /tmp fails (e.g., directory doesn't exist), it stops and doesn't run pwd.
+
 Terminal default is in the Home Directory; that where it opens up by default
 Home Directory is where the personal files live such as docs, downloads, apps, etc.
 
