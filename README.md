@@ -21,9 +21,9 @@ Some popular tools and platforms for creating these types of projects include:
 
 Remember, the most important thing is to choose a format and tool that works for you and your learning style. Good luck and have fun learning Terminal commands!
 
-Sample Quiz:
+Sample Quizzes:
 
-(Created by CoPilot)
+ 
 
 Ready for another beginner quiz — no hints unless you ask. Reply with the command you'd type.
 
@@ -57,11 +57,7 @@ What command sets a file named report.txt to have permissions rw-r--r-- (owner r
 Question 10/10:
 What command prints the value of the PATH environment variable?
 
-
-at the end, see results (example):
-
-Let’s recap what you’ve learned:
-
+ 
 ls – list files
 cd ~ – go to home
 cd - – go back to previous directory
@@ -72,9 +68,7 @@ rm temp.txt – delete a file
 cat notes.txt – display file contents
 nano essay.txt – edit a file
 clear – clear screen
-You’ve built a strong foundation — and you’re ready for the next level.
-
-
+ 
 Example Quiz
 
 1. Which command shows the current working directory?
@@ -90,10 +84,9 @@ Example Quiz
 
 Answers provided: 1. cd 2. ls 3.  cd ./ 4. 5. 6. cp 7. mv 8. rm 9. mv 10. man
     
-Then: Results:
+ Results (6 out of 10 correct):
 
-Nice — here’s how you did:
-
+ 
 1. Correct — `cd`
 2. Correct — `ls`
 3. Incorrect — `cd ./` only changes to the current directory. The general answer is `cd <path>` (e.g., `cd foldername` or `cd /path/to/dir`).
@@ -102,14 +95,8 @@ Nice — here’s how you did:
 6. Correct — `cp`
 7. Correct — `mv`
 8. Correct — `rm`
-9. Incorrect — correct answer: use the redirection operator `>` (e.g., `command > file`) to overwrite a file
-EXAMPLE: `echo hello > file.txt`
-
-Question 10 of 10:
-Which command displays the manual (help) pages for other commands?
-
-(Type your answer and I'll check it.)
-11. Correct — `man`
-
-You got 6 out of 10 fully correct (questions 1, 2, 6, 7, 8, 10). 
-Would you like a short practice set or explanations for any of the ones you missed?
+9. Incorrect — correct answer: use the redirection operator `>` (e.g., `command > file`) to overwrite a file\
+10. 11. Correct — `man`
+ 
+ 
+ 
