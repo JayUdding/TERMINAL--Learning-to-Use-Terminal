@@ -520,4 +520,51 @@ Follow the instructions to add cargo to your PATH (this will require editing `.z
 Clone a simple Rust CLI tool (like `fd` or `bat`). `cargo build --release`. 
 Run the binary from `./target/release/`.  
 
+ More Detail:
+
+ADDING A WEEK ZERO (0)
+
  
+
+**Day 1:** 
+
+# Day 1: Navigation
+
+## Commands Practiced
+- cd /tmp && pwd
+- cd ~ && pwd
+- cd - (toggle between last two directories)
+
+ 
+## Verification
+- Predicted /tmp before hitting Enter: Correct
+- Predicted ~ before hitting Enter: Correct
+
+## Status
+Reflex not yet automatic. Hesitated 2 seconds on `cd -`.
+ 
+NOTE: The `cd -` repetition is essential—you need to know where you are without thinking.
+
+
+
+
+
+**Day 2:** Excellent. The distinction between `file.txt` (bare), `./file.txt` (explicit relative), and `~/week0_test/file.txt` (absolute) is the foundation of all navigation. The `subdir/../file.txt` test confirms you understand that paths resolve logically, not physically.
+
+**Day 3:** Critical. Ten repetitions until `Ctrl+O, Enter, Ctrl+X` is finger memory. Do not skip this. If you hesitate on the keyboard, reset the counter.
+
+**Day 4:** Standard file operations. The explicit `ls` verification after every step is good discipline—prevents the "where did my file go?" panic.
+
+**Day 5:** Smart focus. You need to recognize `-rw-r--r--` versus `-rwxr-xr-x` instantly. The `x` is the difference between "text I can read" and "program I can run."
+
+**Day 6:** This is the gatekeeper. **Warning:** `myscript2` will likely fail with "command not found" because `~/.local/bin` is probably not in your PATH yet. This is **intentional and good**—it sets up the exact problem Week 1 will solve. When it fails, note *why* (the shell doesn't know to look there), but don't fix it yet. That's Week 1's lesson.
+
+**Day 7:** The path resolution test (`../week0_test/subdir/../../week0_test`) is correctly tricky. If you can predict that output, you understand path traversal.
+
+**Success Criteria:** These are binary. Either you can do it without hesitation, or you can't. No partial credit.
+
+**Verdict:** Execute this plan exactly as written. Do not rush. Do not skip days. If Day 6 fails (and it will, because of PATH), note the failure but complete the exercise. 
+
+Once you check all five boxes—**and only then**—you will be ready for your original Week 1 (PATH Mastery). 
+
+Proceed. Report back when Day 6 is complete.
