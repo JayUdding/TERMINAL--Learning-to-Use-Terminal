@@ -3,7 +3,8 @@
 
 ### ✅ What is `hexdump`?
 
-`hexdump` is a **command-line tool** that **reads a file and displays its raw binary data in hexadecimal format**.
+Definition: hexdump` is a **command-line tool** that **reads a file and displays its raw binary data 
+in hexadecimal format**.
 
 It is used to **inspect the raw bytes** of a file — including **non-text data**, such as:
 - Images
@@ -113,7 +114,7 @@ This confirms it’s **not a standard file**.
 It **failed** — which confirmed:
 - The file **cannot be read**.
 - It is **not a standard file**.
-- It is **likely proprietary** (e.g., Canon-generated).
+- It is **likely proprietary** (e.g., in this case Canon-generated).
 
 This was a **critical diagnostic step**.
 
