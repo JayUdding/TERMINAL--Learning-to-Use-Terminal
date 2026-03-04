@@ -549,7 +549,24 @@ NOTE: The `cd -` repetition is essential—you need to know where you are withou
 
 
 
-**Day 2:** Excellent. The distinction between `file.txt` (bare), `./file.txt` (explicit relative), and `~/week0_test/file.txt` (absolute) is the foundation of all navigation. The `subdir/../file.txt` test confirms you understand that paths resolve logically, not physically.
+**Day 2:** 
+
+Day 2: Path Types (./ vs bare vs absolute)
+
+mkdir -p ~/week0_test/subdir && touch ~/week0_test/file.txt
+cd ~/week0_test
+ls file.txt
+ls ./file.txt
+ls ../week0_test/file.txt
+ls ~/week0_test/file.txt
+ls subdir/../file.txt
+cd ~ && rm -r week0_test
+
+ Explain why all 5 ls commands work and the difference between them.
+ 
+The distinction between `file.txt` (bare), `./file.txt` (explicit relative), and
+`~/week0_test/file.txt` (absolute) is the foundation of all navigation. T
+he `subdir/../file.txt` test confirms you understand that paths resolve logically, not physically.
 
 **Day 3:** Critical. Ten repetitions until `Ctrl+O, Enter, Ctrl+X` is finger memory. Do not skip this. If you hesitate on the keyboard, reset the counter.
 
