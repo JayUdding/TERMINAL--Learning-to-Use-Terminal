@@ -540,10 +540,8 @@ ADDING A WEEK ZERO (0)
 - Predicted /tmp before hitting Enter: Correct
 - Predicted ~ before hitting Enter: Correct
 
-## Status
-Reflex not yet automatic. Hesitated 2 seconds on `cd -`.
  
-NOTE: The `cd -` repetition is essential—you need to know where you are without thinking.
+NOTE: The `cd -` repetition is essential— need to know where you are without thinking.
 
 
 
