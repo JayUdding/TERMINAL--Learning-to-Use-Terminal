@@ -563,8 +563,9 @@ cd ~ && rm -r week0_test
  Explain why all 5 ls commands work and the difference between them.
  
 The distinction between `file.txt` (bare), `./file.txt` (explicit relative), and
-`~/week0_test/file.txt` (absolute) is the foundation of all navigation. T
-he `subdir/../file.txt` test confirms you understand that paths resolve logically, not physically.
+`~/week0_test/file.txt` (absolute) is the foundation of all navigation. 
+
+The  `subdir/../file.txt` test confirms you understand that paths resolve logically, not physically.
 
 **Day 3:** Critical. Ten repetitions until `Ctrl+O, Enter, Ctrl+X` is finger memory. Do not skip this. If you hesitate on the keyboard, reset the counter.
 
