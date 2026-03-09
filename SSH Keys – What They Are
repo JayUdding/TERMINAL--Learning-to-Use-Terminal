@@ -37,3 +37,91 @@ Security	Private key never leaves your machine; the public key is harmless on it
 Convenience	After the first setup, git push/pull works with no password prompts 
 (unless you set a passphrase on the key).
 Automation	Scripts, CI pipelines, and IDEs can push/pull without interactive log‑ins.
+
+>>>---
+
+### What the name **`id_ed25519`** means
+
+When you run  
+
+```bash
+ssh-keygen -t ed25519 -C "you@example.com"
+```  
+
+the program creates **two files** in your `~/.ssh/` directory:
+
+| File name | What it is | Why the name looks like that |
+|-----------|------------|------------------------------|
+| `id_ed25519` | **Private key** – the secret half of the key pair. 
+It must stay on *your* computer and never be shared. 
+| `id_` is the conventional prefix for an **identity** (i.e., a key that identifies you). 
+`ed25519` tells you which **cryptographic algorithm** was used to generate the key. |
+| `id_ed25519.pub` | **Public key** – the half you upload to services like GitHub. 
+It can be freely shared. | Same base name, plus the `.pub` suffix to indicate “public”. |
+
+#### Breaking down the components
+
+| Component | Meaning |
+|-----------|---------|
+| `id` | Short for **identity**. 
+Historically OpenSSH used `id_rsa`, `id_dsa`, etc., for the private keys that “identify” the user 
+to a remote host. |
+| `ed25519` | The **algorithm** used to create the key pair. Specifically: |
+| | • **Ed** – refers to *Edwards‑curve* mathematics. |
+| | • **25519** – the name of the specific curve (Curve25519) that provides 128‑bit security 
+and fast signing/verification. |
+| `.pub` | File‑extension that designates the **public** part of the pair. 
+The private key has **no** extension. |
+
+#### Why the algorithm matters
+
+- **Security** – `ed25519` is currently considered stronger per key‑size  than the older RSA or DSA algorithms. 
+It resists known attacks and is faster for signing and verifying.
+- **Key size** – An `ed25519` private key is only 256 bits (32 bytes) long, 
+yet it offers ~128‑bit security, far more than a 2048‑bit RSA key for the same effort.
+- **Compatibility** – Modern services (GitHub, GitLab, Bitbucket, 
+most Linux/Unix servers) accept `ed25519` keys out‑of‑the‑box.
+
+#### What the files contain (high‑level)
+
+- `id_ed25519` → a PEM‑encoded block that looks like:
+
+  ```
+  -----BEGIN OPENSSH PRIVATE KEY-----
+  b3BlbnNzaC1rZXktdjEAAAAABG5vbmUAAAA...
+  -----END OPENSSH PRIVATE KEY-----
+  ```
+
+  It is **encrypted** on disk only if you supplied a passphrase when generating it; 
+otherwise it’s stored in clear text (still safe as long as your filesystem is secure).
+
+- `id_ed25519.pub` → a single line that starts with `ssh-ed25519` 
+followed by a base‑64 blob and the comment you gave (`you@example.com`):
+
+  ```
+  ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIB... you@example.com
+  ```
+
+  This is what you paste into GitHub’s **SSH and GPG keys** page.
+
+#### How SSH uses the pair
+
+1. **You initiate a connection** (`git push`, `ssh user@host`, etc.). 
+Your SSH client offers the private key (`id_ed25519`) to prove who you are.
+2. The remote server (GitHub) has the matching **public key** stored from when you added it.
+3. The server sends a challenge that only the holder of the private key can sign.
+4. Your client signs the challenge, sends the signature back, 
+and the server verifies it with the public key.
+5. If verification succeeds, you’re authenticated—no password needed.
+
+---
+
+### TL;DR
+
+- **`id_`** = identity (your private key).  
+- **`ed25519`** = the modern, secure elliptic‑curve algorithm used.  
+- **`.pub`** = the public counterpart you upload to services.
+
+If you ever generate a different algorithm (e.g., RSA), 
+the file name will reflect that: `id_rsa` / `id_rsa.pub`, `id_ecdsa` / `id_ecdsa.pub`, etc. 
+The naming convention stays the same; only the algorithm portion changes.
