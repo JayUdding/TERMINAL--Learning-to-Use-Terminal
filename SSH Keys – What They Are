@@ -1,0 +1,39 @@
+SSH Keys – What They Are
+
+SSH = Secure Shell
+
+Secure – the connection is encrypted, so anyone intercepting the traffic can’t read the data.
+Shell – a command‑line interface (the “shell”) that lets you run commands on a remote computer 
+as if you were sitting in front of it.
+
+In practice, SSH lets your Mac authenticate to GitHub (or any other server) using a cryptographic key pair, 
+so you can push/pull code without sending passwords over the network.
+
+The Problem Without SSH
+When you push or pull from a remote repository (e.g., git@github.com:user/repo.git), 
+Git needs to authenticate you. The naïve way is to send your GitHub username + password each time. 
+
+That’s:
+
+insecure (password travels over the network)
+inconvenient (you’d have to type it for every push/pull)
+The Solution: Public‑Key Cryptography
+You generate a key pair on your Mac:
+
+Private key – ~/.ssh/id_ed25519 (kept secret on your computer)
+Public key – ~/.ssh/id_ed25519.pub (you can share safely)
+You upload the public key to GitHub (Settings → SSH and GPG keys).
+
+When you run git push or git clone over SSH, GitHub does this:
+
+Sends a challenge (random data) to your Mac.
+Your ssh client signs that challenge with the private key.
+GitHub verifies the signature using the public key it already knows belongs to you.
+If the verification succeeds, you’re authenticated without ever sending a password.
+
+Benefits
+Benefit	Explanation
+Security	Private key never leaves your machine; the public key is harmless on its own.
+Convenience	After the first setup, git push/pull works with no password prompts 
+(unless you set a passphrase on the key).
+Automation	Scripts, CI pipelines, and IDEs can push/pull without interactive log‑ins.
