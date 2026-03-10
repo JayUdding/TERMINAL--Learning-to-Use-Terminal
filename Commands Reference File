@@ -780,3 +780,13 @@ Proceed. Report back when Day 6 is complete.
 
 End for now
 
+
+Delete the directory and everything inside
+
+ 
+rm -rf "name of project or file or directory here"
+-r = recursive (delete directories and their contents)
+-f = force (don't ask "are you sure?" for every file)
+⚠️ WARNING: rm -rf is permanent. There is no Trash/Recycle Bin. Once you press Enter,
+"file or repo" and everything inside it is gone forever.
+
