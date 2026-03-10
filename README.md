@@ -1,14 +1,15 @@
 TERMINAL--Learning-to-Use-Terminal
 
 The Top file (Commands Reference File) is a list of the commands for Terminal and some example uses for memorization and practice.
-Use AI to create quizzes to memorize and practice the prompts. Learn to use examples of navigating Terminal with ease and build some basic python programs that can be run directly in Terminal.
+Use this file (with or without AI) to create quizzes to memorize and practice the prompts. Learn to use examples of navigating within Terminal with ease and then get ready to build some basic python programs that can be run directly in Terminal.
 
-Useful tools:
+Useful tools besides the Reference File:
 
 Flashcards
 Cheatsheet
 
 **Interactive shell script**: Write a simple shell script that presents you with a series of Terminal commands and asks you to type them in. You can use a tool like `read` or `dialog` to create an interactive prompt.
+
 **Terminal-based game**: Create a simple game that tests your knowledge of Terminal commands. For example, you can write a script that generates a random command and asks you to type it in correctly.
 
 Some popular tools and platforms for creating these types of projects include:
@@ -84,7 +85,7 @@ Example Quiz
 
 Answers provided: 1. cd 2. ls 3.  cd ./ 4. 5. 6. cp 7. mv 8. rm 9. mv 10. man
     
- Results (6 out of 10 correct):
+ Results (e.g.: 6 out of 10 correct):
 
  
 1. Correct — `cd`
