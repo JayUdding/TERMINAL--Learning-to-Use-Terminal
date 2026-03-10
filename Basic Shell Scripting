@@ -1,16 +1,18 @@
-Total Beginner lesson in Scripting:
-
+ Beginner lesson in Scripting:
  
-
 ### 🔍 **What is Scripting?**
 
-**Scripting** is the act of writing a **short program** (called a **script**) that automates a task in a computer system.
+**Scripting** is the act of writing a **short program** (called a **script**) 
+that automates a task in a computer system.
 
-It’s like giving a set of instructions to the computer to do something, instead of doing it manually.
+It’s like giving a set of instructions to the computer to do something, 
+instead of doing it manually.
 
-You don’t need to write complex code — scripts are usually simple and written in a **scripting language**, like **Bash**, **Python**, or **Zsh**.
+You don’t need to write complex code — 
+scripts are usually simple and written in a **scripting language**, 
+like **Bash**, **Python**, or **Zsh**.
 
----
+       
 
 ### 🖥️ **What is Shell Scripting?**
 
@@ -24,9 +26,9 @@ It’s used to **automate repetitive tasks** — like:
 
 You write the script in a text file, make it executable, and run it — just like a program.
 
----
+ 
 
-### 🧩 **Key Concepts from Our Quiz**
+### 🧩 **Key Concepts **
 
 Here are the **core ideas** we covered:
 
@@ -92,7 +94,7 @@ For example:
 
 - **Save time** – automate boring tasks  
 - **Learn programming** – it’s a simple way to start  
-- **Understand the terminal** – you’ll become more powerful  
+- **Understand the terminal** – you’ll become a more powerful computer user  
 - **Work with servers** – many systems run on Linux or macOS, which use shells  
 
 ---
@@ -114,7 +116,7 @@ Step-by-Step: Exit nano and Return to the Terminal
 
 You’re in nano, editing a file
 To save the file:
-Press Ctrl+O (hold Ctrl, press O)
+Press Ctrl+O (hold Ctrl, press O 
 Then press Enter to confirm the filename
 
 To exit nano:
@@ -136,18 +138,18 @@ Go to a specific line using Ctrl+_ (then type the line number)
  
 
 ❌ But you cannot:
-Delete text by pressing Delete (on some keyboards, it doesn’t work)
+Delete text by pressing Delete (on some keyboards, it doesn’t work 
 Use Backspace if your keyboard is set up differently
 Use Ctrl+C to cancel — it might just copy text
- \
+ 
 
 ✅ How to Delete Text in nano
 Move the cursor to the character you want to delete
-Press Backspace (the key that erases characters to the left)
-Or press Delete (the key that erases characters to the right)
+Press Backspace (the key that erases characters to the left 
+Or press Delete (the key that erases characters to the right 
 Or press Ctrl+K to cut the current line
 Or press Ctrl+U to paste it back
-\
+ 
 
 ✅ How to Rewrite Text in nano
 Move the cursor to where you want to edit
@@ -159,6 +161,6 @@ You can edit the file just like you would in any text editor.
 If you want to clear the entire file, you can:
 
 Press Ctrl+K repeatedly to cut all lines
-Or press Ctrl+X and then press n when it asks to save (to discard changes)
+Or press Ctrl+X and then press n when it asks to save (to discard changes       
 But if you want to keep changes, press Ctrl+O, then Enter, then Ctrl+X.
 
