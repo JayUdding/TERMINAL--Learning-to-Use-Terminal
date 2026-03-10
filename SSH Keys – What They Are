@@ -31,16 +31,17 @@ Your ssh client signs that challenge with the private key.
 GitHub verifies the signature using the public key it already knows belongs to you.
 If the verification succeeds, you’re authenticated without ever sending a password.
 
-Benefits
-Benefit	Explanation
-Security	Private key never leaves your machine; the public key is harmless on its own.
+Benefits &  Explanation
+Security:	Private key never leaves your machine; the public key is harmless on its own.
 Convenience	After the first setup, git push/pull works with no password prompts 
 (unless you set a passphrase on the key).
 Automation	Scripts, CI pipelines, and IDEs can push/pull without interactive log‑ins.
 
 >>>---
 
-### What the name **`id_ed25519`** means
+DEEP DIVE INTO PRIVATE KEY
+
+### What the name **`id_ed25519`** means...
 
 When you run  
 
@@ -75,7 +76,7 @@ The private key has **no** extension. |
 
 #### Why the algorithm matters
 
-- **Security** – `ed25519` is currently considered stronger per key‑size  than the older RSA or DSA algorithms. 
+- **Security** – `ed25519` is currently considered stronger per key‑size than the older RSA or DSA algorithms. 
 It resists known attacks and is faster for signing and verifying.
 - **Key size** – An `ed25519` private key is only 256 bits (32 bytes) long, 
 yet it offers ~128‑bit security, far more than a 2048‑bit RSA key for the same effort.
@@ -88,7 +89,7 @@ most Linux/Unix servers) accept `ed25519` keys out‑of‑the‑box.
 
   ```
   -----BEGIN OPENSSH PRIVATE KEY-----
-  b3BlbnNzaC1rZXktdjEAAAAABG5vbmUAAAA...
+  b3BlbnNzaC1rZXktdjEAAAKJHKAABG5vbmUAAAA...
   -----END OPENSSH PRIVATE KEY-----
   ```
 
@@ -99,7 +100,7 @@ otherwise it’s stored in clear text (still safe as long as your filesystem is 
 followed by a base‑64 blob and the comment you gave (`you@example.com`):
 
   ```
-  ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIB... you@example.com
+  ssh-ed25519 AAAAC3NzaC1lKJHZDI1NTE5AAAAIB... you@example.com
   ```
 
   This is what you paste into GitHub’s **SSH and GPG keys** page.
