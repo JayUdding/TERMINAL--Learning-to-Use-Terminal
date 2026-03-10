@@ -1,4 +1,4 @@
- hexdump -C /path/to/your/file.pdf
+hexdump -C /path/to/your/file.pdf
 
 
 ### ✅ What is `hexdump`?
@@ -39,7 +39,7 @@ hexdump -C /Users/ Desktop/test.pdf
 You might see:
 ```
 00000000  25 50 44 46 2d 31 2e 37  0a 25 41 63 72 6f 62 61  |%PDF-1.7.%Acroba|
-00000010  74 20 38 2e 78 0a 25 25  45 4f 46 0a 74 61 78 66  |t 8.x.%EOF.%taxf|
+00000010  74 20 38 2e 78 0a 25 25  45 4f 46 0a 74 61 78 66  |t 8.x.%EOF.% |
 00000020  69 6c 69 6e 67 32 30 32  34 20 2e 70 64 66 0a 0a  |iling2024 .pdf..|
 ...
 ```
@@ -58,7 +58,7 @@ So, if you see this, you know:
 - It’s **not a plain text file**.
 - It’s **not a JPEG** (which would start with `FF D8`).
 
----
+---notes on a specific hexdump failure:
 
 ### 🚨 Why did `hexdump` fail with “Operation not permitted”?
 
@@ -80,16 +80,16 @@ You use `hexdump` to:
 4. **Diagnose file access issues** (e.g., “Operation not permitted”).
 
 ---
-
+EXAMPLE NOTES:
 ### ✅ Example: Confirm if a file is a PDF
 
 ```bash
-hexdump -C /Users/ Desktop/taxfiling2024\ 2.pdf | head -n 5
+hexdump -C /Users/ Desktop/form or filename here\ 2.pdf | head -n 5
 ```
 
 If it returns:
 ```
-hexdump: /Users/ /Desktop/taxfiling2024\ 2.pdf: Operation not permitted
+hexdump: /Users/ /Desktop/form or filename here\ 2.pdf: Operation not permitted
 ```
 
 Then the **file cannot be read** — and **`hexdump` cannot inspect it**.
