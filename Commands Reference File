@@ -1,8 +1,10 @@
 TERMINAL COMMANDS
 
-READ, REVIEW, REMEMBER, RETEST, RINSE, REPEAT
+2 READ, REVIEW, REMEMBER, RETEST, 
 
->>>...ABOVE ALL... PRACTICE WITH THE ACTUAL TERMINAL...<<<
+RINSE, REPEAT...
+
+>>>...AND ABOVE ALL... PRACTICE WITH THE ACTUAL TERMINAL...<<<
 
 On macOS we work with Zsh Shell (not Bash Shell)
 
@@ -171,13 +173,20 @@ clear
 
 whoami --> shows the username
 
+whois --
+
 id -p 
 
 alias --creates a shortcut for another command: Example alias ll="ls -la"
 
-arp -a
+arp -a  -- 
 
-traceroute
+traceroute--
+
+ifconfig--configures network interfaces—it sets IP addresses, 
+brings interfaces up or down, changes MTU sizes, and manages network parameters at the kernel level.
+
+networksetup to change network set up.
 
 CONTROL C--cancel command
 
