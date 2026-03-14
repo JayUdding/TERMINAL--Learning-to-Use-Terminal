@@ -1,0 +1,17 @@
+# 1. Simple literal search
+grep "needle" file.txt
+
+# 2. Case‑insensitive, show line numbers
+grep -in "needle" file.txt
+
+# 3. Recursive search, exclude .git folder
+grep -R --exclude-dir=.git "TODO" .
+
+# 4. Filter output of another command
+ps aux | grep -i sshd
+
+# 5. Show context (2 lines before, 3 after)
+grep -B2 -A3 "ERROR" /var/log/syslog
+
+# 6. Count matches
+grep -c "failed" /var/log/auth.log
