@@ -39,6 +39,8 @@ Home Directory is where the personal files live such as docs, downloads, apps, e
 If you press return, you’ll see another line with a % sign, 
 indicating that the previous line has been abandoned.
 
+LIST 
+
 ls -- list
 
 ls -l expanded list (long format); can provide additional information about files and folders, 
@@ -49,7 +51,13 @@ In this case, that additional information includes the name of the user who owns
 ls -a  -- view invisible files—ones that the Finder doesn’t normally show you—by typing  
 These hidden files all have dots (.) in front of their names.
 
+ls -al shows a long listing (permissions, size, date, etc.) 
+and prints the entries in multiple columns when the output fits the screen.
+
 ls -lh (long list as ls -l but in more human readable format)
+
+ ls -1 (that's a one, not the letter l) 
+prints each file or directory name on its own line, sorted alphabetically by default.
 
 date -- shows current date and time
 
@@ -150,8 +158,14 @@ head--display first 10 lines of a file
 tail-display last 10 lines of a file
 head -n20 textfile.txt (displays the first 20 lines of textfile.txt)
 head -20 textfile.txt (same)
+tail -f /var/log/syslog
+(-f continues updating as new lines are appended to the file---f is for "follows")
 
-grep--search for (global regular expression print)
+find--starts a search for a file
+. start from the current directory
+-type f make it look for files (regular files and not directories)
+
+grep--search for (global regular expression print) within a file
 
 * WILDCARD: If you want to search for a word in multiple files, 
 use the * (wildcard) to specify multiple files
@@ -160,6 +174,20 @@ EXAMPLE: grep word *.txt
 NOTE: To search for a word in a case-insensitive manner, 
 use the -i option
 EXAMPLE: grep -i word example.txt
+
+grep -c "ERROR" /var/log/syslog
+-c prints only the count of matching lines.
+
+How to Append the current date and time (YYYY‑MM‑DD HH:MM:SS) to ~/run.log, 
+and creating the file if it doesn’t exist
+
+ 
+date +"%F %T" >> ~/run.log
+%F → YYYY‑MM‑DD
+%T → HH:MM:SS
+>> appends (creates the file if needed).
+
+
 
 !! runs last command
 
@@ -340,7 +368,13 @@ It means that you’re overriding some basic protection of your Mac and making a
 |--------|--------|--------|
 | `mkdir dir` | Create dir | `mkdir projects` |
 | `mkdir -p path` | Nested dirs | `mkdir -p work/reports` |
-| `touch file.txt` | Create file | `touch notes.txt` |
+
+TOUCH
+
+touch file.txt` | Create file | `touch notes.txt` | creates an empty file 
+(or updates the timestamp if it already exists)
+
+
 | `cp src dst` | Copy | `cp file.txt backup/` |
 | `mv old new` | Move/rename | `mv old.txt new.txt` |
 | `rm file.txt` | Delete | `rm old.txt` |
@@ -378,6 +412,8 @@ It means that you’re overriding some basic protection of your Mac and making a
 - `Ctrl + R` → search command history  
 
 du -sh --shows disk usage of the current directory in a human-readable format.
+du -sh ~/projects
+
 
 PS1 defines the command prompt — what appears before you type a command.
 
