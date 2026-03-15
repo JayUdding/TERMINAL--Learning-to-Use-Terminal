@@ -143,4 +143,35 @@ Use it:
 - You can **run it on any file**.
 - It’s **useful for troubleshooting** when you **can’t copy, delete, or upload** a file.
 
- 
+ Beginner Tasks:
+
+# 1  List files one per line
+ls -1
+
+# 2  Show current directory path
+pwd
+
+# 3  Create an empty file
+touch notes.txt
+
+# 4  Make a directory tree
+mkdir -p ~/Documents/projects/2026
+
+# 5  Move/rename a file
+mv notes.txt ~/Documents/projects/2026/meeting.txt
+
+# 6  Copy a file
+cp ~/Documents/projects/2026/meeting.txt ~/Desktop/
+
+# 7  Delete a file
+rm ~/Desktop/meeting.txt
+
+# 8  Search inside a file
+grep "TODO" ~/Documents/projects/2026/meeting.txt
+
+# 9  Append timestamp to a log
+date +"%F %T" >> ~/Documents/projects/2026/run.log
+
+#10  Download a file
+curl -L -o ~/Downloads/example.txt https://example.com/sample.txt
+
