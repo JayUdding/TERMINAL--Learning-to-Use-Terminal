@@ -35,4 +35,17 @@ The following are sample quiz questions:
 **10.** What command opens a file named "config.txt" in the nano text editor?  
 **Answer:** ____________________
 
- 
+
+
+ Here are the correct answers in order:
+
+1. `pwd`
+2. `ls`
+3. `cd Documents`
+4. `mkdir Projects`
+5. `cd ..`
+6. `rm temp.txt`
+7. `mv old.txt new.txt`
+8. `cat notes.txt`
+9. `clear`
+10. `nano config.txt`
