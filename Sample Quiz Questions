@@ -49,3 +49,183 @@ The following are sample quiz questions:
 8. `cat notes.txt`
 9. `clear`
 10. `nano config.txt`
+
+
+
+NEXT QUIZ:
+
+ Here is your new **10-question quiz** on simple terminal commands.
+
+We’ll go **one at a time**.
+
+---
+
+**Question 1 of 10:**
+
+What command makes a file named `script.sh` executable (so you can run it)? 
+
+**Answer:** ________chmod____________
+
+The command is chmod, but you need the +x flag to add execute permission.
+
+Correct answer: chmod +x script.sh
+
+The +x means "add the execute bit."
+
+
+ Close, but incomplete.
+
+The command is `chmod`, but you need the `+x` flag to add execute permission.
+
+**Correct answer:** `chmod +x script.sh`
+
+The `+x` means "add the execute bit."
+
+---
+
+**Question 2 of 10:**
+
+What command would you type to run an executable script named `myscript` that is located in your current directory?
+
+**Answer:** ________run____________
+
+(Note: Just typing `myscript` usually won't work.)
+
+
+Not quite. run is not a standard command in the shell.
+
+To run a script that is in your current directory, 
+you must explicitly tell the shell to look there using:
+
+./myscript
+
+The ./ means "right here in this directory." 
+Without it, the shell searches your PATH (system directories like /bin, /usr/bin), 
+not your current folder.
+
+(Alternative: You could also type bash myscript or zsh myscript, 
+which runs it without needing chmod +x, but the specific answer for an executable script is ./myscript.)
+
+
+
+ Not quite. `run` is not a standard command in the shell.
+
+To run a script that is in your **current directory**, you must explicitly tell the shell to look there using:
+
+**`./myscript`**
+
+The `./` means "right here in this directory." Without it, the shell searches your `PATH` (system directories like `/bin`, `/usr/bin`), not your current folder.
+
+(Alternative: You could also type `bash myscript` or `zsh myscript`, which runs it without needing `chmod +x`, but the specific answer for an executable script is `./myscript`.)
+
+---
+
+**Question 3 of 10:**
+
+What command shows your command history (a numbered list of commands you recently typed)?
+
+**Answer:** ________history____________
+
+  **Correct!**  
+`history` shows the numbered list of your recent commands.
+
+---
+
+**Question 4 of 10:**
+
+What command creates a new **empty file** named `empty.txt`?
+
+**Answer:** _______touch empty.txt_____________    
+
+**Correct!**  
+`touch empty.txt` creates an empty file (or updates its timestamp if it already exists).
+
+---
+
+**Question 5 of 10:**
+
+What command copies a file named `source.txt` to a new file named `backup.txt` in the **same directory**?
+
+**Answer:** ________cp source.txt backup.txt____________
+
+Correct answer: cp source.txt backup.txt
+
+cp creates a duplicate; mv relocates the original.
+
+
+
+**Question 6 of 10:**
+
+What command shows the last 5 commands from your history?
+
+Answer: _______history -5_____________
+
+         **Close, but not quite.**  
+
+The flag `-5` is not standard. To see the last 5 commands, use:
+
+**`history | tail -5`**
+
+Or simply: **`history 5`** (works in both Bash and Zsh)
+
+The `| tail -5` pipes the full history to the `tail` command, which grabs only the last 5 lines.
+
+---
+
+**Question 7 of 10:**
+
+What command shows the **manual page** (help documentation) for the `ls` command?
+
+**Answer:** ________man ls____________
+
+            **Correct!**  
+
+`man ls` opens the manual page for the `ls` command. Press `q` to quit the manual viewer.
+
+---
+
+**Question 8 of 10:**
+
+What command shows **who you are currently logged in as** (your username)?
+
+**Answer:** ________pwd____________
+
+                **Not correct.**  
+
+`pwd` shows your **current directory**, not who you are.
+
+**Correct answer:** `whoami`
+
+`whoami` prints your username.
+
+---
+
+**Question 9 of 10:**
+
+What command creates a new directory named `nested` inside a directory named `parent`, 
+even if `parent` doesn't exist yet?
+
+**Answer:** _______not sure_____________
+
+                 **The command is:** `mkdir -p parent/nested`
+
+The `-p` (parents) flag creates `parent` first, then `nested` inside it, 
+without error even if `parent` didn't exist.
+
+---
+
+**Question 10 of 10:**
+
+What command shows the **current date and time**?
+
+**Answer:** _________date___________
+
+Correct
+
+Review needed:
+
+chmod requires +x to make executable
+Run local scripts with ./ not run
+cp vs mv: copy vs move/rename
+whoami vs pwd: username vs directory
+mkdir -p: creates parent directories as needed
