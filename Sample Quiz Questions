@@ -229,3 +229,319 @@ Run local scripts with ./ not run
 cp vs mv: copy vs move/rename
 whoami vs pwd: username vs directory
 mkdir -p: creates parent directories as needed
+
+
+NEXT QUIZ
+
+Question 1 of 10:
+
+You have a script named run.sh in your current directory. It is already executable. 
+What command do you type to run it?
+
+./run.sh
+
+Question 2 of 10:
+
+What command creates a new directory named data inside a directory named 2024, 
+even if the 2024 directory doesn't exist yet?
+
+mkdir -p 2024/data
+
+The -p (parents) flag tells mkdir to create 2024 first, 
+then data inside it, without complaining if 2024 already exists or doesn't exist.
+
+Question 3 of 10:
+
+What command shows the first 10 lines of a file named large.txt?
+
+head -n 10 large.txt
+
+Or simply: head large.txt (which defaults to the first 10 lines)
+
+The -n flag specifies the number of lines. 
+Some systems accept head -10 large.txt, but -n 10 is the portable standard.
+
+Question 4 of 10:
+
+What command shows the last 10 lines of a file named log.txt?
+
+tail -n 10 log.txt shows the last 10 lines. 
+(Or simply tail log.txt for the default 10 lines.)
+
+Question 5 of 10:
+
+What command searches for the word "error" inside a file named system.log?
+
+find searches for files by name in the filesystem. It does not look inside file contents.
+
+Correct answer: grep "error" system.log
+
+grep (global regular expression print) searches for text patterns inside files.
+
+Question 6 of 10:
+
+What command shows how much disk space is used by your home directory?
+
+**Correct answer:** `du -sh ~`
+du = disk usage
+-s = summarize (just the total, not every subfolder)
+-h = human-readable (shows 'K', 'M', 'G' instead of raw bytes)
+~ = your home directory
+Alternative: du -sh /Users/yourusername (absolute path).
+
+here we got as a result: Operation Not Permitted errors
+
+You ran the command from Question 6 (du -sh ~)—good initiative, but those errors are normal on macOS.
+
+Why you're seeing "Operation not permitted":
+macOS has System Integrity Protection (SIP) and privacy controls 
+that prevent even you from accessing certain system folders 
+(Photos Library, Mail, Messages, etc.) without explicit permission. 
+This is security theater by Apple.
+
+Despite the errors, the command did work—it just skipped the protected folders 
+and reported the total for the accessible parts. If you want to silence the errors:
+
+du -sh ~ 2>/dev/null
+
+Question 7 of 10:
+
+What command shows all running processes on your system?
+
+Correct answer: ps
+
+ps = process status (shows your current shell's processes)
+ps aux = shows all processes from all users (the full system view)
+top = interactive, real-time process viewer (like Activity Monitor in terminal)
+The basic command is ps.
+
+Question 8 of 10:
+
+What command shows the current user (your username)?
+
+whoami
+
+Question 9 of 10:
+
+What command creates an alias (shortcut) so that typing ll will run ls -la?
+
+alias ll="ls -la 
+This creates a shortcut ll that expands to ls -la (long listing with hidden files) whenever you type it.
+
+Note: This alias only lasts for the current session. To make it permanent, you add it to ~/.zshrc.
+
+Question 10 of 10:
+
+What command logs you out of the current terminal session?
+
+clear only clears the screen. It does not log you out.
+
+Correct answer: exit
+
+(Alternative: logout or press Ctrl+D)
+
+
+
+
+AND ANOTHER QUIZ
+
+ Question 1 of 10:
+
+What command shows you where you are (the full path of your current folder)?
+
+pwd
+
+**Question 2 of 10:**
+
+What command **lists** the files and folders in your current location?
+
+ls
+
+ **Question 3 of 10:**
+
+   What command **changes** your location to your **home directory**?
+
+  cd ~
+
+ **Question 4 of 10:**
+
+      What command **moves up one level** (to the parent folder)?
+
+cd ..
+
+**Question 5 of 10:**
+
+        What command **creates** a new folder named "test"?
+
+       mkdir test
+
+ **Question 6 of 10:**
+
+           What command **deletes** a file named "junk.txt"?
+
+**Correct answer:** `rm junk.txt`
+
+            `rm` removes files. `rmdir` only removes empty folders.
+
+            ---
+
+            **Question 7 of 10:**
+
+            What command **opens** a file named "notes.txt" in the nano editor?
+
+ `nano notes.txt` opens it for editing.
+
+                ---
+
+                **Question 8 of 10:**
+
+                What command **shows** the contents of a file named "data.txt" without opening an editor?
+
+`cat data.txt` displays the contents.
+
+   **Question 9 of 10:**
+
+                   What command **clears** the terminal screen?
+
+                  `clear` wipes the screen clean.
+
+**Question 10 of 10:**
+
+                      What command **copies** a file named "original.txt" to a new file named "backup.txt"?
+
+`mv` moves or renames—it does **not** copy. After `mv original.txt backup.txt`, the file "original.txt" would **no longer exist**.
+
+                     **Correct answer:** `cp original.txt backup.txt`
+
+                     `cp` creates a duplicate; `mv` relocates the original.
+
+
+**Pattern identified:** You confuse **file removal** (`rm` vs `rmdir`) 
+and **file copying** (`cp` vs `mv`).
+
+                     **Critical distinction:**
+                     - `rm` = delete file  
+                     - `rmdir` = delete empty folder  
+                     - `cp` = copy (duplicate)  
+                     - `mv` = move/rename (relocate)
+
+                     Drill these four commands until the distinction is automatic. Do not proceed to new material until you can recite: "Remove file, remove directory, copy file, move file."
+
+                     Are you prepared to drill these distinctions....
+
+
+
+Note: files and folders (should be called directories)
+
+  **File** = A document. It contains data (text, code, images, etc.).  
+**Directory** = A container that holds files and other directories.  
+**Folder** = The same thing as a directory. "Folder" is the GUI/graphical term (from the desktop metaphor). "Directory" is the technical terminal term. They are identical.
+
+**In the terminal:**
+- We say **directory**, not folder.
+- A directory is actually a special type of **file** that contains a list of other files.
+- Everything in Unix is a file—including directories.
+
+**Why this matters for your errors:**
+- `rm` removes **files** (documents).
+- `rmdir` removes **empty directories** (empty folders/containers).
+- `mkdir` creates **directories** (containers).
+- `cp` copies **files** (duplicates documents).
+- `mv` moves **files or directories** (relocates them).
+
+**The confusion:**
+You keep trying to use `rmdir` on files (like `junk.txt`). 
+That fails because `rmdir` only works on empty directories, not documents. 
+Use `rm` for files, `rmdir` for empty folders.
+
+**Drill this:**
+
+- File = document (use `rm`, `cp`, `mv`, `cat`)
+- Directory/Folder = container (use `mkdir`, `rmdir`, `cd`, `ls`)
+
+Do not use "folder" when speaking to other terminal users. Say "directory." 
+It marks you as competent.
+
+Now drill: `rm` vs `rmdir` vs `cp` vs `mv` until you cannot mistake them.
+
+Note: the command 'ls' lists everything in your current location: 
+files, directories, symlinks, and other objects.
+
+However, by default, ls does not clearly label which is which unless your terminal uses colors 
+(blue for directories, white for files).
+
+To see the difference explicitly, use:
+
+
+ 
+ls -l
+Directories will start with a d 
+
+
+ 
+Files will start with a - 
+
+
+or 
+
+ls -F
+Directories will show a trailing / 
+
+
+Copy Code
+Projects/  notes.txt
+Critical point: ls shows you the names of everything, 
+but you must use flags (-l or -F) to know which names represent containers (directories) 
+versus documents (files).
+
+
+ 
+
+In `ls -l`, the first character tells you the type:
+
+- **`d`** = directory (folder/container)  
+- **`-`** = regular file (document)  
+- **`l`** = symbolic link (shortcut)
+
+So when you see:
+```
+drwxr-xr-x  2 user  staff  64 Jan  1 12:00 Projects
+```
+That leading **`d`** means "Projects" is a **directory** (a container).
+
+When you see:
+```
+-rw-r--r--  1 user  staff  128 Jan  1 12:00 notes.txt
+```
+That leading **`-`** means "notes.txt" is a **regular file** (a document).
+
+The other letters (`rwxr-xr-x`) are **permissions** (who can read, write, or execute), 
+which you can ignore for now. Just focus on that first character: **`d`** vs **`-`**.
+
+Now you understand why your earlier mistakes happened.
+
+When you tried rmdir junk.txt and it failed, it was because:
+
+junk.txt has a - at the start (it's a file)
+rmdir only works on items with a d at the start (directories)
+You were trying to delete a document with a "delete folder" command.
+
+Immediate drill:
+Run this in your terminal right now:
+
+
+ 
+cd ~/week0_test
+ls -l
+You will see:
+
+subdir starts with d (directory/container)
+file.txt starts with - (regular file)
+
+Now you know which command to use on each:
+
+rm file.txt (remove file)
+rmdir subdir (remove empty directory)
+Or if subdir has files inside:
+
+rm -r subdir (remove directory and everything inside)
