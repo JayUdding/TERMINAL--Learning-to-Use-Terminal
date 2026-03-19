@@ -1,0 +1,11 @@
+Check your user Library for space hogs:
+
+
+Copy Code
+du -sh ~/Library/* 2>/dev/null | sort -rh | head -10
+
+This lists your largest Library folders. Look for:
+
+Application Support (often 10-30 GB if you have Steam, Adobe, or games)
+Caches (should be smaller, 1-3 GB)
+Containers (Mac App Store app data)
