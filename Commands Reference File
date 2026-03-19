@@ -44,6 +44,105 @@ Home Directory is where the personal files live such as docs, downloads, apps, e
 If you press return, you’ll see another line with a % sign, 
 indicating that the previous line has been abandoned.
 
+
+SOME BASICS--FILES FOLDERS DIRECTORIES
+
+There are files and folders (the folders hold files and should be called directories) 
+So there are FILES and DIRECTORIES (folders)
+
+a FILE  = A document. It contains data (text, code, images, etc.).  
+a DIRECTORY  = A container that holds files and other directories.  
+
+(again:  Folder  = The same thing as a directory. 
+"Folder" is the GUI/graphical term (from the desktop metaphor). 
+"Directory" is the technical terminal term. They are identical.
+  
+- A directory is actually a special type of **file** that contains a list of other files.
+ 
+ 
+- `rm` removes **files** (documents).
+- `rmdir` removes **empty directories** (empty folders/containers).
+- `mkdir` creates **directories** (containers).
+- `cp` copies **files** (duplicates documents).
+- `mv` moves **files or directories** (relocates them).
+
+**The confusion:**
+You keep trying to use `rmdir` on files (like `junk.txt`). 
+That fails because `rmdir` only works on empty directories, not documents. 
+Use `rm` for files, `rmdir` for empty folders.
+
+**Drill this:**
+
+- File = document (use `rm`, `cp`, `mv`, `cat`)
+- Directory/Folder = container (use `mkdir`, `rmdir`, `cd`, `ls`)
+
+Do not use "folder" when speaking to other terminal users. Say "directory." 
+ 
+Now drill: `rm` vs `rmdir` vs `cp` vs `mv` until you cannot mistake them.
+
+Note: the command 'ls' lists everything in your current location: 
+files, directories, symlinks, and other objects.
+
+However, by default, ls does not clearly label which is which unless your terminal uses colors 
+(blue for directories, white for files).
+
+To see the difference explicitly, use: 
+ls -l
+
+
+Directories will start with a d 
+
+
+ 
+Files will start with a - 
+
+
+or 
+
+ls -F
+
+
+Directories will show a trailing / 
+  
+Critical point: ls shows you the names of everything, 
+but you must use flags (-l or -F) to know which names represent containers (directories) 
+versus documents (files).
+
+
+ 
+
+In `ls -l`, the first character tells you the type:
+
+- **`d`** = directory (folder/container)  
+- **`-`** = regular file (document)  
+- **`l`** = symbolic link (shortcut)
+
+So when you see:
+```
+drwxr-xr-x  2 user  staff  64 Jan  1 12:00 Projects
+```
+That leading **`d`** means "Projects" is a **directory** (a container).
+
+When you see:
+```
+-rw-r--r--  1 user  staff  128 Jan  1 12:00 notes.txt
+```
+That leading **`-`** means "notes.txt" is a **regular file** (a document).
+
+The other letters (`rwxr-xr-x`) are **permissions** (who can read, write, or execute), 
+which you can ignore for now. Just focus on that first character: **`d`** vs **`-`**.
+
+Commands to use on each:
+
+rm file.txt (remove file)
+rmdir subdir (remove empty directory)
+Or if subdir has files inside:
+
+rm -r subdir (remove directory and everything inside)
+
+
+
+
 LIST 
 
 ls -- list
