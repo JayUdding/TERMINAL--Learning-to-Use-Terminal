@@ -81,22 +81,24 @@ So chmod +x script.sh makes the file runnable
 
 mkdir --- make a new directory
 Example: mkdir test (make a new directory called test)
---then press pwd to see if it is there.
+--then press ls to see if it is there.
 NOTE: If you want to create a directory with a space in its name, 
 Surround the name with quotes. 
 Example: mkdir "My Projects"
 
-mkdir -p:
+mkdir -p test
+
+(the -p is called a flag)
 
 -p = "parents"
-Creates the full path even if parent directories don't exist i.e. Creates intermediate directories if missing
-Doesn't error if directory already exists
-Without -p: mkdir ~/.local/bin fails if ~/.local doesn't exist first.
+Creates the full path even if parent directories don't exist i.e. 
+Creates intermediate directories if missing
 
+CD CHANGE DIRECTORY
  
 cd  go to another directory, moves to a different folder
 
-cd .. go up one directory to the parent directory
+cd .. go up one directory in the direction of the parent directory
 
 cd ~ go to the home directory
 
