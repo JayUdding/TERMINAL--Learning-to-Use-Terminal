@@ -1,14 +1,17 @@
 COMMANDS FOR TERMINAL 
-
-2 READ, REVIEW, REMEMBER, RETEST  
+   
+READ, REVIEW, REMEMBER, RETEST  
 
 RINSE, REPEAT...
 
->>>...AND ABOVE ALL... PRACTICE WITH THE ACTUAL TERMINAL...<<<
+>>>... ABOVE ALL... PRACTICE IN THE ACTUAL TERMINAL...<<<
 
 On macOS we work with Zsh Shell (not Bash Shell)
 
-Cursor is where the command line starts after the prompt
+Cursor 
+Command line 
+Prompt
+
 We see user name followed by computername and possibly the directory we are in (ie. Desktop), 
 followed by % sign. 
 
@@ -30,8 +33,10 @@ Terminal opens with username@computername (hostname)
 % is the prompt symbol -- means ready for input as a normal non-root user
 # is also a prompt symbol and means ready for input as a root user (admin)
 
-&& while we are at it: the &&  means "run the next command only if the previous one succeeded." 
-It chains commands together. If cd /tmp fails (e.g., directory doesn't exist), it stops and doesn't run pwd.
+&&   means "run the next command only if the previous one succeeded." 
+It chains commands together. 
+Example: cd /tmp && pwd
+If cd /tmp fails (e.g., directory doesn't exist), it stops and doesn't run pwd.
 
 Terminal default is in the Home Directory; that where it opens up by default
 Home Directory is where the personal files live such as docs, downloads, apps, etc.
