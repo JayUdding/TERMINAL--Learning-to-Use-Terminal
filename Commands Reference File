@@ -163,6 +163,42 @@ ls -lh (long list as ls -l but in more human readable format)
  ls -1 (that's a one, not the letter l) 
 prints each file or directory name on its own line, sorted alphabetically by default.
 
+ls / (this is going to the root of the file system; not my folders but the computer's file system)
+ls /tmp
+
+**`/tmp` is not in your home folder. It lives at the root of your computer.**
+
+Here is what happens:
+
+1. **`/tmp`** starts with `/` — this means it is an **absolute path** 
+from the **root** of the filesystem (the very top of your computer's hard drive), 
+not inside your home directory.
+
+2. When you type `ls` in your home directory (`~`), 
+you only see **your** files and folders: 
+`Applications`, `Documents`, `Downloads`, `Projects`, etc.
+
+3. **`/tmp`** is a **system directory** (like `Applications` or `Library`, 
+but at the root level). It contains temporary files used by the operating system and programs.
+
+**Where it lives:**
+- Your home: `/Users/ANDROID` (where you see `Desktop`, `Documents`, etc.)
+- System root: `/` (where you see `tmp`, `usr`, `bin`, `etc`)
+
+**To see `/tmp` listed, you would need to run: ls /
+ 
+(This lists the root directory, not your home.)
+
+**What `/tmp` is:**
+A "scratch pad" folder where programs dump temporary files. 
+macOS clears it automatically on restart.
+
+ 
+
+
+
+
+
 date -- shows current date and time
 
 exit -- saves the current version and no longer allows input (then it should be closed)
