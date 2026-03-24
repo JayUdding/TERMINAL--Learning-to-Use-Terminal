@@ -160,8 +160,10 @@ and prints the entries in multiple columns when the output fits the screen.
 
 ls -lh (long list as ls -l but in more human readable format)
 
- ls -1 (that's a one, not the letter l) 
+ 
+ls -1 (that's a one, not the letter l) 
 prints each file or directory name on its own line, sorted alphabetically by default.
+Tip: -1 (the number one) forces one entry per line – easier to read than the default multi‑column view.
 
 ls / (this is going to the root of the file system; not my folders but the computer's file system)
 ls /tmp
@@ -228,6 +230,7 @@ mkdir -p test
 -p = "parents"
 Creates the full path even if parent directories don't exist i.e. 
 Creates intermediate directories if missing
+Tip: -p means make parents as needed; you can run the command again and it won’t error if the folder already exists.
 
 CD CHANGE DIRECTORY
  
@@ -327,8 +330,11 @@ and creating the file if it doesn’t exist
 date +"%F %T" >> ~/run.log
 %F → YYYY‑MM‑DD
 %T → HH:MM:SS
->> appends (creates the file if needed).
 
+
+>> appends (creates the file if needed).
+Example: Append timestamp to a log
+date +"%F %T" >> ~/Documents/projects/2026/run.log
 
 
 !! runs last command
