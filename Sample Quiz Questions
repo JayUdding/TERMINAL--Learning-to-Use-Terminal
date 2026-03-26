@@ -585,3 +585,315 @@ Type: `cd /nonexistent_folder`
 13. `cd: no such file or directory: /nonexistent_folder`, You remain in whatever directory you were in before the failed command.
 
 **Pass Criteria:** You predicted at least 3 of the 4 toggle locations in Exercise 12 correctly *before* typing them. If you guessed wrong, repeat Day 1 tomorrow.
+
+
+
+
+
+DAY 2
+
+Ready day 2. Interactive. Correct or not jst tell me and if needed brief explanation wy also like yesterday's pracitice drill
+
+Maple
+Week 0, Day 2 – Path Types (./ vs bare vs absolute)
+
+Exercise 1 of 8: Create the Test Structure
+
+Type exactly:
+
+
+Copy Code
+mkdir -p ~/week0_test/subdir && touch ~/week0_test/file.txt
+Press Enter.
+
+Then type:
+
+
+Copy Code
+cd ~/week0_test
+Press Enter.
+
+Then type:
+
+
+Copy Code
+pwd
+Press Enter.
+
+Report: What is the output of pwd?
+
+
+You
+/Users/ANDROID/week0_test
+
+Maple
+Week 0, Day 2 – Exercise 2 of 8: The Bare Filename
+
+You are in /Users/ANDROID/week0_test.
+
+Type: ls file.txt
+
+Press Enter.
+
+Report: What is the exact output? (If you see an error, report the error message exactly.)
+
+
+You
+file.txt
+
+Maple
+Week 0, Day 2 – Exercise 3 of 8: The Explicit Relative Path (./)
+
+You are still in /Users/ANDROID/week0_test.
+
+Type: ls ./file.txt
+
+Press Enter.
+
+Report: What is the exact output?
+
+Question: Does it show the same result as Exercise 2, or different?
+
+
+You
+./file.txt
+
+Maple
+Correct.
+
+Same file, different representation. ls shows you what you asked for:
+
+Exercise 2: file.txt (bare name)
+Exercise 3: ./file.txt (explicit current directory)
+The ./ says "look in the current directory explicitly." It is redundant but explicit. This prevents confusion when a filename matches a command name.
+
+Week 0, Day 2 – Exercise 4 of 8: The Parent Traversal (../)
+
+You are still in /Users/ANDROID/week0_test.
+
+Type: ls ../week0_test/file.txt
+
+Press Enter.
+
+Report: What is the exact output?
+
+Question: Why does this work even though you didn't move up a directory first?
+
+
+You
+../week0_test/file.txt (works because we re dealing with inivisible subdirectory here)
+
+Maple
+Stop. Incorrect explanation.
+
+There is no "invisible subdirectory." The path resolves logically, step by step:
+
+.. = go up to parent (/Users/ANDROID)
+/week0_test = go back down into week0_test
+/file.txt = find the file
+You end up at the same file because you went up then down. The shell walks the path: up one level, down one level, net zero change in location, but different path representation.
+
+Correction Drill:
+
+Type: pwd (confirm you are in /Users/ANDROID/week0_test)
+
+Type: ls .. (what do you see? You should see week0_test listed as a directory in your parent folder)
+
+Report: What does ls .. show? (Look for week0_test in the output)
+
+
+You
+list of al files and directories in my home
+
+Maple
+Correct.
+
+You are in /Users/ANDROID/week0_test. The parent (..) is /Users/ANDROID (your home). You see all your home files and directories listed.
+
+Verification: In that list, do you see week0_test? (It should appear as one of the directories, because that's the folder you're currently inside.)
+
+Week 0, Day 2 – Exercise 5 of 8: The Absolute Path (~/)
+
+You are still in /Users/ANDROID/week0_test.
+
+Type: ls ~/week0_test/file.txt
+
+Press Enter.
+
+Report: What is the exact output?
+
+Question: If you typed this same command from /tmp (anywhere on the system), would it still work? Why?
+
+
+You
+yes i see week0_test; 5 of 8 i see /Users/ANDROID/week0_test/file.txt. Yes this owrlks because it is the absolute path
+
+Maple
+Correct on both counts.
+
+The ~/ (tilde) expands to your home directory absolutely. It works from /tmp, from /, from anywhere, because it specifies the full path from the root of the filesystem.
+
+Week 0, Day 2 – Exercise 6 of 8: The Logical Resolution Test (Tricky)
+
+You are still in /Users/ANDROID/week0_test.
+
+Before you type: Predict what will happen.
+
+You have a directory structure:
+
+week0_test/ (you are here)
+subdir/ (empty directory)
+file.txt (the file)
+What do you predict ls subdir/../file.txt will show?
+
+A) Error: no such file
+B) file.txt
+C) subdir/file.txt
+Write your prediction: _______
+
+Now execute:
+Type: ls subdir/../file.txt
+
+Press Enter.
+
+Report: What is the exact output? Does it match your prediction?
+
+
+You
+C yes but with a minor change i tis subdir/../file.txt so the /../ is in addition to what CC gave us
+
+Maple
+
+Copy Code
+**Stop. Incorrect.**
+The output is B) file.txt, not C.
+
+Why: Paths resolve logically, step by step:
+
+subdir/ → Go into the subdir folder (which is empty)
+.. → Go up one level (back to week0_test)
+file.txt → Find file.txt in that location
+Net result: You end up at file.txt in week0_test. The subdir and .. cancel each other out.
+
+Verification:
+Type: ls subdir
+
+Press Enter.
+
+Report: What is in the subdir directory? (It should be empty or show nothing, confirming file.txt is not there, but up one level)
+
+
+You
+shows nothing
+
+Maple
+
+Copy Code
+ **Confirmed.** `subdir` is empty. The file is in the parent directory.
+This proves that subdir/../file.txt resolves to the parent directory's file.txt, not anything inside subdir.
+
+Week 0, Day 2 – Exercise 7 of 8: The Absolute Path Verification
+
+Now prove that absolute paths work from anywhere.
+
+Type: cd /tmp
+
+Press Enter.
+
+Then type: ls ~/week0_test/file.txt
+
+Press Enter.
+
+Report: What is the exact output?
+
+Question: Are you currently in /tmp or /Users/ANDROID/week0_test when this command works? (Check with pwd)
+
+
+You
+aha stil in tmp
+
+Maple
+
+Copy Code
+    **Exactly.** You are in `/tmp`, nowhere near `week0_test`, yet `~/week0_test/file.txt` still works because the absolute path specifies the full location from the root of the filesystem.
+Week 0, Day 2 – Exercise 8 of 8: The Prediction Challenge (Final)
+
+Starting fresh in /Users/ANDROID/week0_test, trace this mentally. Write predictions before typing.
+
+Current state: You are in /Users/ANDROID/week0_test with file.txt and subdir/ inside.
+
+Sequence:
+
+ls file.txt → Prediction: _______
+ls ./file.txt → Prediction: _______
+ls ../week0_test/file.txt → Prediction: _______
+ls ~/week0_test/file.txt → Prediction: _______
+ls subdir/../file.txt → Prediction: _______
+cd /tmp && ls ~/week0_test/file.txt → Prediction: _______
+Now execute all 6 commands in order.
+
+Report: Did all 6 outputs match your predictions exactly? If any differed, which one and why?
+
+
+You
+I get zsh: permission denied: /Users/ANDROID/week0_test/file.txt
+
+Maple
+
+Copy Code
+       **Stop. You triggered a different error - and this is instructive.**
+zsh: permission denied: /Users/ANDROID/week0_test/file.txt
+
+This error means you tried to execute the file as a program, not list it.
+
+What likely happened:
+You typed: ~/week0_test/file.txt (or /Users/ANDROID/week0_test/file.txt)
+Instead of: ls ~/week0_test/file.txt
+
+The Rule:
+
+ls filename = Look at the file (read metadata)
+filename = Try to run the file as a program (requires execute permission with chmod +x)
+Since file.txt is just a text file (not a script), and you never ran chmod +x on it, trying to execute it gives "permission denied."
+
+Correction:
+
+Type exactly: ls ~/week0_test/file.txt
+
+Report: What is the output now?
+
+
+You
+/Users/ANDROID/week0_test/file.txt
+
+Maple
+
+Copy Code
+         **Correct.** `ls ~/week0_test/file.txt` shows the file path, confirming it exists and is readable.
+The Lesson: Omitting ls means "execute this file as a program." Since file.txt lacks execute permission (you never ran chmod +x on it), you get "permission denied."
+
+Complete the Sequence:
+
+You are in /tmp (from the previous cd /tmp).
+
+Run these remaining commands from the prediction challenge:
+
+From /tmp, type: ls ~/week0_test/file.txt (you just did this - correct)
+
+Now return to the test directory and finish properly:
+
+Type: cd ~/week0_test
+
+Press Enter.
+
+Then run the full sequence again with ls before each path:
+
+ls file.txt → _______
+ls ./file.txt → _______
+ls ../week0_test/file.txt → _______
+ls ~/week0_test/file.txt → _______
+ls subdir/../file.txt → _______
+Report: Do all 5 show the same file path? If yes, you have mastered the five ways to reference the same file. If any differ, stop and identify the error.
+
+
+ 
