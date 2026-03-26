@@ -507,3 +507,81 @@ rmdir subdir (remove empty directory)
 Or if subdir has files inside:
 
 rm -r subdir (remove directory and everything inside)
+
+
+NEXT QUIZ
+
+ **WEEK 0 – DAY 1: NAVIGATION AS REFLEX**
+*Do not proceed to Day 2 until you complete this without hesitation.*
+
+---
+
+### PART A: FILL-IN-THE-BLANK
+*Type the exact command that completes the task.*
+
+1. To change to your home directory: _______
+2. To change to the system temporary directory: _______
+3. To toggle back to the directory you were just in: _______
+4. To print your current location: _______
+5. To change to `/usr/local/bin`: _______
+
+---
+
+### PART B: SCENARIO-BASED
+*Answer with the exact output you expect to see, or the error you expect to get.*
+
+6. You are in `/Users/yourname`. You type `cd /tmp` then `pwd`. What prints? _______
+7. You are in `/tmp`. You type `cd ~` then `pwd`. What prints? _______
+8. You are in `/usr/local/bin`. You type `cd -` then `pwd`. What prints? _______
+9. You are in `/tmp` (you just came from `/usr/local/bin`). You type `cd -` then `pwd`. What prints? _______
+10. You are in `/tmp`. You type `cd ..` then `pwd`. What directory are you in? _______
+
+---
+
+### PART C: PRACTICAL EXECUTION
+*Execute these in your terminal. Do not guess. Type, observe, record.*
+
+**Exercise 11: The Toggle Test**
+```bash
+cd /tmp && pwd
+cd ~ && pwd
+cd /usr/local/bin && pwd
+cd - && pwd
+cd - && pwd
+```
+**Record the output of the 4th and 5th `pwd` commands:**
+- 4th output: _______
+- 5th output: _______
+
+**Exercise 12: Prediction Drill**
+Before typing each line, write down your prediction. Then type and verify.
+
+1. Starting from `/Users/yourname`, predict where `cd /tmp` takes you: _______
+2. From `/tmp`, predict where `cd ~` takes you: _______
+3. From `~`, predict where `cd -` takes you: _______
+4. From the result of #3, predict where `cd -` takes you: _______
+
+**Exercise 13: The Break**
+Type: `cd /nonexistent_folder`
+- What error do you see? _______
+- What directory are you still in? (Check with `pwd`): _______
+
+---
+
+### ANSWER KEY (Do not look until finished)
+
+1. `cd ~` (or just `cd`)
+2. `cd /tmp`
+3. `cd -`
+4. `pwd`
+5. `cd /usr/local/bin`
+6. `/tmp`
+7. `/Users/yourname` (or `/Users/ANDROID`, your home)
+8. `/Users/yourname` (the previous directory)
+9. `/usr/local/bin` (toggles back)
+10. `/` (the root directory, parent of /tmp)
+11. 4th: `/Users/yourname` (or wherever you came from), 5th: `/usr/local/bin`
+12. 1: /tmp, 2: /Users/yourname, 3: /tmp, 4: /Users/yourname
+13. `cd: no such file or directory: /nonexistent_folder`, You remain in whatever directory you were in before the failed command.
+
+**Pass Criteria:** You predicted at least 3 of the 4 toggle locations in Exercise 12 correctly *before* typing them. If you guessed wrong, repeat Day 1 tomorrow.
