@@ -238,11 +238,15 @@ cd  go to another directory, moves to a different folder
 
 cd .. go up one directory in the direction of the parent directory
 
-cd ~ go to the home directory
+cd ~ go to the home directory // home navigation
 
 cd ./ - Move to the current directory (refresh)
 
 cd - go back to the previous working directory (like a back button)
+The Rule:
+cd - is a toggle switch between two locations only: where you are now, and where you were immediately before.
+
+
 
 When you type cd Documents and press Enter, you'll move from your current directory 
 to the Documents directory. The cd command stands for "change directory," 
