@@ -1,0 +1,50 @@
+ **Quiz 1 Review:**
+
+- **Q1:** List files/directories in current directory → `ls`
+
+- **Q2:** Display full path of current working directory → `pwd`
+
+- **Q3:** Create new directory named "projects" → `mkdir projects`
+
+- **Q4:** Change to parent directory → `cd ..`
+
+- **Q5:** Delete file "data.tmp" → `rm data.tmp`
+
+- **Q6:** Copy "report.txt" to "report_backup.txt" → `cp report.txt report_backup.txt`
+
+- **Q7:** Rename "notes.txt" to "notes_old.txt" → `mv notes.txt notes_old.txt`
+
+- **Q8:** Display contents of "log.txt" → `cat log.txt`
+
+- **Q9:** Change to home directory → `cd ~`
+
+- **Q10:** Create empty file "placeholder.txt" → `touch placeholder.txt`
+
+ 
+
+ **Quiz 2 Review:**
+
+- **Q1:** Remove directory "archive" recursively → `rm -r archive` (or `rm -rf archive`) — 
+**Correction:** You provided only the flags `rm -rf` without the target operand, which is incomplete and dangerous.
+
+- **Q2:** Display last 20 lines of "server.log" → `tail -n 20 server.log` (or `tail -20 server.log`) — 
+**Correction:** You wrote `tail 20 server.log`, treating "20" as a filename rather than an option argument.
+
+- **Q3:** Create nested directory structure "2026/projects/march" → `mkdir -p "2026/projects/march"` — Correct.
+
+- **Q4:** Move "temp.txt" to subdirectory "backup" → `mv temp.txt backup/` — 
+**Correction:** You used `/.backup` (absolute path to root) instead of `backup/` (relative path).
+
+- **Q5:** Display first 5 lines of "data.csv" → `head -5 data.csv` — Correct.
+
+- **Q6:** List all files (including hidden) in long format with human-readable sizes → `ls -alh` — 
+**Correction:** You omitted the `-h` flag; `ls -al` shows raw byte counts only.
+
+- **Q7:** Search for "failed" in "system.log" → `grep "failed" system.log` — 
+**Correction:** You prefixed with `*` (`grep *failed`), causing shell glob expansion instead of pattern matching.
+
+- **Q8:** Display manual page for chmod → `man chmod` — Correct.
+
+- **Q9:** Display current username → `whoami` — Correct.
+
+- **Q10:** Clear terminal screen → `clear` — Correct.
