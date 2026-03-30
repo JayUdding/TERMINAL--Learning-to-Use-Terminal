@@ -748,6 +748,34 @@ NOTE: The `cd -` repetition is essential— need to know where you are without t
 
 Day 2: Path Types (./ vs bare vs absolute)
 
+TUTORIAL:
+
+Path Overview: Absolute vs. Relative
+
+/ alone means the filesystem root. Everything starts here. 
+/filename means "at the root, find filename." This is absolute.
+
+No leading slash means "start from where I am now." 
+filename or dirname/ means "in my current directory, find this." This is relative.
+
+./ explicitly means current directory. 
+./filename equals filename but clarifies you mean "here, not elsewhere."
+
+../ means parent directory (up one level).
+
+~/ means your home directory (absolute shortcut).
+
+/.name vs ./name: The first looks for a hidden file/dir at the filesystem root. 
+The second looks in your current directory. Your error used the root location when you meant the relative subdirectory.
+
+The Rule: If it starts with /, you are specifying a location from the root of the entire system, regardless of where you currently stand. 
+If it lacks /, you are specifying a location relative to your current working directory.
+
+
+
+
+
+
 mkdir -p ~/week0_test/subdir && touch ~/week0_test/file.txt
 cd ~/week0_test
 ls file.txt
