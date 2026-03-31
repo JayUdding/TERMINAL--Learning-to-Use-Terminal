@@ -107,3 +107,39 @@ The slash must lead the name without space to specify the root location.
 What command moves a file named "backup.tar" from the root directory `/` into your current working directory 
 (use relative path symbol for current directory)? 
 → `mv /backup.tar ./` — Correct.
+
+
+Quiz 4
+
+ 
+
+**Quiz 4 Review: Path Discrimination (Advanced)**
+
+- **Q1:** Copy "notes.txt" to parent directory → `cp notes.txt ..` — Correct.
+- **Q2:** Move "system.log" from root to current directory → `mv /system.log ./` — Correct.
+
+- **Q3:** Create directory "config" inside home using tilde → `mkdir ~/config` — 
+**Correction:** You used `mkdir ~config`. 
+Without the slash, the shell performs username expansion (looking for user "config") rather than constructing a path. 
+The slash is mandatory to separate the home directory reference from the subdirectory name.
+
+!
+
+- **Q4:** List contents of "/var/log" → `ls /var/log` — Correct.
+
+- **Q5:** Move "data.csv" from parent directory to current → `mv ../data.csv ./` — 
+**Correction:** You typed `data.cvs` (transposed letters). The command failed because the filename did not exist. 
+Precision in characters is non-negotiable.
+
+- **Q6:** Create directory "backups" at root → `mkdir /backups` — Correct.
+- **Q7:** Copy "app.conf" from "/etc" to "./settings" → `cp /etc/app.conf ./settings` — Correct.
+- **Q8:** Change to parent of parent directory → `cd ../../` — Correct.
+- **Q9:** Delete "temp.txt" in home directory using tilde → `rm ~/temp.txt` — Correct.
+- **Q10:** List contents of "projects" inside home using tilde → `ls ~/projects` — Correct.
+
+**Persistent Issues:** Tilde syntax precision (slash placement) and character-level accuracy in filenames. 
+These errors cause command failure or unintended user lookups.
+
+*"Practice yourself, for heaven's sake, in little things; and thence proceed to greater."* — Epictetus
+
+
