@@ -232,6 +232,13 @@ Creates the full path even if parent directories don't exist i.e.
 Creates intermediate directories if missing
 Tip: -p means make parents as needed; you can run the command again and it won’t error if the folder already exists.
 
+Create a directory inside the home directory:  
+`mkdir ~/config`. 
+Important !! I  wrote `~config` which the shell interprets as the home directory of a user named "config" (user expansion)
+ not a directory named "config" inside your  home. 
+The slash after tilde is mandatory to separate the home directory reference from the subdirectory name.
+
+
 CD CHANGE DIRECTORY
  
 cd  go to another directory, moves to a different folder
