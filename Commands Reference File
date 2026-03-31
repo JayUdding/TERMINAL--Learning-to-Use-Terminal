@@ -246,6 +246,9 @@ cd - go back to the previous working directory (like a back button)
 The Rule:
 cd - is a toggle switch between two locations only: where you are now, and where you were immediately before.
 
+Going up more than one level i.e.  two levels up to the grandparent level:
+ ls ../..` or `ls ../../`. You chain parent directory references: `..` is one level 
+`../..` is two levels. `~` goes to home directory, not root (root is `/`).
 
 
 When you type cd Documents and press Enter, you'll move from your current directory 
