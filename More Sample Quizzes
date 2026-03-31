@@ -24,6 +24,7 @@
 
  **Quiz 2 Review:**
 
+
 - **Q1:** Remove directory "archive" recursively → `rm -r archive` (or `rm -rf archive`) — 
 **Correction:** You provided only the flags `rm -rf` without the target operand, which is incomplete and dangerous.
 
@@ -48,3 +49,61 @@
 - **Q9:** Display current username → `whoami` — Correct.
 
 - **Q10:** Clear terminal screen → `clear` — Correct.
+
+
+
+
+                
+ **Quiz 3 Review: Path Discrimination**
+
+- **Q1:** 
+What command moves a file named "data.txt" from your current directory into a subdirectory named "archive" 
+(which exists in your current location)? Use relative path syntax. 
+→ `mv data.txt archive` — Correct.
+
+- **Q2:** 
+What command moves a file named "config.json" to the root of the filesystem (the directory represented by a single `/`)? 
+Use absolute path syntax. 
+→ `mv config.json /` — Correct.
+
+- **Q3:** 
+What command copies a file named "readme.txt" from your current directory into the parent directory 
+(the directory immediately above your current location)? 
+→ `cp readme.txt ../` — Correct.
+
+- **Q4:** 
+What command lists the contents of a directory named "logs" located at the root of the filesystem 
+(not in your current directory)? 
+→ `ls /logs` — **Correction:** You used `cat /logs`. 
+The `cat` command displays file contents; `ls` lists directory contents. 
+Your absolute path syntax was correct but you applied the wrong operation.
+
+- **Q5:** 
+What command changes directory to your home directory using the tilde shortcut (absolute path)? 
+→ `cd ~` — Correct.
+
+- **Q6:** 
+What command copies a file named "settings.conf" from your current directory to the directory `/etc` (absolute path)? 
+→ `cp settings.conf /etc` — Correct.
+
+- **Q7:** 
+What command moves a file named "script.sh" from your current directory into a subdirectory named "bin" that is inside your current directory? 
+Use the explicit relative prefix (starts with `./`). 
+→ `mv script.sh ./bin` — Correct.
+
+- **Q8:** 
+What command lists the contents of the directory that is two levels above your current directory (grandparent)? 
+→ `ls ../..` (or `ls ../../`) 
+**Correction:** You stated `ls ..` (one level) and expressed confusion about two levels. 
+Chain the parent references: `../..` traverses two levels up. `~` represents home directory, not root (`/`).
+
+- **Q9:** 
+What command creates a new directory named "temp" at the root of the filesystem (requires absolute path)? 
+→ `mkdir /temp` — **Correction:** You used `mkdir temp /`. 
+This creates "temp" in your current directory and treats `/` as a separate operand. 
+The slash must lead the name without space to specify the root location.
+
+- **Q10:** 
+What command moves a file named "backup.tar" from the root directory `/` into your current working directory 
+(use relative path symbol for current directory)? 
+→ `mv /backup.tar ./` — Correct.
