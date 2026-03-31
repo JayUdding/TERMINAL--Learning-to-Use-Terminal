@@ -143,3 +143,38 @@ These errors cause command failure or unintended user lookups.
 *"Practice yourself, for heaven's sake, in little things; and thence proceed to greater."* — Epictetus
 
 
+
+
+               
+
+**Quiz 5 Review: Path Discrimination** (Continued)
+
+- **Q1:** Copy "report.pdf" to grandparent directory → `cp report.pdf ../..` — Correct.
+- **Q2:** Move "old_data.csv" from home to current → `mv ~/old_data.csv ./` — Correct.
+
+- **Q3:** Create "temp" inside parent directory → `mkdir ../temp` — 
+**Correction:** You used `mkdir temp ..` (creates "temp" here and attempts to recreate parent) or `mkdir temp ../` (same error). 
+The parent reference must prefix the new directory name: `../temp`.
+
+- **Q4:** List contents of root directory → `ls /` — Correct.
+- **Q5:** Copy "file.txt" to "archive" inside parent → `cp file.txt ../archive` — Correct.
+
+- **Q6:** Delete directory "obsolete" at root with contents → `rm -r /obsolete` — 
+**Correction:** You used `rmdir -r /obsolete`. `rmdir` removes only empty directories and rejects the `-r` flag. 
+Use `rm -r` for recursive deletion.
+
+- **Q7:** Change to "documents" inside home → `cd ~/documents` — Correct.
+- **Q8:** Move "secret.key" to root as "backup.key" → `mv secret.key /backup.key` — Correct.
+
+- **Q9:** Create "2026" inside "/logs" → `mkdir /logs/2026` — 
+**Correction:** You used `mkdir /logs 2026`, creating two separate directories: 
+"/logs" (error, already exists) and "2026" (in current directory, not inside /logs). 
+The path must be contiguous: `/logs/2026`.
+
+- **Q10:** List all files (including hidden) in long format, human-readable, for parent → `ls -ahl ../` — Correct.
+
+**Critical Patterns:**
+- Path construction requires contiguous slashes (`../temp`, `/logs/2026`), not separate arguments.
+- `rmdir` vs `rm -r` are different tools with different purposes; do not confuse them.
+
+*"If you wish to improve, be content to appear clueless or stupid in extraneous matters."* — Epictetus (no problem)
