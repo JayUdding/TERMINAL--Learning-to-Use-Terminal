@@ -177,4 +177,8 @@ The path must be contiguous: `/logs/2026`.
 - Path construction requires contiguous slashes (`../temp`, `/logs/2026`), not separate arguments.
 - `rmdir` vs `rm -r` are different tools with different purposes; do not confuse them.
 
-*"If you wish to improve, be content to appear clueless or stupid in extraneous matters."* — Epictetus (no problem)
+*"If you wish to improve, be content to appear clueless or stupid in extraneous matters."* — Epictetus (this one no problem for me)
+
+
+
+
