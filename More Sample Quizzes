@@ -180,5 +180,40 @@ The path must be contiguous: `/logs/2026`.
 *"If you wish to improve, be content to appear clueless or stupid in extraneous matters."* — Epictetus (this one no problem for me)
 
 
+NEXT QUIZ
 
+                          
+
+**Quiz 6 Review:**
+
+- **Q1:** Move "draft.txt" to home directory → `mv draft.txt ~/` — Correct.
+
+- **Q2:** Create "cache" in grandparent directory → `mkdir ../../cache` 
+**Correction:** You used `mkdir cache ../..`, creating "cache" in current dir and attempting to recreate grandparent. 
+Path must be contiguous: `../../cache`.
+
+- **Q3:** Copy "README.md" from root to current → `cp /README.md ./` — Correct.
+- **Q4:** Delete "temp.log" in parent directory → `rm ../temp.log` — Correct.
+- **Q5:** Change to root directory → `cd /` — Correct.
+
+- **Q6:** List contents of `~/bin` → `ls ~/bin`  
+**Correction:** You used `cat`, which outputs file contents. `ls` lists directory contents.
+
+
+- **Q7:** Move "archive.zip" from home to root → `mv ~/archive.zip /` — Correct.
+
+- **Q8:** Copy "legacy.dat" from grandparent to current → `cp ../../legacy.dat ./`  
+**Correction:** You omitted the slash: `../..legacy.dat` reads as a single filename, not a path. Must be `../../legacy.dat`.
+
+- **Q9:** Create "scratch" at root → `mkdir /scratch` — Correct.
+
+- **Q10:** List all files (including hidden) in long format for parent → `ls -alh ..`  
+**Correction:** You used `-` (invalid/previous dir shorthand in some contexts) instead of `..` (parent directory).
+
+**Persistent Errors:**
+- Path concatenation: Missing slashes between `..` components creates invalid filenames.
+- Command confusion: `cat` vs `ls` for directory listing.
+- Symbol precision: `..` vs `-` vs `...` (parent vs previous vs invalid).
+
+*"We are what we repeatedly do. Excellence, then, is not an act, but a habit."* — Will Durant (summarizing Aristotle)
 
