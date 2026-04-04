@@ -249,6 +249,8 @@ cd ~ go to the home directory // home navigation
 
 cd ./ - Move to the current directory (refresh)
 
+cd / move to the root of the file system (not the same as home!)
+
 cd - go back to the previous working directory (like a back button)
 The Rule:
 cd - is a toggle switch between two locations only: where you are now, and where you were immediately before.
