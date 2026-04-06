@@ -484,3 +484,49 @@ mv ~/archive.tar.gz /
 
 
 NEXT QUIZ
+
+ **Quiz -- Mastery Check**
+
+**Question 1:**  
+What command displays the contents of a file named "settings.conf" located in your **home directory**?
+cat ~/settings.conf
+
+**Question 2:**  
+What command lists all files (including hidden) in your **current directory**?
+ls -a ./
+
+**Question 3:**  
+What command copies a file named "data.txt" from your **current directory** to your **home directory**?
+cp ./data.txt ~/
+
+**Question 4:**  
+What command moves a file named "old.txt" from your **home directory** to the **parent directory**?
+mv ~/old.txt ../
+
+**Question 5:**  
+What command deletes an empty directory named "empty" located in your **home directory**?
+rmdir ~/empty
+
+**Question 6:**  
+What command changes directory to the **previous working directory** (where you were before the current location)?
+cd -
+
+**Question 7:**  
+What command creates a directory named "new_folder" inside your **current directory**?
+mkdir ./new_folder
+
+**Question 8:**  
+What command copies a file named "file.txt" from the **grandparent directory** (two levels up) to your **current directory**?
+cp ../../file.txt ./
+
+**Question 9:**  
+What command deletes a regular file (not a directory) named "trash.txt" located in your **home directory**?
+rm -r ~/trash.txt
+
+**Question 10:**  
+What command moves a file named "system.log" from the **root directory** to your **home directory**?
+mv /system.log ~/
+
+---
+
+Answer all 10 when ready.
