@@ -1,1 +1,37 @@
+ **Quiz 1: File Permissions Basics**
 
+Answer all 10 questions in a single response. Precision matters—watch your syntax, spaces, and filename accuracy.
+
+1. You are currently in `/home/user/projects/website/css`. Write the exact command to navigate to `/home/user/projects/website`.
+
+cd ../
+
+2. Create an empty file named `permissions.test` in the current directory.
+touch ./permissions.test
+
+3. Given the following `ls -l` output line:
+   ```
+   -rwxr-xr-- 1 alice dev 2048 Apr 4 14:30 deploy.sh
+   ```
+   What specific permissions does the **group** have on this file? 
+(Answer with the exact three characters, e.g., "rwx" or "r--")
+
+rwxr
+
+4. Given the following `ls -l` output line:
+   ```
+   drwxr-x--- 1 bob staff 4096 Apr 4 12:00 archive/
+   ```
+   What type of file is this, and what operations can **others** (users who are neither the owner nor in the group) perform on it?
+
+5. Add execute permission for the **owner** to the file `script.sh` using symbolic notation.
+
+6. Remove write permission for the **group** from the file `data.txt` using symbolic notation.
+
+7. Add read permission for **others** to the file `notes.txt` using symbolic notation.
+
+8. Set permissions on `config.txt` such that the **owner** has exactly read and write permissions (no execute), using the `=` operator in symbolic notation.
+
+9. In standard `ls -l` output, what do the three characters in positions 2-4 (immediately after the first character) represent?
+
+10. Remove **all** permissions (read, write, and execute) for **others** from the file `private.key` using symbolic notation.
