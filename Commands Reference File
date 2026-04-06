@@ -72,7 +72,43 @@ After seeing the prompt:
 If you press return, you’ll see another line with a % sign, 
 indicating that the previous line has been abandoned.
 
+SOME MORE ON LOCATIONS (PARENT AND GRANDPARENT):
 
+ 
+
+**Directory Hierarchy Map**
+
+Think of it as nested containers:
+
+```
+/ (Root)
+└── Users/ (on macOS) or home/ (on Linux)
+    └── ANDROID/ (Your Home Directory ~)
+        ├── Documents/
+        ├── Downloads/
+        └── projects/ (Example Current Directory ./)
+            └── code/ (Subdirectory)
+```
+
+**If you are in your Home Directory (`~`):**
+- `./` = Home (`/Users/ANDROID`)
+- `../` = Parent of home (`/Users`)
+- `../../` = Grandparent (`/` Root)
+
+**If you are in `~/projects` (Current):**
+- `./` = `~/projects`
+- `../` = `~` (Home)
+- `../../` = `/Users` (Parent of home)
+
+**If you are in `/var/log` (Current):**
+- `./` = `/var/log`
+- `../` = `/var`
+- `../../` = `/` (Root)
+- `~/` = Still `/Users/ANDROID` (Home never changes; it's absolute)
+
+**Rule:** `../` always means "up one level from where I stand right now," not "up one level from home."
+
+ 
 SOME BASICS--FILES FOLDERS DIRECTORIES
 
 There are files and folders (the folders hold files and should be called directories) 
