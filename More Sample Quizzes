@@ -539,32 +539,172 @@ more of the same--trying to get 3 perfect scores!
 
 **Question 1:**  
 What command displays the contents of a file named "README.md" located in your **current directory**?
+cat ./README.md
 
 **Question 2:**  
 What command deletes a regular file (not a directory) named "temp.log" located in your **home directory**?
+rm ~/temp.log
 
 **Question 3:**  
 What command moves a file named "document.pdf" from your **home directory** to your **current directory**?
+mv ~/document.pdf ./
 
 **Question 4:**  
 What command creates a directory named "archives" inside your **home directory**?
+mkdir ~/archives
 
 **Question 5:**  
 What command changes directory to the **previous working directory**?
+cd -
 
 **Question 6:**  
 What command copies a file named "config.ini" from the **parent directory** to your **home directory**?
+cp ../config.ini ~/
 
 **Question 7:**  
 What command deletes an empty directory named "old_cache" (underscore) located in your **current directory**?
+rmdir ./old_cache
 
 **Question 8:**  
 What command lists all files (including hidden) in the **grandparent directory** (two levels up from current)?
+ls -a ../../
 
 **Question 9:**  
 What command moves a file named "data.csv" from your **current directory** to the **root directory**?
+mv ./data.csv /
 
 **Question 10:**  
 What command copies a file named "backup.tar.gz" from the **grandparent directory** to your **home directory**?
+cp ../../backup.tar.gz ~/
 
+NEXT QUIZ
+
+ **Quiz--Character Precision**
+
+Slow down. Check every character. Dots matter. Underscores matter. Case matters.
+
+**Question 1:**  
+What command displays the contents of a file named "config.txt" (dot-t-x-t) located in your **home directory**?
+cat ~/config.txt
+
+**Question 2:**  
+What command lists all files (including hidden) in your **current directory**?
+ls -a ./
+
+**Question 3:**  
+What command copies a file named "master.doc" from your **home directory** to the **parent directory**?
+cp ~/master.doc ../
+
+**Question 4:**  
+What command moves a file named "legacy.dat" from the **grandparent directory** (two levels up) to your **home directory**?
+mv ../../legacy.dat ~/
+
+**Question 5:**  
+What command deletes an empty directory named "temp_folder" (underscore) located in your **home directory**?
+rmdir ~/temp_folder
+
+**Question 6:**  
+What command changes directory to the **previous working directory**?
+cd -
+
+**Question 7:**  
+What command deletes a regular file (not a directory) named "data.json" (dot-j-s-o-n) located in your **current directory**?
+rm ./data.json
+
+**Question 8:**  
+What command creates a directory named "logs" inside the **grandparent directory**?
+mkdir ../../logs
+
+**Question 9:**  
+What command lists the contents of the **root directory**?
+ls /
+
+**Question 10:**  
+What command moves a file named "upload.txt" (dot-t-x-t) from your **current directory** to the **root directory**?
+mv ./upload.txt /
+
+
+
+NEXT QUIZ
+
+ **Quiz -- Final Perfect Run**
+
+**Question 1:**  
+What command displays the contents of a file named "notes.txt" located in your **current directory**?
+cat ./notes.txt
+
+**Question 2:**  
+What command lists all files (including hidden) in your **home directory**?
+ls -a ~/
+
+**Question 3:**  
+What command copies a file named "local.conf" from your **current directory** to the **grandparent directory** (two levels up)?
+cp ./local.conf ../../
+
+**Question 4:**  
+What command moves a file named "upstream.dat" from the **parent directory** to your **home directory**?
+mv ../upstream.dat ~/
+
+**Question 5:**  
+What command deletes an empty directory named "scratch_pad" (underscore) located in your **current directory**?
+rmdir ./scratch_pad
+
+**Question 6:**  
+What command changes directory to the **previous working directory**?
+cd -
+
+**Question 7:**  
+What command copies a file named "template.yml" (dot-y-m-l) from your **home directory** to your **current directory**?
+cp ~/template.yml ./
+
+**Question 8:**  
+What command deletes a regular file (not a directory) named "garbage.tmp" (dot-t-m-p) located in your **home directory**?
+rm ~/garbage.tmp
+
+**Question 9:**  
+What command creates a directory named "sibling" inside the **parent directory**?
+mkdir ../sibling
+
+**Question 10:**  
+What command moves a file named "system.cfg" from the **root directory** to your **current directory**?
+mv /system.cfg ./
+
+
+NEXT QUIZ
+
+ **Quiz--Clean Run**
+
+**Question 1:**  
+What command displays the contents of a file named "readme.txt" located in your current directory?
+
+**Question 2:**  
+What command lists all files (including hidden) in your home directory?
+
+**Question 3:**  
+What command moves a file named "archive.zip" from your home directory to the parent directory?
+
+**Question 4:**  
+What command copies a file named "config.json" from the grandparent directory to your current directory?
+
+**Question 5:**  
+What command deletes an empty directory named "temp" located in your home directory?
+
+**Question 6:**  
+What command changes directory to the previous working directory?
+
+**Question 7:**  
+What command deletes a regular file named "junk.log" located in your current directory?
+
+**Question 8:**  
+What command creates a directory named "backup" inside the parent directory?
+
+**Question 9:**  
+What command moves a file named "system.dat" from the root directory to your home directory?
+
+**Question 10:**  
+What command copies a file named "local.yml" from your current directory to the root directory?
+
+---
+
+Answer all 10 when ready.
  
