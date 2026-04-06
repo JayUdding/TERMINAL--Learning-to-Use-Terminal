@@ -327,3 +327,90 @@ Next Quiz...
 
 - **Q10:** What command changes directory to the grandparent directory (two levels up)?  
   → `cd ../..`
+
+
+
+NEXT QUIZ
+
+ **Quiz-- Precision Under Pressure**
+
+**Question 1:**  
+What command displays the contents of a file named "secrets.txt" located in your home directory?
+cat ~/secrets.txt 
+
+**Question 2:**  
+What command lists all files (including hidden) in the directory `/etc`?
+ls -a /etc
+
+**Question 3:**  
+What command moves a file named "draft.md" from your current directory to the grandparent directory (two levels up)?
+mv draft.md ../.. (or also mv draft.md ../../?)--yes Correct. Both work; trailing slash is optional but explicit.
+
+**Question 4:**  
+What command deletes an empty directory named "empty_folder" located in the parent directory?
+rmdir ../empty_folder
+
+**Question 5:**  
+What command copies a file named "important.doc" from your home directory to your current directory?
+cp ~/important.doc ./
+
+**Question 6:**  
+What command changes directory to the previous working directory (where you were before the current one)?
+cd -
+
+**Question 7:**  
+What command creates a directory named "nested" inside the grandparent directory?
+mkdir ../../nested
+
+**Question 8:**  
+What command deletes a directory named "old_project" and all its contents, where "old_project" is located in your home directory?
+rm -r ~/old-project
+
+INCORRECT. You wrote ~/old-project (hyphen) instead of ~/old_project (underscore). 
+Precision remains crucial!
+
+**Question 9:**  
+What command moves a file named "system.log" from the root directory to the parent directory?
+mv /system.log ../
+
+**Question 10:**  
+What command copies a file named "data.json" from the grandparent directory to your home directory?
+cp ../../data.json ~/
+
+---
+
+
+
+NEXT QUIZ
+
+ **More Precision Drill**
+
+**Question 1:**  
+What command displays the contents of a file named "config.yml" (not .yaml) located in your home directory?
+
+**Question 2:**  
+What command lists all files (including hidden) in the directory `/var/log`?
+
+**Question 3:**  
+What command moves a file named "temp.txt" from your current directory to the parent directory?
+
+**Question 4:**  
+What command deletes an empty directory named "test_dir" (underscore) located in your current directory?
+
+**Question 5:**  
+What command copies a file named "backup.sql" from the root directory to your home directory?
+
+**Question 6:**  
+What command changes directory to the previous working directory?
+
+**Question 7:**  
+What command creates a directory named "logs" inside the grandparent directory?
+
+**Question 8:**  
+What command deletes a directory named "my_project" (underscore) and all its contents, where "my_project" is located in your home directory?
+
+**Question 9:**  
+What command copies a file named "data.csv" from your home directory to the parent directory?
+
+**Question 10:**  
+What command moves a file named "old_data.json" from the grandparent directory to the root directory?
