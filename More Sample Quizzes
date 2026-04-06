@@ -433,7 +433,12 @@ mv ../../old_data.json /
 
 NEXT QUIZ
 
- **Quiz 11: Home vs. Current Discrimination**
+ **Quiz --Home vs. Current Discrimination**
+
+
+
+
+
 
 **Question 1:**  
 What command displays the contents of a file named "notes.txt" located in your **current directory**?
