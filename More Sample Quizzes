@@ -435,39 +435,52 @@ NEXT QUIZ
 
  **Quiz --Home vs. Current Discrimination**
 
-
-
-
-
+ 
 
 **Question 1:**  
 What command displays the contents of a file named "notes.txt" located in your **current directory**?
+cat ./notes.txt 
 
 **Question 2:**  
 What command lists all files (including hidden) in your **home directory**?
+ls -a ~/
 
 **Question 3:**  
 What command copies a file named "report.pdf" from your **home directory** to your **current directory**?
+cp ~/report.pdf ./
 
 **Question 4:**  
 What command deletes an empty directory named "cache_dir" (underscore) located in your **home directory**?
+rmdir ~/cache_dir
 
 **Question 5:**  
 What command moves a file named "data.xml" from the **parent directory** to your **home directory**?
+mv ../data.xml ~/
 
 **Question 6:**  
 What command creates a directory named "temp" inside your **home directory**?
+mkdir ~/temp
+ 
 
 **Question 7:**  
 What command deletes a file named "junk.txt" located in your **current directory**?
+rm -r ./junk.txt INCORRECT.
+rm ./junk.txt  You used rm -r ./junk.txt. The -r (recursive) flag is for deleting directories and their contents. 
+For a single file, use rm alone. The path ./ was correct, but the command flag was imprecise.
 
 **Question 8:**  
 What command copies a file named "settings.json" from your **current directory** to the **grandparent directory** (two levels up)?
+cp ./settings.json ../../
 
 **Question 9:**  
 What command changes directory to your **home directory**?
+cd ~/
 
 **Question 10:**  
 What command moves a file named "archive.tar.gz" from your **home directory** to the **root directory**?
+mv ~/archive.tar.gz /
 
- 
+ 9 out of 10 correct
+
+
+NEXT QUIZ
