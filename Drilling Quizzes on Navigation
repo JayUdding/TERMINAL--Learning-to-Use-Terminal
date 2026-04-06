@@ -676,35 +676,44 @@ NEXT QUIZ
 
 **Question 1:**  
 What command displays the contents of a file named "readme.txt" located in your current directory?
+cat ./readme.txt
 
 **Question 2:**  
 What command lists all files (including hidden) in your home directory?
+ls -a ~/
 
 **Question 3:**  
 What command moves a file named "archive.zip" from your home directory to the parent directory?
+mv ~/archive.zip ../
 
 **Question 4:**  
 What command copies a file named "config.json" from the grandparent directory to your current directory?
+cp ../../config.json ./
 
 **Question 5:**  
 What command deletes an empty directory named "temp" located in your home directory?
+rmdir ~/temp
 
 **Question 6:**  
 What command changes directory to the previous working directory?
+cd -
 
 **Question 7:**  
 What command deletes a regular file named "junk.log" located in your current directory?
+rm ./junk.log
 
 **Question 8:**  
 What command creates a directory named "backup" inside the parent directory?
+mkdir ../backup
 
 **Question 9:**  
 What command moves a file named "system.dat" from the root directory to your home directory?
+mv /system.dat ~/
 
 **Question 10:**  
 What command copies a file named "local.yml" from your current directory to the root directory?
+cp ./local.yml /
 
----
 
-Answer all 10 when ready.
- 
+
+GOT 3 times a perfect score in the last three quizzes--moving on to FILE PERMISSIONS
