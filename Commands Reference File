@@ -41,6 +41,34 @@ If cd /tmp fails (e.g., directory doesn't exist), it stops and doesn't run pwd.
 Terminal default is in the Home Directory; that where it opens up by default
 Home Directory is where the personal files live such as docs, downloads, apps, etc.
 
+MORE ON HOME vs ROOT vs CURRENT 
+
+HOME  symbol `~/`  
+
+**Home directory** is your user account's personal directory—where macOS stores your Downloads, Documents, Desktop, etc.
+
+ 
+The tilde `~` is shell shorthand for this specific absolute path. It never changes (unless you switch user accounts), 
+regardless of where you `cd` to.
+
+**The distinction:**
+- `./` = Wherever you are standing right now (changes constantly as you navigate)
+- `~/` = Your house (fixed location: `/Users/ANDROID`)
+- `/` = The root of the entire city (filesystem)
+
+**Example:**
+If you are currently in `/Users/ANDROID/projects/code`:
+- `./file.txt` = `/Users/ANDROID/projects/code/file.txt`
+- `~/file.txt` = `/Users/ANDROID/file.txt` (up two levels, in your home)
+- `/file.txt` = `/file.txt` (at the root of the drive, outside your user folder entirely)
+
+**Why you keep erring:** 
+You treat `~` as "somewhere convenient" or "current-ish" rather than a specific, 
+fixed location that happens to contain your personal files.
+
+..........
+
+After seeing the prompt:
 If you press return, you’ll see another line with a % sign, 
 indicating that the previous line has been abandoned.
 
