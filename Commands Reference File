@@ -12,16 +12,16 @@ Cursor
 Command line 
 Prompt
 
-We see user name followed by computername and possibly the directory we are in (ie. Desktop), 
+When opening the Terminal we see (1) Username; followed by (2) Computername/Hostname; and possibly (3) the directory we are in (ie. Desktop), 
 followed by % sign. 
 
 If we press return/enter then a new command line presents. 
 
-Commands are only executed in the directory we are in at the moment. 
+Commands are only executed in the directory we are in at the moment. Current Directory
 
 We can't interact with the terminal with the mouse (but we can use it to place the cursor). 
 
-You can only use the arrow keys and keyboard. 
+We can only use the arrow keys and keyboard. 
 
 The UP arrow selects the previous commands used in the session.
 
@@ -29,7 +29,8 @@ About the Prompt when we open up the Terminal:
 
 Terminal opens with username@computername (hostname)
 @ is the divider between username and computername
-~ means home directory 
+~ means home directory (where our files live)
+/ Root access---system files
 % is the prompt symbol -- means ready for input as a normal non-root user
 # is also a prompt symbol and means ready for input as a root user (admin)
 
@@ -39,7 +40,7 @@ Example: cd /tmp && pwd
 If cd /tmp fails (e.g., directory doesn't exist), it stops and doesn't run pwd.
 
 Terminal default is in the Home Directory; that where it opens up by default
-Home Directory is where the personal files live such as docs, downloads, apps, etc.
+Home Directory is where our personal files live such as docs, downloads, apps, etc.
 
 MORE ON HOME vs ROOT vs CURRENT 
 
@@ -52,9 +53,9 @@ The tilde `~` is shell shorthand for this specific absolute path. It never chang
 regardless of where you `cd` to.
 
 **The distinction:**
-- `./` = Wherever you are standing right now (changes constantly as you navigate)
-- `~/` = Your house (fixed location: `/Users/ANDROID`)
-- `/` = The root of the entire city (filesystem)
+- `./` = Wherever you are standing right now (changes constantly as you navigate)CURRENT 
+- `~/` = Your house (fixed location: `/Users/ANDROID`) HOME
+- `/` = The root of the entire city (filesystem) ROOT
 
 **Example:**
 If you are currently in `/Users/ANDROID/projects/code`:
@@ -62,8 +63,7 @@ If you are currently in `/Users/ANDROID/projects/code`:
 - `~/file.txt` = `/Users/ANDROID/file.txt` (up two levels, in your home)
 - `/file.txt` = `/file.txt` (at the root of the drive, outside your user folder entirely)
 
-**Why you keep erring:** 
-You treat `~` as "somewhere convenient" or "current-ish" rather than a specific, 
+Do not treat `~` as "somewhere convenient" or "current-ish" rather than a specific, 
 fixed location that happens to contain your personal files.
 
 ..........
@@ -111,7 +111,7 @@ Think of it as nested containers:
  
 SOME BASICS--FILES FOLDERS DIRECTORIES
 
-There are files and folders (the folders hold files and should be called directories) 
+There are files and folders (the folders that hold files are called directories) 
 So there are FILES and DIRECTORIES (folders)
 
 a FILE  = A document. It contains data (text, code, images, etc.).  
@@ -133,7 +133,7 @@ a DIRECTORY  = A container that holds files and other directories.
 **The confusion:**
 You keep trying to use `rmdir` on files (like `junk.txt`). 
 That fails because `rmdir` only works on empty directories, not documents. 
-Use `rm` for files, `rmdir` for empty folders.
+Use `rm` for files, `rmdir` for empty folders/directories.
 
 **Drill this:**
 
@@ -148,9 +148,10 @@ Note: the command 'ls' lists everything in your current location:
 files, directories, symlinks, and other objects.
 
 However, by default, ls does not clearly label which is which unless your terminal uses colors 
-(blue for directories, white for files).
+(e.g. blue for directories, white for files).
 
 To see the difference explicitly, use: 
+
 ls -l
 
 
@@ -166,7 +167,7 @@ or
 ls -F
 
 
-Directories will show a trailing / 
+Directories will also show a trailing / 
   
 Critical point: ls shows you the names of everything, 
 but you must use flags (-l or -F) to know which names represent containers (directories) 
@@ -338,7 +339,7 @@ You can do it in one step.
 
 EXMAMPLES:
 
-cp example.txt ~/Documents (the ~ adds the path)
+cp example.txt ~/Documents (the ~ adds the path to Home directory)
 cp example.txt Documents would copy the file into the current directory, not into Documents.
 cp   copy a file / example: cp hello.py backup.py (NOTE no comma between the two filenames)
 cp -r   copy a directory and its contents recursively
