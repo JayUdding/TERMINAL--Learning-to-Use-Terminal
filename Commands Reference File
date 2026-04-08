@@ -44,7 +44,7 @@ Home Directory is where our personal files live such as docs, downloads, apps, e
 
 MORE ON HOME vs ROOT vs CURRENT 
 
-HOME  symbol `~/`  
+HOME  symbol `~/`  (Tilde)
 
 **Home directory** is your user account's personal directory—where macOS stores your Downloads, Documents, Desktop, etc.
 
@@ -172,10 +172,7 @@ Directories will also show a trailing /
 Critical point: ls shows you the names of everything, 
 but you must use flags (-l or -F) to know which names represent containers (directories) 
 versus documents (files).
-
-
  
-
 In `ls -l`, the first character tells you the type:
 
 - **`d`** = directory (folder/container)  
