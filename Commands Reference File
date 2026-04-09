@@ -4,13 +4,13 @@ READ, REVIEW, REMEMBER, RUN, RETEST
 
 RINSE, REPEAT...
 
->>>... ABOVE ALL... PRACTICE IN THE ACTUAL TERMINAL...<<<
+>>>... ABOVE ALL... AT THE SAME TIME PRACTICE IN THE ACTUAL TERMINAL...<<<
 
 On macOS we work with Zsh Shell (not Bash Shell)
 
 Cursor 
 Command line 
-Prompt
+Prompt / Shell Prompt
 
 When opening the Terminal we see (1) Username; followed by (2) Computername/Hostname; and possibly (3) the directory we are in (ie. Desktop), 
 followed by % sign. This entire text is called the SHELL PROMPT. It shows the Terminal is ready for input.
