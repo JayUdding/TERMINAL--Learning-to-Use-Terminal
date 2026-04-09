@@ -12,6 +12,15 @@ Cursor
 Command line 
 Prompt / Shell Prompt
 
+The prompt user@MacBook-Pro ~ % tells you:
+
+Who you are: user (your username)
+Where you are: ~ (your home directory)
+What kind of account you have: % (regular user, not root)
+Which machine you’re on: MacBook-Pro (your computer’s name)
+That the system is ready to accept a command
+It’s like a status bar for your terminal session — always giving you context.
+
 When opening the Terminal we see (1) Username; followed by (2) Computername/Hostname; and possibly (3) the directory we are in (ie. Desktop), 
 followed by % sign. This entire text is called the SHELL PROMPT. It shows the Terminal is ready for input.
 
