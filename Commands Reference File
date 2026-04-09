@@ -13,7 +13,7 @@ Command line
 Prompt
 
 When opening the Terminal we see (1) Username; followed by (2) Computername/Hostname; and possibly (3) the directory we are in (ie. Desktop), 
-followed by % sign. 
+followed by % sign. This entire text is called the SHELL PROMPT. It shows the Terminal is ready for input.
 
 If we press return/enter then a new command line presents. 
 
@@ -302,6 +302,12 @@ The slash after tilde is mandatory to separate the home directory reference from
 
 
 CD CHANGE DIRECTORY
+
+NOTE: From the Home Directory--When you type cd Documents and press Enter, 
+the prompt changes to reflect your new location.
+It would now look like:
+user@MacBook-Pro Documents %
+So the ~ changes to Documents, because you are now in that directory.
  
 cd  go to another directory, moves to a different folder
 
@@ -388,6 +394,8 @@ find--starts a search for a file
 . start from the current directory
 -type f make it look for files (regular files and not directories)
 
+GREP
+
 grep--search for (global regular expression print) within a file
 
 * WILDCARD: If you want to search for a word in multiple files, 
@@ -456,8 +464,31 @@ Done in order to: check code, make changes, edits
 Note: To save changes in nano, press Ctrl+O and then Enter. 
 To exit nano, press Ctrl+X
 
+The command nano example.txt is used to open a file named example.txt in the nano text editor.
+
+When you type nano example.txt and press Enter, the example.txt file will be opened in the nano editor, where you can edit its contents. The nano command is a popular text editor that's easy to use and comes pre-installed on many Linux and macOS systems.
+
+Tip: If you want to create a new file instead of editing an existing one, you can simply type nano newfile.txt (replace newfile.txt with your desired filename).
+
+Note: To save changes in nano, press Ctrl+O and then Enter. To exit nano, press Ctrl+X.
+
 vim    Open a file in the vim text editor
 3. `cat` - Display the contents of a file
+
+
+When you type cat example.txt and press Enter, the contents of the file will be displayed in the terminal, 
+allowing you to view its text. The cat command is short for "concatenate," 
+but it's often used to simply display the contents of a file.
+
+Tip: If you want to display the contents of multiple files at once, 
+you can separate the filenames with spaces, like this: cat example.txt anotherfile.txt
+
+Note: To scroll through the output if it's too long to fit in the terminal, 
+you can use a pager like less or more. For example: cat example.txt | less
+
+
+
+
 4. `less` - Display the contents of a file one page at a time
 5. `head` - Display the first few lines of a file
 6. `tail` - Display the last few lines of a file
