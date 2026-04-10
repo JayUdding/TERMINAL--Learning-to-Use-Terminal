@@ -164,19 +164,19 @@ To see the difference explicitly, use:
 ls -l
 
 
-Directories will start with a d 
+d      Directories will start with a d 
 
 
  
-Files will start with a - 
+-     Files will start with a - 
 
 
-or 
+or use:
 
 ls -F
 
 
-Directories will also show a trailing / 
+Directories will  show a trailing / 
   
 Critical point: ls shows you the names of everything, 
 but you must use flags (-l or -F) to know which names represent containers (directories) 
@@ -288,8 +288,11 @@ chmod changes file permissions
 So chmod +x script.sh makes the file runnable
 
 mkdir --- make a new directory
-Example: mkdir test (make a new directory called test)
+
+Example: 
+mkdir test (make a new directory called test)
 --then press ls to see if it is there.
+
 NOTE: If you want to create a directory with a space in its name, 
 Surround the name with quotes. 
 Example: mkdir "My Projects"
